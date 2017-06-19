@@ -1,12 +1,21 @@
-\contentsline {section}{Abbildungsverzeichnis}{5}{section*.5}
-\contentsline {section}{Tabellenverzeichnis}{5}{section*.6}
-\contentsline {section}{Listingverzeichnis}{5}{section*.7}
-\contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{5}{section*.8}
-\contentsline {section}{\numberline {1}Einleitung}{7}{section.1}
-\contentsline {section}{\numberline {2}Kapitel 1}{7}{section.2}
-\contentsline {section}{\numberline {3}Kapitel 2}{8}{section.3}
-\contentsline {section}{\numberline {4}Ausblick}{8}{section.4}
-\contentsline {section}{\numberline {5}Fazit}{8}{section.5}
-\contentsline {section}{Literaturverzeichnis}{10}{lstnumber.1.33}
-\contentsline {section}{Anhang}{11}{section*.10}
-\contentsline {section}{Eidesstattliche Erkl\IeC {\"a}rung}{11}{section*.11}
+\contentsline {section}{Abbildungsverzeichnis}{4}{section*.4}
+\contentsline {section}{Tabellenverzeichnis}{4}{section*.5}
+\contentsline {section}{Listingverzeichnis}{4}{section*.6}
+\contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{4}{section*.7}
+\contentsline {section}{\numberline {1}Einleitung}{6}{section.1}
+\contentsline {section}{\numberline {2}Grundlagen}{7}{section.2}
+\contentsline {subsection}{\numberline {2.1}Kompetenzen}{7}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Kompetenzframeworks}{7}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}RDF, Semantic Web Linked Data}{7}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Graphen}{8}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Graphentheorie}{8}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Graphendatenbank}{8}{subsubsection.2.4.2}
+\contentsline {section}{\numberline {3}Verwandte Themen und Arbeiten}{8}{section.3}
+\contentsline {subsection}{\numberline {3.1}Openbadge}{8}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}InLoc}{9}{subsubsection.3.1.1}
+\contentsline {subsection}{\numberline {3.2}ESCO}{9}{subsection.3.2}
+\contentsline {section}{\numberline {4}Ausblick}{9}{section.4}
+\contentsline {section}{\numberline {5}Fazit}{9}{section.5}
+\contentsline {section}{Literaturverzeichnis}{11}{lstnumber.1.33}
+\contentsline {section}{Anhang}{12}{section*.9}
+\contentsline {section}{Eidesstattliche Erkl\IeC {\"a}rung}{12}{section*.10}

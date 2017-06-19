@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.8)  15 JUN 2017 10:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.8)  19 JUN 2017 14:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -914,12 +914,12 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ]
 \openout2 = `latex_einstellungen/deckblatt.aux'.
 
- (./latex_einstellungen/deckblatt.tex <abb/logo1.png, id=58, 1073.611pt x 264.187pt>
+ (./latex_einstellungen/deckblatt.tex <abb/logo1.png, id=94, 1073.611pt x 264.187pt>
 File: abb/logo1.png Graphic file (type png)
  <use abb/logo1.png>
 Package pdftex.def Info: abb/logo1.png used on input line 22.
 (pdftex.def)             Requested size: 264.61333pt x 65.11134pt.
- <abb/logo2.png, id=60, 1073.611pt x 264.187pt>
+ <abb/logo2.png, id=96, 1073.611pt x 264.187pt>
 File: abb/logo2.png Graphic file (type png)
  <use abb/logo2.png>
 Package pdftex.def Info: abb/logo2.png used on input line 24.
@@ -928,43 +928,42 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 28.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 78.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 77.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 78.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 77.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 78.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 77.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 78.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 77.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 78.
+(Font)              <12> on input line 77.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 78.
+(Font)              <8> on input line 77.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 78.
-LaTeX Font Info:    Try loading font information for U+msa on input line 78.
+(Font)              <6> on input line 77.
+LaTeX Font Info:    Try loading font information for U+msa on input line 77.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 78.
+LaTeX Font Info:    Try loading font information for U+msb on input line 77.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )) [2
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./abb/logo1.png> <./abb/logo2.png>] (./sperrvermerk.tex) [3
-
-]
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./abb/logo1.png> <./abb/logo2.png>]
 \openout2 = `abstract.aux'.
 
- (./abstract.tex) [4
+ (./abstract.tex) [3
+
 
 ] (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.toc)
 \tf@toc=\write7
@@ -996,16 +995,21 @@ Class scrartcl Warning: \float@listhead detected!
 \tf@lol=\write10
 \openout10 = `Hauptdatei.lol'.
 
- (./latex_einstellungen/abkuezungen/abkuerzungen.tex) (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.nls [5
+ (./latex_einstellungen/abkuezungen/abkuerzungen.tex) (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.nls [4
 
-]) [6] (./1_einleitung.tex
+]) [5] (./1_einleitung.tex
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 13.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 13.
-) (./2_kap1.tex) (./3_kap2.tex) (./7_ausblick.tex) (./8_fazit.tex) (./beispiel.tex [7]
+) (./2_grundlagen.tex [6]
+Overfull \hbox (4.66458pt too wide) in paragraph at lines 18--19
+[]\T1/lmr/m/n/12 Qualifikationen(lateinisch: qua-lis fa-ce-re, Be-schaf-fen-heit her-stel-len) sind hin-ge-gen prüf-
+ []
+
+) (./3_similar_topics.tex [7] [8]) (./7_ausblick.tex) (./8_fazit.tex) (./beispiel.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1024,16 +1028,16 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 35.
 LaTeX Font Info:    Font shape `OMS/lmr/m/it' in size <10> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 36.
- [8]
+ [9]
 
-LaTeX Warning: Citation `wk05' on page 9 undefined on input line 76.
+LaTeX Warning: Citation `wk05' on page 10 undefined on input line 76.
 
 
-LaTeX Warning: Citation `wk05' on page 9 undefined on input line 80.
+LaTeX Warning: Citation `wk05' on page 10 undefined on input line 80.
 
-) [9] (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.bbl) [10
+) [10] (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.bbl) [11
 
-] (./anhang/anhang.tex) [11]
+] (./anhang/anhang.tex) [12]
 \openout2 = `erklaerung.aux'.
 
  (./erklaerung.tex
@@ -1041,11 +1045,11 @@ Overfull \hbox (45.09023pt too wide) detected at line 23
 []
  []
 
-) [12
+) [13
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 274.
- [13
+ [14
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 274.
@@ -1061,18 +1065,18 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 274.
  ) 
 Here is how much of TeX's memory you used:
- 12207 strings out of 492995
- 190328 string characters out of 6132705
- 390445 words of memory out of 5000000
- 15391 multiletter control sequences out of 15000+600000
+ 12233 strings out of 492995
+ 190898 string characters out of 6132705
+ 390418 words of memory out of 5000000
+ 15408 multiletter control sequences out of 15000+600000
  81701 words of font info for 65 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  42i,12n,51p,8858b,1923s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.pdf" (13 pages, 337553 bytes).
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.pdf" (14 pages, 372837 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 234 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 342 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 81 named destinations out of 1000 (max. 500000)
+ 179 words of extra memory for PDF output out of 10000 (max. 10000000)
 

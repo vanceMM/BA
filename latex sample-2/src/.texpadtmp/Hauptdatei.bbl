@@ -7,6 +7,24 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[all]{alliance_for_excellent_education}
+\emph{Expanding Education and Workforce Opportunities Through Digital Badges}.
+\newblock
+  \url{http://all4ed.org/reports-factsheets/expanding-education-and-workforce-opportunities-through-digital-badges/}
+
+\bibitem[bib17]{bibb}
+\emph{Definition und Kontextualisierung des Kompetenzbegriffes}.
+\newblock \url{https://www.bibb.de/de/8570.php}.
+\newblock \,Version:\,Jun 2017
+
+\bibitem[Dor14]{Dorn2014}
+\textsc{Dorn}, J{\"u}rgen:
+\newblock Elektronische Abzeichen zur Unterst{\"u}tzung von informalem Lernen.
+\newblock {In: }\emph{Informatik-Spektrum} 37 (2014), Nr. 4, 329--332.
+\newblock \url{http://dx.doi.org/10.1007/s00287-014-0796-2}. --
+\newblock DOI 10.1007/s00287--014--0796--2. --
+\newblock ISSN 1432--122X
+
 \bibitem[HKRS07]{Hitzler2007}
 \textsc{Hitzler}, Pascal ; \textsc{Krötzsch}, Markus ; \textsc{Rudolph},
   Sebastian  ; \textsc{Sure}, York:
