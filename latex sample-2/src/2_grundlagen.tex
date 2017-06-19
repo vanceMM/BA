@@ -33,8 +33,11 @@ Im folgenden sollen einige Konzepte und Technologien erläutert werden welche di
 
 \subsection{Graphen}
 
-Ein Graph(G) ist eine Struktur, welche aus Knoten(V) besteht die wiederum durch Kanten(E) verbunden sein können.
-
+Ein Graph ist definiert als eine Menge von Knoten(Vertices) und deren Beziehungen, welche über Kanten(Edges) dargestellt werden. Mit Graphen kann man vernetzte Strukturen wie zb. Straßennetze, Computernetzwerke oder Datenstrukturen modellieren. So finden in vielen modernen Technologien wie Routenplaner oder Social Media Anwendungen graphentheoretische Konzepte wieder.
 	\subsubsection{Graphentheorie}
+	In diesem Teilgebiet der Mathematik werden Graphen und ihre Beziehungen zueinander untersucht. Das älteste Dokumentierte Problem der Graphentheorie ist das Königsberger Brückenproblem. Dabei wurde ein Rundweg durch Königsberg gesucht, der alle Brücken jedoch nur einmal überquerte. Leonhard Euler erkannte 1736, dass man die einzelnen Ufer als Punkte und Brücken als Kanten abstrahieren konnte. Euler zeigte, dass ein solcher Weg nicht existierte, da jeder Knoten mit einer ungeraden Anzahl von ungerichteten Kanten verbunden sein muss.
+	
 	\subsubsection{Graphendatenbank}
-		
+	
+	Im Gegensatz zu relationalen Datenbanken werden Daten nicht in Tupeln als Tabellen gespeichert sondern als Knoten in einem Graphenmodell. Der Vorteil darin liegt zunächst in der Daten Modelierung, da das Graphen Model sehr intuitive ist und sich einfach auf Papier modelieren lässt. 
+	Ein weiterer wichtiger Aspekt ist der Performance Vorteil bei Bei Abfragen von stark verknüpften Daten. Abfragen in relationalen Datenbanken werden langsamer je größer der Datenbestand. Im Graphen wird immer nur der Teilgraph durchlaufen welcher die die Abfrage erfüllt.\cite[8]{robinson_webber_eifrem_2015}

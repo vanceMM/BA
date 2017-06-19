@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.8)  19 JUN 2017 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.8)  19 JUN 2017 20:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -582,7 +582,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count94
 \LT@p@ftn=\toks17
 )
-Class scrartcl Info: longtable captions redefined on input line 32.
+Class scrartcl Info: longtable captions redefined on input line 33.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -740,7 +740,7 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 (scrartcl)              I'd suggest to use 
 (scrartcl)              package `scrlayer-scrpage'.
 (scrartcl)              Nevertheless, using requested
-(scrartcl)              package `fancyhdr' on input line 63.
+(scrartcl)              package `fancyhdr' on input line 64.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
@@ -810,23 +810,23 @@ Writing nomenclature file Hauptdatei.nlo
 (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/latex_einstellungen/deckblatt.aux) (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/abstract.aux) (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/erklaerung.aux))
 \openout1 = `Hauptdatei.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 128.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 129.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -889,7 +889,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box38
-Package hyperref Info: Link coloring OFF on input line 128.
+Package hyperref Info: Link coloring OFF on input line 129.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -897,16 +897,16 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count121
 )
-LaTeX Info: Redefining \ref on input line 128.
-LaTeX Info: Redefining \pageref on input line 128.
-LaTeX Info: Redefining \nameref on input line 128.
+LaTeX Info: Redefining \ref on input line 129.
+LaTeX Info: Redefining \pageref on input line 129.
+LaTeX Info: Redefining \nameref on input line 129.
  (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.out) (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.out)
 \@outlinefile=\write6
 \openout6 = `Hauptdatei.out'.
 
 \c@lstlisting=\count122
  (./latex_einstellungen/trennung.tex)
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 138.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 139.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
@@ -989,7 +989,7 @@ Class scrartcl Warning: \float@listhead detected!
 (scrartcl)              Loading of package `scrhack' may help to
 (scrartcl)              avoid this warning, if you are using a
 (scrartcl)              a package that still implements the
-(scrartcl)              deprecated \float@listhead interface  on input line 201.
+(scrartcl)              deprecated \float@listhead interface  on input line 202.
 
 (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.lol)
 \tf@lol=\write10
@@ -1009,7 +1009,7 @@ Overfull \hbox (4.66458pt too wide) in paragraph at lines 18--19
 []\T1/lmr/m/n/12 Qualifikationen(lateinisch: qua-lis fa-ce-re, Be-schaf-fen-heit her-stel-len) sind hin-ge-gen prüf-
  []
 
-) (./3_similar_topics.tex [7] [8]) (./7_ausblick.tex) (./8_fazit.tex) (./beispiel.tex
+[7]) (./3_similar_topics.tex [8]) (./7_ausblick.tex) (./8_fazit.tex) (./beispiel.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1020,7 +1020,7 @@ File: abb/logo2.png Graphic file (type png)
  <use abb/logo2.png>
 Package pdftex.def Info: abb/logo2.png used on input line 12.
 (pdftex.def)             Requested size: 132.30666pt x 32.55566pt.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+ [9] (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
@@ -1028,16 +1028,28 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 35.
 LaTeX Font Info:    Font shape `OMS/lmr/m/it' in size <10> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 36.
- [9]
+
 
 LaTeX Warning: Citation `wk05' on page 10 undefined on input line 76.
 
+[10]
 
-LaTeX Warning: Citation `wk05' on page 10 undefined on input line 80.
+LaTeX Warning: Citation `wk05' on page 11 undefined on input line 80.
 
-) [10] (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.bbl) [11
+) [11] (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.bbl
+/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.bbl:39: Misplaced alignment tab character &.
+l.39 \newblock OReilly &
+                         Associates, 2015
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-] (./anhang/anhang.tex) [12]
+) [12
+
+] (./anhang/anhang.tex) [13]
 \openout2 = `erklaerung.aux'.
 
  (./erklaerung.tex
@@ -1045,38 +1057,38 @@ Overfull \hbox (45.09023pt too wide) detected at line 23
 []
  []
 
-) [13
+) [14
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 274.
- [14
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
+ [15
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 274.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
  (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/latex_einstellungen/deckblatt.aux) (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/abstract.aux) (/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/erklaerung.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 274.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 274.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
 Package rerunfilecheck Info: File `Hauptdatei.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 274.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
  ) 
 Here is how much of TeX's memory you used:
- 12233 strings out of 492995
- 190898 string characters out of 6132705
- 390418 words of memory out of 5000000
- 15408 multiletter control sequences out of 15000+600000
+ 12236 strings out of 492995
+ 190966 string characters out of 6132705
+ 394418 words of memory out of 5000000
+ 15409 multiletter control sequences out of 15000+600000
  81701 words of font info for 65 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 42i,12n,51p,8858b,1923s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,11n,51p,8858b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.pdf" (14 pages, 372837 bytes).
+Output written on "/Users/valentin/Documents/Repositories/BA/latex sample-2/src/.texpadtmp/Hauptdatei.pdf" (15 pages, 376737 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
- 300 compressed objects within 3 object streams
- 81 named destinations out of 1000 (max. 500000)
+ 349 PDF objects out of 1000 (max. 8388607)
+ 305 compressed objects within 4 object streams
+ 83 named destinations out of 1000 (max. 500000)
  179 words of extra memory for PDF output out of 10000 (max. 10000000)
 

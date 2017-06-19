@@ -33,4 +33,9 @@
 \newblock Berlin Heidelberg New York : Springer-Verlag, 2007. --
 \newblock ISBN 978--3--540--33994--6
 
+\bibitem[RWE15]{robinson_webber_eifrem_2015}
+\textsc{Robinson}, Ian ; \textsc{Webber}, Jim  ; \textsc{Eifrem}, Emil:
+\newblock \emph{Graph Databases Ian Robinson; Jim Webber; Emil Eifrem}.
+\newblock OReilly & Associates, 2015
+
 \end{thebibliography}
