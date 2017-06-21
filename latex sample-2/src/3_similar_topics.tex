@@ -17,11 +17,50 @@ Die Zusicherung kann dann in den Quellcode eines SVG oder PNG Bildes geschrieben
 
 \vspace{1em}
 
-\subsubsection{InLoc}\label{inloc}
+\subsection{InLoc}\label{inloc}
+
+Das Europäische Projekt InLOC(Integrating Learning Outcomes and Competences) erlaubt es Kompetenzen und Lernergebnisse verschiedener Kompetenzrahmen in einem einheitlichen semantischen Format abzubilden.
+
+\todo{Wichtig? Mehr Informationen ausarbeiten}
+
 \subsection{ESCO}
 
-In der EU gibt es nach einer Aktuellen Eurostat Statistik ca. 19 Millionen Menschen ohne Beschäftigung. Jedoch haben einige Branchen in Deutschland Probleme Stellen mit qualifiziertem Personal zu besetzen. So blieben im Jahr 2016 In der IT und Telekommunikationsbranche 375.034 Stellen unbesetzt. 
+In der EU gibt es nach einer Aktuellen Eurostat Statistik ca. 19 Millionen Menschen ohne Beschäftigung. Jedoch haben einige Branchen in Deutschland Probleme Stellen mit qualifiziertem Personal zu besetzen. So blieben im Jahr 2016 In der IT und Telekommunikationsbranche 375.034 Stellen unbesetzt.\cite{Statista2016}
  
 Die Europäische Kommission hat dieses Problem erkannt und mit ESCO eine mehrsprachige Klassifizierung für europäische Fähigkeiten, Kompetenzen, Qualifikationen und Berufe entwickelt, deren Zusammenhang durch Berufsprofile verdeutlicht wird.
  
 Ein der Aufgaben von ESCO ist es, Die Lücken zwischen dem Arbeitsmarkt und den verschiedenen Bildungssystemen der einzelnen Mitgliedstaaten zu schließen. So unterscheiden sich Qualifikationen welche Menschen in ihren Heimatländern erhalten nicht nur voneinander, sondern können auch oftmals nicht mit aktuellen Entwicklungen des Arbeitsmarktes und dessen Anforderungen mithalten.
+\subsection{GraphGist: Competency Management}\label{graphgist}
+\subsection{GraphGist: Recommendation System Sandbox}\label{recommender}
+
+Neo4J bietet über die Sandbox eine interaktive Möglichkeit auf einer temporär generierten Instanz im Browser zu arbeiten. Mit Schritt-für-Schritt Anleitungen werden Themen wie "Netzwerk Management" oder die "Panama Papers" in Neo4j näher gebracht. 
+
+Ein für diese Arbeit relevantes Themenfeld bietet die Sandbox "Recommendations".\cite{neo4j} Als Datenquelle für die Instanz stehen die "Open Movie Database"\cite{omdb}, und das MovieLens Projekt\cite{grouplens_2016} zur Verfügung.
+Neben einer Erläuterung zum Property Graph Model und einer Einführung in die Cypher Query Language gibt es Beispiele zu verschiedenen Methoden und Metriken für das Filtern von Ergebnissen. Dabei werden verschiedene Ansätze zu den Methoden Inhaltsbasierte Filterung und Kollaborative Filterung erläutert. Ein Beispiel für eine Metrik zum finden von Ähnlichkeiten ist der Jaccard Index. Er ist genau dann 1, wenn zwei Mengen identisch sind. Je weniger Gemeinsame Elemente zwei Mengen besitzen, desto kleiner wird der Jaccard Index und wird 0, wenn keine Gemeinsamkeiten vorliegen.
+\begin{center}
+	$ J(A,B)=\frac{\mid A\bigcap B\mid }{ \mid A \bigcup B \mid }$
+
+\end{center}
+
+\subsection{RDF Import Neo4J}
+
+Jesús Barrasa ist  \textit{Senior Graph Solutions Consultant at Neo Technology} bei Neo4j, und hat ein Plugin für Neo4j entworfen, mit dessen Hilfe sich RDF Dokumente in Neo4j importieren lassen. So lässt sich mit dem Befehl :
+\vspace{1em}
+
+\begin{lstlisting}[frame=htrbl, caption={Das Listing zeigt einen Funktionsaufruf über die Neo4j}, label={lst:result2}]
+CALL semantics.importRDF("file:////..../esco_skos.rdf","RDF/XML",
+ { languageFilter: 'de', commitSize: 5000 , nodeCacheSize: 250000})	
+\end{lstlisting}
+
+Der komplette RDF Graph des ESCO Kataloges mit allen Beziehungen laden und Abfragen.
+
+%\begin{figure}[htb]
+% \centering
+% \includegraphics[width=0.3\textwidth,angle=0]{abb/rdf_import_neo4j}
+% \caption[Beschreibung]{Beschreibung}
+%\label{fig:Beschreibung}
+%\end{figure}
+
+
+
+

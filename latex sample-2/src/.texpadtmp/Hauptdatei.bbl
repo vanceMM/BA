@@ -7,6 +7,13 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Ade]{Statista2016}
+\textsc{Adecco}:
+\newblock \emph{Arbeitsmarkt: Stellenangebote in Deutschland 2016 nach
+  Berufsgruppen | Statistik}.
+\newblock
+  \url{https://de.statista.com/statistik/daten/studie/693192/umfrage/offene-stellenangebote-in-deutschland-nach-berufsgruppen/}
+
 \bibitem[all]{alliance_for_excellent_education}
 \emph{Expanding Education and Workforce Opportunities Through Digital Badges}.
 \newblock
@@ -25,6 +32,11 @@
 \newblock DOI 10.1007/s00287--014--0796--2. --
 \newblock ISSN 1432--122X
 
+\bibitem[gro16]{grouplens_2016}
+\emph{MovieLens}.
+\newblock \url{https://grouplens.org/datasets/movielens/}.
+\newblock \,Version:\,Oct 2016
+
 \bibitem[HKRS07]{Hitzler2007}
 \textsc{Hitzler}, Pascal ; \textsc{Krötzsch}, Markus ; \textsc{Rudolph},
   Sebastian  ; \textsc{Sure}, York:
@@ -33,9 +45,27 @@
 \newblock Berlin Heidelberg New York : Springer-Verlag, 2007. --
 \newblock ISBN 978--3--540--33994--6
 
+\bibitem[Kon16]{OBNO3-A2}
+\textsc{Konert}, Johannes:
+\newblock Open Badge Network Proposal on Competency Alignment and Directory.
+\newblock   (2016).
+\newblock
+  \url{http://www.openbadgenetwork.com/wp-content/uploads/2016/01/OBNO3-A2__CompetencyAlignmentAndRepository__proposal_v1.1.pdf}
+
+\bibitem[neo]{neo4j}
+\emph{Neo4j Graph Database Sandbox - Get Started with Graphs}.
+\newblock \url{https://neo4j.com/sandbox-v2/}. --
+\newblock kein direkte Link zur Instanz. Diese wird erst nach einem Login nur
+  temporär erzeugt. Die Url sieht dann etwa wie folgt aus:
+  https://xx-x-x-x-xxxxx.neo4jsandbox.com/
+
+\bibitem[omd]{omdb}
+\emph{OMDb API}.
+\newblock \url{http://www.omdbapi.com/}
+
 \bibitem[RWE15]{robinson_webber_eifrem_2015}
 \textsc{Robinson}, Ian ; \textsc{Webber}, Jim  ; \textsc{Eifrem}, Emil:
 \newblock \emph{Graph Databases Ian Robinson; Jim Webber; Emil Eifrem}.
-\newblock OReilly & Associates, 2015
+\newblock OReilly and Associates, 2015
 
 \end{thebibliography}

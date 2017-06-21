@@ -32,8 +32,8 @@
 \usepackage{longtable}
 
 % Unterstützung für Schriftarten
-%\newcommand{\changefont}[3]{ 
-%\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+\newcommand{\changefont}[3]{ 
+\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
 
 % Packet für Seitenrandabständex und Einstellung für Seitenränder
 \usepackage{geometry}
@@ -47,6 +47,9 @@
 
 % Paket für Textfarben
 \usepackage{color}
+
+%Paket für todos
+\usepackage{todonotes}
 
 % Mathematische Symbole importieren
 \usepackage{amssymb}
@@ -229,13 +232,17 @@
 
 \input{3_similar_topics}
 
-%....
+\input{4_analyse}
+
+\input{5_umsetzung}
+
+\input{6_evaluation}
 
 \input{7_ausblick}
 
 \input{8_fazit}
 
-\input{beispiel}
+%\input{beispiel}
 
 \onecolumn
 % einfacher Zeilenabstand

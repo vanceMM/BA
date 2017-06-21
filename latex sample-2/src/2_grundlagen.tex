@@ -21,14 +21,50 @@ Fachkompetenzen
 Beispiele für Kompetenzen und Qualifikationen:
 
 \subsection{Kompetenzframeworks}
+
+Kompetenzen abzubilden gestaltet sich als schwierig, da diese einen dynamischen Charakter hat um vom Kontext, ihrer Domäne abhängig ist. Durch die Unterteilung in Branchen und Sektoren ist eine Klassifizierung von Kompetenzen dann möglich. Eine weitere Dimension zur Klassifikation ist das Niveau, es beschreibt das Maß oder auch den "Schwierigkeitsgrad" einer Handlung die mit der gegebenen Kompetenz zu bewältigen ist. 
+\vspace{1em}
+Da Abschlüsse nicht Kompetenz bescheinigen werden Qualifikationsrahmen benötigt, mit deren Hilfe die in einem Bildungsweg erworbenen Kenntnisse und Fähigkeiten zu Kompetenzentwicklung beitragen können. Mit diesen Lernergebnissen die das "Können" im Sinne von "in der Lage sein, etwas zu tun" beschreiben, erben sich dann Vergleichsmöglichkeiten.
+
+Im Deutschen Qualifikationsrahmen für lebenslanges Lernen DQR, EQR, e-CF als sektor-spezifische Umsetzung des Europäischen Qualifikationsrahmenens.
+
+
+
+
+Zusammenfassung:
+
+"Kompetenzrahmen sind eine wichtige Brücke zwischen dynamischer Kompetenz und statischen Bildungs- und Zertifikatssystemen.
+Denn Kompetenzrahmen machen Kompetenz klassifizierbar und unterstützen ihre Anerkennung und Anrechnung."
+
+
 \subsection{RDF, Semantic Web  Linked Data}\label{semantic_web}
+\subsubsection{Semantic Web}
 Das Semantic Web stellt Daten im World Wide Web in einem für Maschinen verarbeitbaren Art und Weise zur Verfügung mit dem Ziel der Interoperabilität, also der Möglichkeit Informationen zwischen Anwendungen und Plattformen auszutauschen und diese in Beziehung zu setzen. Kernaspekte sind das Auffinden relevanter Informationen, die Integration von Informationen aus verschiedenen Quellen und automatische Schlussfolgerung.
-“Finde Wege und Methoden, Informationen so zu repräsentieren, dass Maschinen damit in einer Art und Weise umgehen können, die aus menschlicher Sicht nützlich und sinnvoll erscheint.”
+“Finde Wege und Methoden, Informationen so zu repräsentieren, dass Maschinen damit in einer Art und Weise umgehen können, die aus menschlicher Sicht nützlich und sinnvoll erscheint.”\cite[12]{Hitzler2007}
  
 Im folgenden sollen einige Konzepte und Technologien erläutert werden welche die Anforderungen des Semantic Webs umsetzen.
  
-		
-\cite[12]{Hitzler2007}
+\subsubsection{Linked Data}
+
+Die Beziehungen der Daten im Semantic Web müssen nicht auf ein Datensatz beschränkt bleiben. So können Daten auch Querverweise auf andere Datensätze haben. Ein Beispiel sind die Daten von Wikipedia die durch das Linked Dataset DBPedia zugänglich sind. Einzelne Einträge beinhalten dabei Verweise auf das Geonames Dataset.
+
+Einige dieser Datensätze sind öffentlich zugänglich(Linked Open Data). So stellt das Amt für Veröffentlichungen der Europäischen Union Europäische Union mit ihrem offenen Datenportal Daten ihrer Institutionen und anderer Einrichtungen zur Verfügung. 
+ 
+Die Vorgehensweise bei der Erstellung von Linked Data wird von Tim Berners-Lee in folgenden 4 Schritten beschrieben:
+
+\begin{enumerate}
+	\item Dinge und Objekte werden durch URIs identifiziert
+	\item Die URIs sind über das HTTP Protokoll aufrufbar
+	\item Beim Aufruf werden relevante Informationen in standardisierten Formaten geliefert
+	\item Die gelieferten Daten enthalten Referenzen auf andere URIs
+\end{enumerate}
+\subsubsection{RDF}
+
+Um die Anforderung des Semantic Web’s, Daten im Web auszutauschen, zu erfüllen, wurde das Resource Description Framework RDF als eine formale Sprache für die Beschreibung strukturierter Informationen geschaffen. Dabei soll die ursprüngliche Bedeutung erhalten bleiben und Kombinationen und Weiterbearbeitung der enthaltenen Informationen ermöglicht werden.
+Eine Resource kann generell jedes Objekt mit einer eindeutigen Identiät sein. Zb. Bücher, Orte, Menschen, abstrakte Konzepte usw. Um Mehrdeutigkeiten zu verhindern werden URIs als Bezeichner verwendet. Diese RDF-Beschreibungen können auch durch Zeichenketten syntaktisch dargestellt werden, müssen vorher jedoch in Bestandteile zerlegt und serialisiert werden. Die dabei entstehenden Dokumente sind gerichtete Graphen, wobei Knoten und Kanten mit eindeutigen Bezeichnern beschriftet sind. 
+ 
+Triple
+RDF-Graphen lassen sich vollständig durch ihre Kanten beschreiben. Eine solche Kante hat einen Anfangspunkt, eine Beschriftung und einen Endpunkt. Dieses Triple wird bestimmt durch “Subjekt-Prädikat-Objekt”.
 
 
 \subsection{Graphen}
@@ -36,8 +72,12 @@ Im folgenden sollen einige Konzepte und Technologien erläutert werden welche di
 Ein Graph ist definiert als eine Menge von Knoten(Vertices) und deren Beziehungen, welche über Kanten(Edges) dargestellt werden. Mit Graphen kann man vernetzte Strukturen wie zb. Straßennetze, Computernetzwerke oder Datenstrukturen modellieren. So finden in vielen modernen Technologien wie Routenplaner oder Social Media Anwendungen graphentheoretische Konzepte wieder.
 	\subsubsection{Graphentheorie}
 	In diesem Teilgebiet der Mathematik werden Graphen und ihre Beziehungen zueinander untersucht. Das älteste Dokumentierte Problem der Graphentheorie ist das Königsberger Brückenproblem. Dabei wurde ein Rundweg durch Königsberg gesucht, der alle Brücken jedoch nur einmal überquerte. Leonhard Euler erkannte 1736, dass man die einzelnen Ufer als Punkte und Brücken als Kanten abstrahieren konnte. Euler zeigte, dass ein solcher Weg nicht existierte, da jeder Knoten mit einer ungeraden Anzahl von ungerichteten Kanten verbunden sein muss.
-	
-	\subsubsection{Graphendatenbank}
-	
+	\todo[inline]{graphentheoretische Konzepte zitieren Seite4}
+	\subsubsection{Graphendatenbanken}	
 	Im Gegensatz zu relationalen Datenbanken werden Daten nicht in Tupeln als Tabellen gespeichert sondern als Knoten in einem Graphenmodell. Der Vorteil darin liegt zunächst in der Daten Modelierung, da das Graphen Model sehr intuitive ist und sich einfach auf Papier modelieren lässt. 
 	Ein weiterer wichtiger Aspekt ist der Performance Vorteil bei Bei Abfragen von stark verknüpften Daten. Abfragen in relationalen Datenbanken werden langsamer je größer der Datenbestand. Im Graphen wird immer nur der Teilgraph durchlaufen welcher die die Abfrage erfüllt.\cite[8]{robinson_webber_eifrem_2015}
+	
+	\subsubsection{Neo4J}
+	
+	Ein der am weitest verbreiteten Graphen Datenbanken ist Neo4J.
+	
