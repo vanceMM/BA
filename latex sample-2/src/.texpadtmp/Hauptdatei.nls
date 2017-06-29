@@ -2,39 +2,6 @@
 
  \nomgroup{A}
 
-  \item [{CMS}]\begingroup Content Management System\nomeqref {0}
-		\nompageref{4}
-  \item [{CSS}]\begingroup Cascading Style Sheets\nomeqref {0}
-		\nompageref{4}
-  \item [{ERM}]\begingroup Entity Relationship Modell\nomeqref {0}
-		\nompageref{4}
-  \item [{GNU}]\begingroup GNU is not Unix\nomeqref {0}\nompageref{4}
-  \item [{GPL}]\begingroup GNU General Public License\nomeqref {0}
-		\nompageref{4}
-  \item [{GUI}]\begingroup Graphical User Interface\nomeqref {0}
-		\nompageref{4}
-  \item [{HTML}]\begingroup Hypertext Markup Language\nomeqref {0}
-		\nompageref{4}
-  \item [{IM}]\begingroup Instant Message\nomeqref {0}\nompageref{4}
-  \item [{JS}]\begingroup JavaScript\nomeqref {0}\nompageref{4}
-  \item [{JSON}]\begingroup JavaScript Object Notation\nomeqref {0}
-		\nompageref{4}
-  \item [{KPI}]\begingroup Key Performance Indicator\nomeqref {0}
-		\nompageref{4}
-  \item [{LGPL}]\begingroup GNU Lesser General Public License\nomeqref {0}
-		\nompageref{4}
-  \item [{OCR}]\begingroup Optical Character Recognition\nomeqref {0}
-		\nompageref{4}
-  \item [{RSS}]\begingroup Really Simple Syndication\nomeqref {0}
-		\nompageref{4}
-  \item [{SQL}]\begingroup Structured Query Language\nomeqref {0}
-		\nompageref{4}
-  \item [{TDD}]\begingroup Test-driven development\nomeqref {0}
-		\nompageref{4}
-  \item [{UGC}]\begingroup User Generated Content\nomeqref {0}
-		\nompageref{4}
-  \item [{WWW}]\begingroup World Wide Web\nomeqref {0}\nompageref{4}
-  \item [{XMPP}]\begingroup Extensible Messaging and Presence Protocol\nomeqref {0}
-		\nompageref{4}
+  \item [{LOD}]\begingroup Linked Open Data\nomeqref {0}\nompageref{4}
 
 \end{thenomenclature}

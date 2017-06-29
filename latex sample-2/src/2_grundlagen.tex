@@ -24,12 +24,9 @@ Beispiele für Kompetenzen und Qualifikationen:
 
 Kompetenzen abzubilden gestaltet sich als schwierig, da diese einen dynamischen Charakter hat um vom Kontext, ihrer Domäne abhängig ist. Durch die Unterteilung in Branchen und Sektoren ist eine Klassifizierung von Kompetenzen dann möglich. Eine weitere Dimension zur Klassifikation ist das Niveau, es beschreibt das Maß oder auch den "Schwierigkeitsgrad" einer Handlung die mit der gegebenen Kompetenz zu bewältigen ist. 
 \vspace{1em}
-Da Abschlüsse nicht Kompetenz bescheinigen werden Qualifikationsrahmen benötigt, mit deren Hilfe die in einem Bildungsweg erworbenen Kenntnisse und Fähigkeiten zu Kompetenzentwicklung beitragen können. Mit diesen Lernergebnissen die das "Können" im Sinne von "in der Lage sein, etwas zu tun" beschreiben, erben sich dann Vergleichsmöglichkeiten.
+Da Abschlüsse nicht Kompetenz bescheinigen werden Qualifikationsrahmen benötigt, mit deren Hilfe die in einem Bildungsweg erworbenen Kenntnisse und Fähigkeiten zu Kompetenzentwicklung beitragen können. Mit diesen Lernergebnissen die das "Können" im Sinne von "in der Lage sein, etwas zu tun" beschreiben, ergebenben sich dann Vergleichsmöglichkeiten.
 
-Im Deutschen Qualifikationsrahmen für lebenslanges Lernen DQR, EQR, e-CF als sektor-spezifische Umsetzung des Europäischen Qualifikationsrahmenens.
-
-
-
+Um Qualifikationen und Kompetenzen aus unterschiedlichen sektoralen oder nationalen Rahmenwerken zu vergleichen benötigt es einen Meta-Rahmen. 
 
 Zusammenfassung:
 
@@ -66,12 +63,15 @@ Eine Resource kann generell jedes Objekt mit einer eindeutigen Identiät sein. Z
 Triple
 RDF-Graphen lassen sich vollständig durch ihre Kanten beschreiben. Eine solche Kante hat einen Anfangspunkt, eine Beschriftung und einen Endpunkt. Dieses Triple wird bestimmt durch “Subjekt-Prädikat-Objekt”.
 
+\todo{Vokabular bzw. Ontologien}
 
 \subsection{Graphen}
 
-Ein Graph ist definiert als eine Menge von Knoten(Vertices) und deren Beziehungen, welche über Kanten(Edges) dargestellt werden. Mit Graphen kann man vernetzte Strukturen wie zb. Straßennetze, Computernetzwerke oder Datenstrukturen modellieren. So finden in vielen modernen Technologien wie Routenplaner oder Social Media Anwendungen graphentheoretische Konzepte wieder.
+Ein Graph ist definiert als eine Menge von Knoten(Vertices) und deren Beziehungen, welche über Kanten(Edges) dargestellt werden. Mit Graphen kann man vernetzte Strukturen wie zb. Straßennetze, Computernetzwerke oder Datenstrukturen modellieren. So finden sich in vielen modernen Technologien wie Routenplaner oder Social Media Anwendungen graphentheoretische Konzepte wieder.
 	\subsubsection{Graphentheorie}
 	In diesem Teilgebiet der Mathematik werden Graphen und ihre Beziehungen zueinander untersucht. Das älteste Dokumentierte Problem der Graphentheorie ist das Königsberger Brückenproblem. Dabei wurde ein Rundweg durch Königsberg gesucht, der alle Brücken jedoch nur einmal überquerte. Leonhard Euler erkannte 1736, dass man die einzelnen Ufer als Punkte und Brücken als Kanten abstrahieren konnte. Euler zeigte, dass ein solcher Weg nicht existierte, da jeder Knoten mit einer ungeraden Anzahl von ungerichteten Kanten verbunden sein muss.
+	
+	In der Informatik 
 	\todo[inline]{graphentheoretische Konzepte zitieren Seite4}
 	\subsubsection{Graphendatenbanken}	
 	Im Gegensatz zu relationalen Datenbanken werden Daten nicht in Tupeln als Tabellen gespeichert sondern als Knoten in einem Graphenmodell. Der Vorteil darin liegt zunächst in der Daten Modelierung, da das Graphen Model sehr intuitive ist und sich einfach auf Papier modelieren lässt. 
@@ -79,5 +79,24 @@ Ein Graph ist definiert als eine Menge von Knoten(Vertices) und deren Beziehunge
 	
 	\subsubsection{Neo4J}
 	
-	Ein der am weitest verbreiteten Graphen Datenbanken ist Neo4J.
+	Die Open Source Graphdatenbank Neo4j ist durch ein \textit{Labeled Property Graph Model} implementiert. Knoten im Graph können durch Labels in Kategorien eingeordnet werden und speichern Informationen als Schlüssel-Wert Paare in Properties. 
+	Neben Knoten können auch Kanten Properties erhalten, was eine Gewichtung der Beziehungen zwischen Knoten ermöglicht. Eine Beziehung besteht immer aus einem Start- und Endknoten, sowie einer Richtung.\cite[26]{Robinson2015}
+	
+	Anfragen an die Neo4j Datenbank werden mittels der deklarativen Sprache \textit{Cypher} ausgeführt. Mit dieser Sprache können Daten gefunden werden, welche einem Muster  entsprechen. Diese Patterns setzen sich aus Knoten und Beziehungen zusammen. 
+	
+%	\begin{figure}[htb]
+% \centering
+% \includesvg{abb/cypher}
+% \caption[Beschreibung]{Cypher mit der Beziehung "mag"}
+%\label{fig:Beschreibung}
+%\end{figure}
+
+Mit der \textit{MATCH} Klausel, werden alle Pfade im Graphen gezeigt, welche dem Pattern entsprechen. Mit \textit{WHERE} kann die Sammlung gefiltert werden.
+
+\subsection{Empfehlungssysteme}
+
+Ein Empfehlungsystem ist eine Software, welche Nutzern Vorschläge zu Artikeln, Music, Filmen, Büchern oder anderen Objekten macht. \cite{Ricci2010} Ausgehend von einem Objekt werden dem Benutzer andere Objekte mit Ähnlichkeiten zu dem Ausgangsobjekt aufgelistet. Für die Ergebnisse werden im wesentlichen zwei Ansätze verfolgt. Das Inhalts basierte Filtern und Kollaborative Filtern.
+
+
+ 
 	

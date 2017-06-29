@@ -1,4 +1,4 @@
-\contentsline {section}{Abbildungsverzeichnis}{4}{section*.4}
+\contentsline {section}{Abbildungsverzeichnis}{5}{section*.4}
 \contentsline {section}{Tabellenverzeichnis}{5}{section*.5}
 \contentsline {section}{Listingverzeichnis}{5}{section*.6}
 \contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{5}{section*.7}
@@ -13,25 +13,36 @@
 \contentsline {subsection}{\numberline {2.4}Graphen}{9}{subsection.2.4}
 \contentsline {subsubsection}{\numberline {2.4.1}Graphentheorie}{9}{subsubsection.2.4.1}
 \contentsline {subsubsection}{\numberline {2.4.2}Graphendatenbanken}{9}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}Neo4J}{9}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.3}Neo4J}{10}{subsubsection.2.4.3}
+\contentsline {subsection}{\numberline {2.5}Empfehlungssysteme}{10}{subsection.2.5}
 \contentsline {section}{\numberline {3}Verwandte Themen und Arbeiten}{10}{section.3}
 \contentsline {subsection}{\numberline {3.1}Openbadge}{10}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}InLoc}{10}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}ESCO}{11}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}GraphGist: Competency Management}{11}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}GraphGist: Recommendation System Sandbox}{11}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}RDF Import Neo4J}{11}{subsection.3.6}
-\contentsline {section}{\numberline {4}Analyse und Aufgabenstellung}{12}{section.4}
-\contentsline {subsection}{\numberline {4.1}Anforderungsanalyse}{12}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Anforderungen an die Engine}{12}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Anforderungen an die Datenbank}{13}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}Aufgabenstellung}{13}{subsection.4.2}
-\contentsline {section}{\numberline {5}Entwurf}{13}{section.5}
-\contentsline {subsection}{\numberline {5.1}Neo4j Instanz(Api)}{13}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Datenmodel}{13}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Anfragen Formulieren}{13}{subsection.5.3}
-\contentsline {section}{\numberline {6}Ausblick}{13}{section.6}
-\contentsline {section}{\numberline {7}Fazit}{13}{section.7}
-\contentsline {section}{Literaturverzeichnis}{14}{section.7}
-\contentsline {section}{Anhang}{15}{section*.11}
-\contentsline {section}{Eidesstattliche Erkl\IeC {\"a}rung}{15}{section*.12}
+\contentsline {subsection}{\numberline {3.2}European e-Competence Framework}{11}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}InLoc}{11}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}ESCO}{11}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}GraphGist: Recommendation System Sandbox}{12}{subsubsection.3.4.1}
+\contentsline {subsection}{\numberline {3.5}RDF Import Neo4J}{12}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Recommender Systeme}{13}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}RecSys Challenge}{13}{subsubsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.2}GraphGist Recommendation Engine Neo4j}{13}{subsubsection.3.6.2}
+\contentsline {section}{\numberline {4}Analyse und Aufgabenstellung}{13}{section.4}
+\contentsline {subsection}{\numberline {4.1}Aufgabenstellung}{13}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Anforderungsanalyse}{13}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Kompetenzmodell}{13}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Anforderungen an die Engine}{13}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Anforderungen an die Datenbank}{14}{subsubsection.4.2.3}
+\contentsline {subsection}{\numberline {4.3}Aufgabenstellung}{14}{subsection.4.3}
+\contentsline {section}{\numberline {5}Entwurf}{14}{section.5}
+\contentsline {subsection}{\numberline {5.1}Format/Kompotenzmodell}{14}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}ESCO RDF Import}{14}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}inLOC}{15}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Datenbank}{15}{subsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.4}API}{15}{subsubsection.5.1.4}
+\contentsline {subsection}{\numberline {5.2}Datenmodell}{16}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Anfragen Formulieren}{16}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Algorithmen}{16}{subsection.5.4}
+\contentsline {section}{\numberline {6}Ausblick}{16}{section.6}
+\contentsline {section}{\numberline {7}Fazit}{16}{section.7}
+\contentsline {section}{Literaturverzeichnis}{18}{lstnumber.2.33}
+\contentsline {section}{Anhang}{19}{section*.14}
+\contentsline {section}{Eidesstattliche Erkl\IeC {\"a}rung}{19}{section*.15}

@@ -2,23 +2,41 @@
 
 Open Badges können über das criteria und alignment field mit Kompetenzen aus externen Kompetenzframeworks verlinkt werden. Daraus ergibt sich die Anforderung Badges mit ähnlichen Kompetezen, Badges die sich ergänzen oder identisch sind zu ermitteln, aber auch fehlende Kompetenzen zu identifizieren die benötigt werden um einen gewünschten Badge zu erlangen. \cite{OBNO3-A2}
 
+
+Problematisch sind die verschiedenen Standards der einzelnen Kompetenzframeworks. So gibt es nicht nur nationale und sprachliche Unterschiede sondern auch Unterschiede in den veröffentlichen Formaten. Von den bisher veröffentlichten Kompetenzframeworks bietet momentan nur ESCO den Download der Daten in einem maschinenlesbaren Format(CSV, XML, RDF) an. 
 \vspace{1em}
 
-Diese Arbeit soll Methoden und Metriken evaluieren um Kompetenzen in einem Graphen zu modellieren und Ähnlichkeiten festzustellen.  Die Kompetenzen werden einem Kompetenzverzeichnis entnommen welches Kompetenzen aus verschiedenen Kompetenzrahmen verwaltet. Das Ergebnis wird ein Prototyp eines Empfehlungsystems sein, welches folgende Anforderungen erfüllen sollte.
+\subsection{Aufgabenstellung}
+
+Diese Arbeit soll Methoden und Metriken evaluieren um Kompetenzen in einem Graphen zu modellieren und Ähnlichkeiten festzustellen.  Die Kompetenzen können einem Kompetenzverzeichnis entnommen werden welches Kompetenzen aus verschiedenen Kompetenzrahmen verwaltet. Eine andere Herangehensweise wäre mit jedem neuen Eintrag im Kompetenzverzeichnis auch einen neuen Eintrag in den Graphen vorzunehmen. 
+
+Das Ergebnis dieser Arbeit ist ein Prototyp eines Empfehlungsystems, welches folgende Anforderungen erfüllen sollte.
+
+
 
 \subsection{Anforderungsanalyse} 
 
-Ein Empfehlungssystem bekommt eine Kompetenz übergeben und Liefert eine oder mehrere Kompetenzen zurück welche in Beziehung zur gegebenen Kompetenz stehen.
+\subsubsection{Kompetenzmodell}
+
+???
+
 
 \subsubsection{Anforderungen an die Engine}
-
+Ein solches Empfehlungssystem soll als eigener Dienst fungieren, und über eine API erreichbar sein. Die Eingabe für das Empfehlungsystem soll eine Kompetenz oder eine eindeutige ID für eine Kompetenz sein, als Ausgabe soll eine oder mehrere Kompetenzen in sortierter Reihenfolge geliefert werden. 
 \begin{itemize}
 	\item Ähnliche Kompetenzen finden
 	\item Identische Kompetenzen finden
 	\item Wichtigkeit von Kompetenzen anzeigen
+	\item Inkludierende Kompetenzen ermitteln
+	\item Lücken von Kompetenzen finden
 \end{itemize}
 
 Optionale Anforderungen
+
+\begin{itemize}
+	\item Vergleich von Kompetenzen aus verschiedenen Frameworks
+\end{itemize}
+
 
 
 \subsubsection{Anforderungen an die Datenbank}
