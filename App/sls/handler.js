@@ -4,7 +4,7 @@ var neo4j = require('neo4j-driver').v1;
 
 
 module.exports.getNode = function(event, context, callback) {
-  var driver = neo4j.driver("bolt://ip-172-31-36-168.eu-central-1.compute.internal", neo4j.auth.basic("neo4j", "linuxisgreat"));
+  var driver = neo4j.driver("bolt://"+process.env.NEO4J_URL, neo4j.auth.basic(process.env.USER ,process.env.PASSWORD));
   var session = driver.session();
   session
     .run('MATCH (c:Competence) return c;')

@@ -20,6 +20,15 @@ service: competence-service # NOTE: update this with your service name
 provider:
   name: aws
   runtime: nodejs6.10
+  role: arn:aws:iam::833589265826:role/myResourcesLambdaExecutionRole
+  vpc:
+    securityGroupIds:
+      - sg-0064236b
+    subnetIds:
+      - subnet-bdf1cfd5
+      - subnet-adc7c4e7
+      - subnet-86fa81fc
+
 
 # you can overwrite defaults here
   stage: dev
@@ -43,7 +52,9 @@ provider:
 
 # you can define service wide environment variables here
   environment:
-
+    NEO4J_URL: ip-172-31-36-168.eu-central-1.compute.internal
+    USER: neo4j
+    PASSWORD: linuxisgreat
 # you can add packaging information here
 #package:
 #  include:
