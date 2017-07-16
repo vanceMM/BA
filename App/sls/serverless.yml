@@ -72,6 +72,13 @@ functions:
           path: node # Path for this endpoint
           method: get # HTTP method for this endpoint
 
+  getSimilarOccupations:
+    handler: handler.getSimilarOccupations
+    events:
+      - http:
+          path: getSimilarOccupations
+          method: get
+
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
