@@ -8,27 +8,23 @@ Problematisch sind die verschiedenen Standards der einzelnen Kompetenzframeworks
 
 \subsection{Aufgabenstellung}
 
-Diese Arbeit soll Methoden und Metriken evaluieren um Kompetenzen in einem Graphen zu modellieren und Ähnlichkeiten festzustellen.  Die Kompetenzen können einem Kompetenzverzeichnis entnommen werden welches Kompetenzen aus verschiedenen Kompetenzrahmen verwaltet. Eine andere Herangehensweise wäre mit jedem neuen Eintrag im Kompetenzverzeichnis auch einen neuen Eintrag in den Graphen vorzunehmen. 
-
-Das Ergebnis dieser Arbeit ist ein Prototyp eines Empfehlungsystems, welches folgende Anforderungen erfüllen sollte.
-
+Ein wichtiger Bestandteil von Stellenbeschreibungen sind auch eine Liste von geforderten Kompetenzen. Kompetenzen lassen sich als Graph modellieren, denn oftmals bestehen zwischen ihnen hierarchische Strukturen und Gemeinsamkeiten. Das Ziel dieser Arbeit soll es sein, Die Beziehungen dieser Kompetenzen in einem Graphenmodell zu analysieren, und Methoden und Metriken zu finden mit deren Hilfe es möglich sein wird, Ähnlichkeiten von einzelnen Kompetenzen oder ganzen Kompetenzsets zu ermitteln. Konkret soll ein Dienst entwickelt werden, der von anderen Programmen genutzt, oder in bestehende Systeme integriert werden kann.
 
 
 \subsection{Anforderungsanalyse} 
 
-\subsubsection{Kompetenzmodell}
-
-???
-
+\subsubsection{Kompetenzen}
 
 \subsubsection{Anforderungen an die Engine}
-Ein solches Empfehlungssystem soll als eigener Dienst fungieren, und über eine API erreichbar sein. Die Eingabe für das Empfehlungsystem soll eine Kompetenz oder eine eindeutige ID für eine Kompetenz sein, als Ausgabe soll eine oder mehrere Kompetenzen in sortierter Reihenfolge geliefert werden. 
+Ein solches Empfehlungssystem soll als eigener Dienst fungieren, und über eine API erreichbar sein. Die Eingabe für das Empfehlungssystem soll eine Kompetenz oder eine ein Set von Kompetenzen sein. Kompetenzen werden in einer Datenschicht persistiert, die die gängigen CRUD Datenbankoperationen ermöglicht. Die API leitet die Kompetenzen dann an eine Methode weiter, welche die nötigen Entitäten und deren Beziehungen zurück liefert. Auf resultierenden Datensätzen können weitere Operationen, wie Aggregation oder Sortierung durchgeführt werden und falls weitere Berechnungen oder Operationen nötig sind die mit der Abfragensprache nicht geleistet werden, mit einer einer gängigen Programmiersprache weitere algorithmische Schritte implementieren. Am Ende sollen 0, 1 oder mehrere Kompetenzen in sortierter Reihenfolge an den Aufrufer zurückgeliefert werden.
+
+Folgende Anforderungen können an dieses System gestellt werden.
 \begin{itemize}
+	\item Übereinstimmung von Kompetenzsets ermitteln
+	\item Ähnlichkeit von Kompetenzsets ermitteln
 	\item Ähnliche Kompetenzen finden
-	\item Identische Kompetenzen finden
-	\item Wichtigkeit von Kompetenzen anzeigen
 	\item Inkludierende Kompetenzen ermitteln
-	\item Lücken von Kompetenzen finden
+	\item Fehlende von Kompetenzen finden
 \end{itemize}
 
 Optionale Anforderungen
@@ -38,8 +34,18 @@ Optionale Anforderungen
 \end{itemize}
 
 
+Mit der Übereinstimmung von Kompetenzsets zb. das einer Stellenbeschreibung und das eines Lebenslaufes, kann ein Matching vorgenommen werden, welches Computersystemen ermöglicht passende Stellenangebote oder Bewerber zu finden. Über die Vernetzung der Kompetenzen im Graphen können Wege zur weiteren Bildung ermittelt werden.
 
-\subsubsection{Anforderungen an die Datenbank}
 
-\subsection{Aufgabenstellung}
+\subsubsection{Anforderungen an die Architektur}
+
+Der Dienst soll als nach dem Microservice Muster implementiert werden, also bei Bedarf komplett austauschbar sein und wenige Abhängigkeiten enthalten. Nutzer sollen über das HTTP Protokoll mit dem Dienst kommunizieren können. Die Daten werden in einem Graphen persistiert, in welchem Kompetenzen als Knoten und Beziehungen der Kompetenzen als Kanten gespeichert werden. Für die Kommunikation soll ein gängiges Format zur Ein und Ausgabe gewählt werden.
+
+\begin{itemize}
+	\item Erreichbarkeit über eine Web-API 
+	\item Persistenz der Daten in einem Graphen	
+	\item Daten Ein und Ausgabe in einem standardisierten Format 
+\end{itemize}
+
+
 

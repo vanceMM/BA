@@ -2,7 +2,7 @@
 
 var neo4j = require('neo4j-driver').v1;
 
-var driver = neo4j.driver("bolt://"+process.env.NEO4J_URL, neo4j.auth.basic(process.env.USER ,process.env.PASSWORD));
+var driver = neo4j.driver("bolt://"+process.env.NEO4J_URL, neo4j.auth.basic("neo4j" ,"linuxisgreat"));
 module.exports.getNode = function(event, context, callback) {
   var session = driver.session();
   session
@@ -48,4 +48,39 @@ module.exports.getSimilarOccupations = function(event, context, callback) {
   .catch(function (error) {
     console.log(error);
   });
+};
+
+module.exports.getSimilarCompetences = function(event, context, callback) {
+  var session = driver.session();
+  var results = [];
+
+
+  if(event.httpMethod === "POST" && event.body) {
+
+    let json = JSON.parse(event.body);
+    console.log(json.competences);
+
+
+  session
+  .run('MATCH (n) WHERE n.ns1_identifier IN {queryParam} RETURN n;', {queryParam: json.competences})
+  .then(function (result) {
+    result.records.forEach(function (record) {
+      results.push(record);
+    });
+
+    callback(null, {
+      statusCode: 200,
+      body: JSON.stringify({
+        message: results,
+      }),
+    });
+
+    session.close();
+    driver.close();
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+}
+
 };

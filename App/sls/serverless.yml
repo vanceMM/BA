@@ -52,9 +52,8 @@ provider:
 
 # you can define service wide environment variables here
   environment:
-    NEO4J_URL: ip-172-31-36-168.eu-central-1.compute.internal
-    USER: neo4j
-    PASSWORD: linuxisgreat
+    NEO4J_URL: ${file(./serverless.env.yml):${opt:stage}.NEO4J_URL}
+
 # you can add packaging information here
 #package:
 #  include:
@@ -78,6 +77,23 @@ functions:
       - http:
           path: getSimilarOccupations
           method: get
+
+  getSimilarCompetences:
+    handler: handler.getSimilarCompetences
+    events:
+      - http:
+          path: getSimilarCompetences
+          method: post
+
+
+
+
+plugins:
+  - serverless-offline
+#    serverless-offline plugin
+#    This Serverless plugin emulates AWS λ and API Gateway on your local machine
+#    to speed up your development cycles. To do so, it starts an HTTP server that handles the request's lifecycle like APIG does and invokes your handlers.
+
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events

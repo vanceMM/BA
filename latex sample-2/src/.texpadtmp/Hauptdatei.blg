@@ -4,7 +4,12 @@ The top-level auxiliary file: /Users/valentin/Dropbox/BA/latex sample-2/src/.tex
 The style file: ../alphadin.bst
 A level-1 auxiliary file: latex_einstellungen/deckblatt.aux
 A level-1 auxiliary file: abstract.aux
-Illegal, another \bibstyle command---line 138 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
+Case mismatch error between cite keys Neo4j and neo4j
+---line 101 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
+ : \citation{Neo4j
+ :                }
+I'm skipping whatever remains of this command
+Illegal, another \bibstyle command---line 151 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
  : \bibstyle
  :          {alphadin}
 I'm skipping whatever remains of this command
@@ -17,51 +22,52 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ../Hauptdatei.bib
 Warning--entry type for "bibb" isn't style-file defined
 --line 59 of file ../Hauptdatei.bib
+Warning--I didn't find a database entry for "https://ec.europa.eu/esco/portal/escopedia/Competence"
 Warning--I didn't find a database entry for "wk05"
 Warning--to sort, need author or key in bibb
 Warning--to sort, need author or key in alliance_for_excellent_education
 Warning--to sort, need author or key in neo4j
 Warning--to sort, need author or key in omdb
 Warning--to sort, need author or key in grouplens_2016
-You've used 12 entries,
+You've used 13 entries,
             4793 wiz_defined-function locations,
-            971 strings with 8667 characters,
-and the built_in function-call counts, 6309 in all, are:
-= -- 637
-> -- 141
-< -- 126
-+ -- 150
-- -- 49
-* -- 430
-:= -- 991
-add.period$ -- 18
-call.type$ -- 12
-change.case$ -- 53
-chr.to.int$ -- 11
-cite$ -- 22
-duplicate$ -- 191
-empty$ -- 525
-format.name$ -- 92
-if$ -- 1338
+            979 strings with 8930 characters,
+and the built_in function-call counts, 6730 in all, are:
+= -- 678
+> -- 149
+< -- 135
++ -- 159
+- -- 51
+* -- 452
+:= -- 1058
+add.period$ -- 20
+call.type$ -- 13
+change.case$ -- 57
+chr.to.int$ -- 12
+cite$ -- 23
+duplicate$ -- 206
+empty$ -- 560
+format.name$ -- 98
+if$ -- 1428
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 61
-newline$ -- 77
-num.names$ -- 21
-pop$ -- 90
+missing$ -- 67
+newline$ -- 83
+num.names$ -- 24
+pop$ -- 97
 preamble$ -- 1
-purify$ -- 77
+purify$ -- 83
 quote$ -- 0
-skip$ -- 302
+skip$ -- 328
 stack$ -- 0
-substring$ -- 507
-swap$ -- 36
-text.length$ -- 25
-text.prefix$ -- 3
+substring$ -- 526
+swap$ -- 39
+text.length$ -- 27
+text.prefix$ -- 4
 top$ -- 0
-type$ -- 108
+type$ -- 120
 warning$ -- 5
-while$ -- 40
-width$ -- 13
-write$ -- 155
-(There was 1 error message)
+while$ -- 43
+width$ -- 14
+write$ -- 168
+(There were 2 error messages)

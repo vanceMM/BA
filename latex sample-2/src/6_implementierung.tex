@@ -1,0 +1,96 @@
+\section{Implementierung}\label{implementaion}
+
+ In diesem Kapitel sollen die einzelnen Implementierungsschritte für den Empfehlungsdienst erläutert werden. Alle Komponenten können in der \textit{Amazon Webservices Cloud} implementiert werden. Dabei sollen nur die eingesetzten Dienste beschrieben werden, jedoch auf grundlegende Einstellungen wie die Benutzer Rollen und Berechtigungen in der AWS Konsole über welche sich sämtliche Dienste steuern und konfigurieren lassen, nicht weiter eingegangen werden. Im einzelnen kommen folgende Dienste zum Einsatz:
+
+EC2:
+
+Mit Elastic Compute Cloud können virtuelle Rechner Umgebungen erstellt werden auf welchen skalierbare Applikationen entwickelt werden können. Rechen und Speicherkapazitäten können den persönlichen Bedürfnissen angepasst werden. 
+
+AWS API Gateway:
+
+Mit API Gateway können Anwendungen über das Internet auf die Cloud Dienste von Amazon zugreifen. Dazu werden HTTP-Endpunkte erstellt.
+
+AWS Lambda
+
+Wird ein Endpunkt besucht kann 
+   \subsection{EC2 }
+
+Die Neo4j Instanz wird auf einer Ubuntu Umgebung installiert. Dafür müssen jedoch erst einige Abhängkeiten und Pakete installiert werden. Um den Aufwand gering zuhalten, wird eine Amazon Web Serivices EC2 Instanz hochgefahren mit einem speziellen Cloudformation Template. Cloudformation erleichtert das Erstellen von Umgebungen mit wichtigen Laufzeitparametern. Das folgende Schaubild veranschaulicht alle wichtigen Parameter:
+
+\subsection{Neo4j}
+
+Über den freigegebenen Port 7474 bietet Neo4j eine Weboberfläche zur Abfrage der Daten und Visualisierung der Ergebnisse an. Die Datenbank soll nun initial mit realen Daten befüllt werden. 
+
+\subsubsection{RDF Import}
+
+Neoj4 lässt sich über Plugins erweitern. Diese so genannten \textit{Prozeduren} werden in Java geschrieben und können mit der Cypher Query Language aufgerufen werden.
+Mit dem Plugin \textit{neosemantics} können Daten aus einem Triplestore in Neo4j geladen werden. Über die Weboberfläche kann mit einer Cypher Abfrage die Methode zum importieren der Daten aufgerufen werden. 
+
+\lstset{language=xml}
+\lstset{language=java}
+\lstset{breaklines=true}
+\begin{lstlisting}[frame=htrbl, caption={importRDF Prozeduraufruf}, label={lst:importRDF}]
+CALL semantics.importRDF("file:///.../esco_skos.rdf","RDF", { shortenUrls: true, typesToLabels: true, commitSize: 9000, languageFilter: 'de'})
+
+
+\end{lstlisting}
+
+
+\subsection{API Gateway}
+
+\subsection{Serverless}
+
+Mit den Amazon Web Diensten können serverlose Anwendungen geschrieben werden, die es dem Entwickler ermöglichen sich auf den Kern der Applikation, den Quellcode zu konzentrieren ohne sich Gedanken über Ressourcen und Kapazitäten zu machen. Bereits in der Entwurfsphase konnte fest gestellt werden, dass die Komplexität der Anwendung im weniger Programmieraufwand, sondern im finden und implementieren von Algorithmen liegt. Dennoch ist das Bereitstellen von einigen Ressourcen wie einer Laufzeitumgebung und einer API notwendig um anderen Anwendungen über das Internet das Ausführen des Codes mit Parametern zu ermöglichen. Dabei spielt es keine Rolle wieviele Anwendungen auf gleichzeitig auf die API zugreifen, die Rechenkapazität werden automatisch angepasst. Draus ergibt sich ein weiterer Vorteil für Entwickler und Betreiber. Code der nicht ausgeführt wird verbraucht keine Ressourcen, und wird von Ressourcen Dienstleister auch nicht in Rechnung gestellt. 
+Der geringe Overhead, die geringen Betriebskosten und die geringe Komplexität der zu entwickelnden Anwendungen laden daher dazu ein, den serverlosen Ansatz zu wählen. 
+Automatisches Kapazitäts Management
+Only Pay what you use
+ 
+
+\subsubsection{AWS Lambda}
+
+Lambda bietet die Möglichkeit Code auszuführen ohne die nötigen Ressourcen managen zu müssen. Lambda ist Ereignis gesteuert, was bedeutet der Code wird als Reaktion auf ein Ereignis ausgeführt. 
+\subsubsection{Serverless Framework}
+Das Serverless Framework ist ein Kommandozeilen Tool, und wurde zur Unterstützung des Entwicklungs und Deployment Prozess von serverlosen Anwendungen entwickelt. 
+Der Quellcode zur Datenverarbeitung in den Lambda Funktionen kann mit diesem Framework nicht nur lokal getestet werden, sondern kann auch direkt mit API Gateway verknüpft werden. Alle wichtigen Parameter wie Umgebungsvariablen zb. Zugangsdaten, URLs und Endpunkte, werden in einer Konfigurationsdatei eingetragen.  Über die Kommandozeile kann die Lambda Funktion aufgerufen werden, sowohl lokal als auch auf dem Stage System. 
+Ein Problem was nun an den Tag tritt ist die lokale Nichtverfügbarkeit von Diensten die nur in der Cloud existieren. Nimmt man zb. Änderungen im Code der Lambda Funktion vor und möchte diese testen, muss der Code zunächst neu deployt werden bevor neue Anfragen an die API gesendet werden können. Dieser Prozess braucht Zeit und verlängert den Entwicklungsprozess. Besser wäre es eine lokale simulierte API zur Verfügung zu haben mit welcher sich die Änderungen im Quell Code der Lambda Funktion direkt testen lassen. Dieses Feature wird über Plugins des \textit{Serverless Frameworks} zur Verfügung gestellt.
+API implementieren
+Was ist Api Gateway?
+Welche Vorteile bietet API Gateway
+
+
+\subsection{Architektur im Überblick}
+
+Nachdem nun alle Komponenten eingerichtet sind erfolgt das Implementieren der Algorithmen und Datenbankabfragen. Als Laufzeitumgebung für die Lambda Funktionen wird Node.js in der Version 6.10 gewählt. Für die Anbindung an die Neo4j wird die \textit{neo4j-driver} Bibliothek geladen. Damit lässt sich zunächst für den gesamten Scope der Lambda Funktion der Datenbanktreiber der \textit{neo4j} Klasse instanzieren. 
+Wird nun beim ausführen des Codes durch Lambda wird die \textit{Handler} Funktion aufgerufen, kann für den jeweiligen Handler eine neue Session geöffnet werden und ein String für die Datenbankabfrage, inklusive Parameter geformt werden. Ist die Abfrage beendet wird die Callback Funktion aufgerufen und ein Response Objekt erstellt, welches das Ergebnis der Datenbankabfrage im JSON String Format enthält.
+
+%\begin{lstlisting}[language=JavaScript]
+%	'use strict';
+%
+%var neo4j = require('neo4j-driver').v1;
+%
+%var driver = neo4j.driver("bolt://"+process.env.NEO4J_URL, neo4j.auth.basic("neo4j" ,"linuxisgreat"));
+%module.exports.getNode = function(event, context, callback) {
+%  var session = driver.session();
+%  session
+%  .run('MATCH (n:{queryParam}) return n;', {queryParam: event.queryStringParameters.label})
+%  .then(function (result) {
+%    result.records.forEach(function (record) {
+%      callback(null, {
+%        statusCode: 200,
+%        body: JSON.stringify({
+%          message: record,
+%          input: event,
+%        }),
+%      });
+%    });
+%    session.close();
+%    driver.close();
+%  })
+%  .catch(function (error) {
+%    console.log(error);
+%  });
+%};
+%\end{lstlisting}
+%
+
+\subsection{Algorithmen und Metriken}

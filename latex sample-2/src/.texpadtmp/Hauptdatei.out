@@ -28,21 +28,31 @@
 \BOOKMARK [1][-]{section.4}{4 Analyse und Aufgabenstellung}{}% 28
 \BOOKMARK [2][-]{subsection.4.1}{4.1 Aufgabenstellung}{section.4}% 29
 \BOOKMARK [2][-]{subsection.4.2}{4.2 Anforderungsanalyse}{section.4}% 30
-\BOOKMARK [3][-]{subsubsection.4.2.1}{4.2.1 Kompetenzmodell}{subsection.4.2}% 31
+\BOOKMARK [3][-]{subsubsection.4.2.1}{4.2.1 Kompetenzen}{subsection.4.2}% 31
 \BOOKMARK [3][-]{subsubsection.4.2.2}{4.2.2 Anforderungen an die Engine}{subsection.4.2}% 32
-\BOOKMARK [3][-]{subsubsection.4.2.3}{4.2.3 Anforderungen an die Datenbank}{subsection.4.2}% 33
-\BOOKMARK [2][-]{subsection.4.3}{4.3 Aufgabenstellung}{section.4}% 34
-\BOOKMARK [1][-]{section.5}{5 Entwurf}{}% 35
-\BOOKMARK [2][-]{subsection.5.1}{5.1 Format/Kompotenzmodell}{section.5}% 36
-\BOOKMARK [3][-]{subsubsection.5.1.1}{5.1.1 ESCO RDF Import}{subsection.5.1}% 37
-\BOOKMARK [3][-]{subsubsection.5.1.2}{5.1.2 inLOC}{subsection.5.1}% 38
-\BOOKMARK [3][-]{subsubsection.5.1.3}{5.1.3 Datenbank}{subsection.5.1}% 39
-\BOOKMARK [3][-]{subsubsection.5.1.4}{5.1.4 API}{subsection.5.1}% 40
+\BOOKMARK [3][-]{subsubsection.4.2.3}{4.2.3 Anforderungen an die Architektur}{subsection.4.2}% 33
+\BOOKMARK [1][-]{section.5}{5 Entwurf}{}% 34
+\BOOKMARK [2][-]{subsection.5.1}{5.1 Format/Kompotenzmodell}{section.5}% 35
+\BOOKMARK [3][-]{subsubsection.5.1.1}{5.1.1 ESCO als RDF}{subsection.5.1}% 36
+\BOOKMARK [3][-]{subsubsection.5.1.2}{5.1.2 inLOC}{subsection.5.1}% 37
+\BOOKMARK [3][-]{subsubsection.5.1.3}{5.1.3 Fazit: Auswahl eines Models}{subsection.5.1}% 38
+\BOOKMARK [3][-]{subsubsection.5.1.4}{5.1.4 Datenbank}{subsection.5.1}% 39
+\BOOKMARK [3][-]{subsubsection.5.1.5}{5.1.5 API}{subsection.5.1}% 40
 \BOOKMARK [2][-]{subsection.5.2}{5.2 Datenmodell}{section.5}% 41
 \BOOKMARK [2][-]{subsection.5.3}{5.3 Anfragen Formulieren}{section.5}% 42
 \BOOKMARK [2][-]{subsection.5.4}{5.4 Algorithmen}{section.5}% 43
-\BOOKMARK [1][-]{section.6}{6 Ausblick}{}% 44
-\BOOKMARK [1][-]{section.7}{7 Fazit}{}% 45
-\BOOKMARK [1][-]{lstnumber.2.33}{Literaturverzeichnis}{}% 46
-\BOOKMARK [1][-]{section*.14}{Anhang}{}% 47
-\BOOKMARK [1][-]{section*.15}{Eidesstattliche Erkl\344rung}{}% 48
+\BOOKMARK [1][-]{section.6}{6 Implementierung}{}% 44
+\BOOKMARK [2][-]{subsection.6.1}{6.1 EC2}{section.6}% 45
+\BOOKMARK [2][-]{subsection.6.2}{6.2 Neo4j}{section.6}% 46
+\BOOKMARK [3][-]{subsubsection.6.2.1}{6.2.1 RDF Import}{subsection.6.2}% 47
+\BOOKMARK [2][-]{subsection.6.3}{6.3 API Gateway}{section.6}% 48
+\BOOKMARK [2][-]{subsection.6.4}{6.4 Serverless}{section.6}% 49
+\BOOKMARK [3][-]{subsubsection.6.4.1}{6.4.1 AWS Lambda}{subsection.6.4}% 50
+\BOOKMARK [3][-]{subsubsection.6.4.2}{6.4.2 Serverless Framework}{subsection.6.4}% 51
+\BOOKMARK [2][-]{subsection.6.5}{6.5 Architektur im \334berblick}{section.6}% 52
+\BOOKMARK [2][-]{subsection.6.6}{6.6 Algorithmen und Metriken}{section.6}% 53
+\BOOKMARK [1][-]{section.7}{7 Ausblick}{}% 54
+\BOOKMARK [1][-]{section.8}{8 Fazit}{}% 55
+\BOOKMARK [1][-]{lstnumber.3.33}{Literaturverzeichnis}{}% 56
+\BOOKMARK [1][-]{section*.13}{Anhang}{}% 57
+\BOOKMARK [1][-]{section*.14}{Eidesstattliche Erkl\344rung}{}% 58
