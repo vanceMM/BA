@@ -38,6 +38,8 @@ CALL semantics.importRDF("file:///.../esco_skos.rdf","RDF", { shortenUrls: true,
 
 \subsection{API Gateway}
 
+Das API Gateway wird hier als Proxy verwendet, mit dessen Hilfe HTTP Requests an Lambda Funktionen weiter gereicht werden. Die Lambda Funktionen wiederum rufen innerhalb eines virtuellen Netzwerks eine Datenbankabfrage für die EC2 Neo4j Instanz auf. Die URL für diese Instanz ist nur innerhalb des Virtuellen Netzwerks erreichbar, und ist somit für die Anwendung vor dem Proxy verborgen. 
+
 \subsection{Serverless}
 
 Mit den Amazon Web Diensten können serverlose Anwendungen geschrieben werden, die es dem Entwickler ermöglichen sich auf den Kern der Applikation, den Quellcode zu konzentrieren ohne sich Gedanken über Ressourcen und Kapazitäten zu machen. Bereits in der Entwurfsphase konnte fest gestellt werden, dass die Komplexität der Anwendung im weniger Programmieraufwand, sondern im finden und implementieren von Algorithmen liegt. Dennoch ist das Bereitstellen von einigen Ressourcen wie einer Laufzeitumgebung und einer API notwendig um anderen Anwendungen über das Internet das Ausführen des Codes mit Parametern zu ermöglichen. Dabei spielt es keine Rolle wieviele Anwendungen auf gleichzeitig auf die API zugreifen, die Rechenkapazität werden automatisch angepasst. Draus ergibt sich ein weiterer Vorteil für Entwickler und Betreiber. Code der nicht ausgeführt wird verbraucht keine Ressourcen, und wird von Ressourcen Dienstleister auch nicht in Rechnung gestellt. 
@@ -63,34 +65,35 @@ Welche Vorteile bietet API Gateway
 Nachdem nun alle Komponenten eingerichtet sind erfolgt das Implementieren der Algorithmen und Datenbankabfragen. Als Laufzeitumgebung für die Lambda Funktionen wird Node.js in der Version 6.10 gewählt. Für die Anbindung an die Neo4j wird die \textit{neo4j-driver} Bibliothek geladen. Damit lässt sich zunächst für den gesamten Scope der Lambda Funktion der Datenbanktreiber der \textit{neo4j} Klasse instanzieren. 
 Wird nun beim ausführen des Codes durch Lambda wird die \textit{Handler} Funktion aufgerufen, kann für den jeweiligen Handler eine neue Session geöffnet werden und ein String für die Datenbankabfrage, inklusive Parameter geformt werden. Ist die Abfrage beendet wird die Callback Funktion aufgerufen und ein Response Objekt erstellt, welches das Ergebnis der Datenbankabfrage im JSON String Format enthält.
 
-%\begin{lstlisting}[language=JavaScript]
-%	'use strict';
-%
-%var neo4j = require('neo4j-driver').v1;
-%
-%var driver = neo4j.driver("bolt://"+process.env.NEO4J_URL, neo4j.auth.basic("neo4j" ,"linuxisgreat"));
-%module.exports.getNode = function(event, context, callback) {
-%  var session = driver.session();
-%  session
-%  .run('MATCH (n:{queryParam}) return n;', {queryParam: event.queryStringParameters.label})
-%  .then(function (result) {
-%    result.records.forEach(function (record) {
-%      callback(null, {
-%        statusCode: 200,
-%        body: JSON.stringify({
-%          message: record,
-%          input: event,
-%        }),
-%      });
-%    });
-%    session.close();
-%    driver.close();
-%  })
-%  .catch(function (error) {
-%    console.log(error);
-%  });
-%};
-%\end{lstlisting}
-%
+\begin{lstlisting}[language=JavaScript]
+	'use strict';
+
+var neo4j = require('neo4j-driver').v1;
+
+var driver = neo4j.driver("bolt://"+process.env.NEO4J_URL, neo4j.auth.basic("neo4j" ,"linuxisgreat"));
+module.exports.getNode = function(event, context, callback) {
+  var session = driver.session();
+  session
+  .run('MATCH (n:{queryParam}) return n;', {queryParam: event.queryStringParameters.label})
+  .then(function (result) {
+    result.records.forEach(function (record) {
+      callback(null, {
+        statusCode: 200,
+        body: JSON.stringify({
+          message: record,
+          input: event,
+        }),
+      });
+    });
+    session.close();
+    driver.close();
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+};
+
+
+\end{lstlisting}
 
 \subsection{Algorithmen und Metriken}

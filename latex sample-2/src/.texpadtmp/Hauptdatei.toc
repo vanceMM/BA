@@ -39,20 +39,19 @@
 \contentsline {subsubsection}{\numberline {5.1.4}Datenbank}{16}{subsubsection.5.1.4}
 \contentsline {subsubsection}{\numberline {5.1.5}API}{17}{subsubsection.5.1.5}
 \contentsline {subsection}{\numberline {5.2}Datenmodell}{17}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Anfragen Formulieren}{17}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Algorithmen}{18}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.3}Anfragen Formulieren}{18}{subsection.5.3}
 \contentsline {section}{\numberline {6}Implementierung}{18}{section.6}
 \contentsline {subsection}{\numberline {6.1}EC2}{18}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Neo4j}{18}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}RDF Import}{18}{subsubsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2}Neo4j}{19}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}RDF Import}{19}{subsubsection.6.2.1}
 \contentsline {subsection}{\numberline {6.3}API Gateway}{19}{subsection.6.3}
 \contentsline {subsection}{\numberline {6.4}Serverless}{19}{subsection.6.4}
-\contentsline {subsubsection}{\numberline {6.4.1}AWS Lambda}{19}{subsubsection.6.4.1}
-\contentsline {subsubsection}{\numberline {6.4.2}Serverless Framework}{19}{subsubsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.1}AWS Lambda}{20}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}Serverless Framework}{20}{subsubsection.6.4.2}
 \contentsline {subsection}{\numberline {6.5}Architektur im \IeC {\"U}berblick}{20}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Algorithmen und Metriken}{20}{subsection.6.6}
-\contentsline {section}{\numberline {7}Ausblick}{20}{section.7}
-\contentsline {section}{\numberline {8}Fazit}{20}{section.8}
-\contentsline {section}{Literaturverzeichnis}{23}{lstnumber.3.33}
-\contentsline {section}{Anhang}{24}{section*.13}
-\contentsline {section}{Eidesstattliche Erkl\IeC {\"a}rung}{24}{section*.14}
+\contentsline {subsection}{\numberline {6.6}Algorithmen und Metriken}{21}{subsection.6.6}
+\contentsline {section}{\numberline {7}Ausblick}{21}{section.7}
+\contentsline {section}{\numberline {8}Fazit}{21}{section.8}
+\contentsline {section}{Literaturverzeichnis}{24}{lstnumber.3.33}
+\contentsline {section}{Anhang}{25}{section*.13}
+\contentsline {section}{Eidesstattliche Erkl\IeC {\"a}rung}{25}{section*.14}

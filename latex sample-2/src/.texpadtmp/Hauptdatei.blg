@@ -9,7 +9,7 @@ Case mismatch error between cite keys Neo4j and neo4j
  : \citation{Neo4j
  :                }
 I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 151 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
+Illegal, another \bibstyle command---line 149 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
  : \bibstyle
  :          {alphadin}
 I'm skipping whatever remains of this command
@@ -22,6 +22,13 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ../Hauptdatei.bib
 Warning--entry type for "bibb" isn't style-file defined
 --line 59 of file ../Hauptdatei.bib
+Warning--entry type for "lopez" isn't style-file defined
+--line 103 of file ../Hauptdatei.bib
+I was expecting a `,' or a `}'---line 108 of file ../Hauptdatei.bib
+ :   
+ :   month        = 3
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "https://ec.europa.eu/esco/portal/escopedia/Competence"
 Warning--I didn't find a database entry for "wk05"
 Warning--to sort, need author or key in bibb
@@ -31,37 +38,37 @@ Warning--to sort, need author or key in omdb
 Warning--to sort, need author or key in grouplens_2016
 You've used 13 entries,
             4793 wiz_defined-function locations,
-            979 strings with 8930 characters,
-and the built_in function-call counts, 6730 in all, are:
-= -- 678
+            978 strings with 8894 characters,
+and the built_in function-call counts, 6674 in all, are:
+= -- 671
 > -- 149
 < -- 135
 + -- 159
 - -- 51
-* -- 452
-:= -- 1058
-add.period$ -- 20
+* -- 449
+:= -- 1053
+add.period$ -- 19
 call.type$ -- 13
 change.case$ -- 57
 chr.to.int$ -- 12
 cite$ -- 23
-duplicate$ -- 206
-empty$ -- 560
+duplicate$ -- 202
+empty$ -- 549
 format.name$ -- 98
-if$ -- 1428
+if$ -- 1411
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 67
-newline$ -- 83
+missing$ -- 68
+newline$ -- 82
 num.names$ -- 24
-pop$ -- 97
+pop$ -- 94
 preamble$ -- 1
 purify$ -- 83
 quote$ -- 0
-skip$ -- 328
+skip$ -- 325
 stack$ -- 0
 substring$ -- 526
-swap$ -- 39
+swap$ -- 40
 text.length$ -- 27
 text.prefix$ -- 4
 top$ -- 0
@@ -69,5 +76,5 @@ type$ -- 120
 warning$ -- 5
 while$ -- 43
 width$ -- 14
-write$ -- 168
-(There were 2 error messages)
+write$ -- 165
+(There were 3 error messages)
