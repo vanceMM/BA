@@ -46,12 +46,7 @@ Die Europäische Kommission hat mit ESCO eine Schnittstelle geschaffen, welche I
 Neo4J bietet über die Sandbox eine interaktive Möglichkeit auf einer temporär generierten Instanz im Browser zu arbeiten. Mit Schritt-für-Schritt Anleitungen werden Themen wie "Netzwerk Management" oder die "Panama Papers" in Neo4j näher gebracht. 
 
 Ein für diese Arbeit relevantes Themenfeld bietet die Sandbox "Recommendations".\cite{neo4j} Als Datenquelle für die Instanz stehen die "Open Movie Database"\cite{omdb}, und das MovieLens Projekt\cite{grouplens_2016} zur Verfügung.
-Neben einer Erläuterung zum Property Graph Model und einer Einführung in die Cypher Query Language gibt es Beispiele zu verschiedenen Methoden und Metriken für das Filtern von Ergebnissen. Dabei werden verschiedene Ansätze zu den Methoden Inhaltsbasierte Filterung und Kollaborative Filterung erläutert. Ein Beispiel für eine Metrik zum finden von Ähnlichkeiten ist der Jaccard Index. Er ist genau dann 1, wenn zwei Mengen identisch sind. Je weniger Gemeinsame Elemente zwei Mengen besitzen, desto kleiner wird der Jaccard Index und wird 0, wenn keine Gemeinsamkeiten vorliegen.
-\begin{center}
-	$ J(A,B)=\frac{\mid A\bigcap B\mid }{ \mid A \bigcup B \mid }$
-
-\end{center}
-
+Neben einer Erläuterung zum Property Graph Model und einer Einführung in die Cypher Query Language gibt es Beispiele zu verschiedenen Methoden und Metriken für das Filtern von Ergebnissen. Dabei werden verschiedene Ansätze zu den Methoden Inhaltsbasierte Filterung und Kollaborative Filterung erläutert. 
 \subsection{RDF Import Neo4J}
 
 Jesús Barrasa ist  \textit{Senior Graph Solutions Consultant at Neo Technology} bei Neo4j, und hat ein Plugin für Neo4j entworfen, mit dessen Hilfe sich RDF Dokumente in Neo4j importieren lassen. So lässt sich mit dem Befehl :
@@ -72,8 +67,26 @@ Der komplette RDF Graph des ESCO Kataloges mit allen Beziehungen laden und Abfra
 %\end{figure}
 
 \subsection{Recommender Systeme}
+
+Bekannte Anwendungsfälle für ein Recommender System sind neben Musik und Film Empfehlungen vor allem die \textit{andere Kunden kauften auch...} Komponente in Web Shops. Ziel dieser Systeme ist es eine Vorhersage zu treffen, welches Produkt oder Objekt dem Kunden oder Anwender ebenfalls interessieren könnte. Dabei werden häufig die Konzepte des Inhaltsbasierenden und des Kollaborativen Filtern angewandt. 
+
+Beim Inhaltsbasierten Filtern wird 
+
 \subsubsection{RecSys Challenge}
 \subsubsection{GraphGist Recommendation Engine Neo4j}
+
+\subsection{Job-Matching: Xing}
+
+Das Karrierenetzwerk bietet Arbeitssuchenden die Möglichkeit Job-Empfehlungen auf Basis des eigenen Profils zu erhalten. Dabei wird nach den Kriterien Entfernung zum Arbeitsort, Karrierestufe, Skills und Aktivitäten gefiltert. Aus diesen 4 Kriterien wird ein Relevanz-Indikator ermittelt, welcher die Treffgenauigkeit des Inserats angibt. 
+
+\begin{figure}[htb]
+ \centering
+ \includegraphics[width=0.7\textwidth,angle=0]{abb/xing_jobmatching}
+ \caption[Beschreibung]{Jobmatching Xing-Profil}
+\label{fig:Beschreibung}
+\end{figure}
+
+Dieser Ansatz berücksichtigt jedoch nicht die Persönlichkeit der Bewerber, und bietet auch nur eine teilweise höhere Bewerberpassgenauigkeit aus Sicht der Arbeitgeber. Wie qualifiziert ein Bewerber wirklich ist bleibt weiter unklar, da eine Liste der angegebenen Skills keine Auskunft darüber gibt wie kompetent der Bewerber auf einem Gebiet wirklich ist. 
 
 
 

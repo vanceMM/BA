@@ -1,6 +1,9 @@
 \section{Implementierung}\label{implementaion}
 
+
  In diesem Kapitel sollen die einzelnen Implementierungsschritte für den Empfehlungsdienst erläutert werden. Alle Komponenten können in der \textit{Amazon Webservices Cloud} implementiert werden. Dabei sollen nur die eingesetzten Dienste beschrieben werden, jedoch auf grundlegende Einstellungen wie die Benutzer Rollen und Berechtigungen in der AWS Konsole über welche sich sämtliche Dienste steuern und konfigurieren lassen, nicht weiter eingegangen werden. Im einzelnen kommen folgende Dienste zum Einsatz:
+
+\subsection{Beschreibung des Stacks}
 
 EC2:
 
@@ -38,7 +41,7 @@ CALL semantics.importRDF("file:///.../esco_skos.rdf","RDF", { shortenUrls: true,
 
 \subsection{API Gateway}
 
-Das API Gateway wird hier als Proxy verwendet, mit dessen Hilfe HTTP Requests an Lambda Funktionen weiter gereicht werden. Die Lambda Funktionen wiederum rufen innerhalb eines virtuellen Netzwerks eine Datenbankabfrage für die EC2 Neo4j Instanz auf. Die URL für diese Instanz ist nur innerhalb des Virtuellen Netzwerks erreichbar, und ist somit für die Anwendung vor dem Proxy verborgen. 
+Das API Gateway wird hier als Proxy verwendet, mit dessen Hilfe HTTP Requests an Lambda Funktionen weiter gereicht werden. Die Lambda Funktionen wiederum rufen innerhalb eines virtuellen Netzwerks eine Datenbankabfrage für die EC2 Neo4j Instanz auf. Die URL für diese Instanz ist nur innerhalb des Virtuellen Netzwerks erreichbar, und ist somit für die Anwendung vor dem Proxy verborgen. Innerhalb der Lambda Funktion kann dann mit den berechneten Daten ein Response Objekt erstellt werden und an den Aufrufer der API zurückgesendet werden. 
 
 \subsection{Serverless}
 
@@ -55,6 +58,7 @@ Lambda bietet die Möglichkeit Code auszuführen ohne die nötigen Ressourcen ma
 Das Serverless Framework ist ein Kommandozeilen Tool, und wurde zur Unterstützung des Entwicklungs und Deployment Prozess von serverlosen Anwendungen entwickelt. 
 Der Quellcode zur Datenverarbeitung in den Lambda Funktionen kann mit diesem Framework nicht nur lokal getestet werden, sondern kann auch direkt mit API Gateway verknüpft werden. Alle wichtigen Parameter wie Umgebungsvariablen zb. Zugangsdaten, URLs und Endpunkte, werden in einer Konfigurationsdatei eingetragen.  Über die Kommandozeile kann die Lambda Funktion aufgerufen werden, sowohl lokal als auch auf dem Stage System. 
 Ein Problem was nun an den Tag tritt ist die lokale Nichtverfügbarkeit von Diensten die nur in der Cloud existieren. Nimmt man zb. Änderungen im Code der Lambda Funktion vor und möchte diese testen, muss der Code zunächst neu deployt werden bevor neue Anfragen an die API gesendet werden können. Dieser Prozess braucht Zeit und verlängert den Entwicklungsprozess. Besser wäre es eine lokale simulierte API zur Verfügung zu haben mit welcher sich die Änderungen im Quell Code der Lambda Funktion direkt testen lassen. Dieses Feature wird über Plugins des \textit{Serverless Frameworks} zur Verfügung gestellt.
+
 API implementieren
 Was ist Api Gateway?
 Welche Vorteile bietet API Gateway
@@ -62,15 +66,24 @@ Welche Vorteile bietet API Gateway
 
 \subsection{Architektur im Überblick}
 
+
+
 Nachdem nun alle Komponenten eingerichtet sind erfolgt das Implementieren der Algorithmen und Datenbankabfragen. Als Laufzeitumgebung für die Lambda Funktionen wird Node.js in der Version 6.10 gewählt. Für die Anbindung an die Neo4j wird die \textit{neo4j-driver} Bibliothek geladen. Damit lässt sich zunächst für den gesamten Scope der Lambda Funktion der Datenbanktreiber der \textit{neo4j} Klasse instanzieren. 
 Wird nun beim ausführen des Codes durch Lambda wird die \textit{Handler} Funktion aufgerufen, kann für den jeweiligen Handler eine neue Session geöffnet werden und ein String für die Datenbankabfrage, inklusive Parameter geformt werden. Ist die Abfrage beendet wird die Callback Funktion aufgerufen und ein Response Objekt erstellt, welches das Ergebnis der Datenbankabfrage im JSON String Format enthält.
 
-\begin{lstlisting}[language=JavaScript]
+Die Im Entwurf beschriebene Kern Komponente für Die Datenbankanbindung, die Ein uns Ausgabe von Daten und die Implementierung von Algorithmen, soll nun Lambda Funktionen in einer Node.js Laufzeitumgebung implementiert werden. Als erstes wird eine Instanz des Datenbanktreibers erzeugt welche von mehreren Handlern benutzt werden kann. Für jede Anforderung der Engine, soll ein eigener Handler implementiert werde, der genau dann ausgeführt wird wenn ein HTTP Request auf dem zu dem Handler gehörenden Pfad aufgerufen wird. Parameter aus dem Query String, oder Daten die mittels POST übermittelt werden können aus dem \textit{event} Objekt gelesen werden. 
+
+Innerhalb des Handlers wird ein \textit{session} Objekt erzeugt, welches Die Verbindung zur Datenbank herstellt und über diese auch die Abfragen an die Datenbank erfolgen. Dazu wird die \textit{run} Methode auf dem Objekt aufgerufen und der Querystring und Queryparameter übergeben. Es wird ein Promises erzeugt, auf welchem eine Callbackfunktion aufgerufen wird sobald die Abfrage alle Ergebnisse geliefert hat. Aus dem Resultset kann ein Objekt erzeugt werden welches mit der \textit{callback} Funktion des Lambda Handlers an den Aufrufer, in diesem Fall die API zurück gegeben wird.
+
+Mit dem folgenden Handler wird ein Node \textit{n} über ein eindeutiges Attribut wie einer Id oder eines IRI in der Datenbank abgefragt und an die API zurückgeliefert.
+
+
+\begin{lstlisting}[language=JavaScript, frame=htrbl, caption={Lambda Handler Funktion}, label={lst:lambda_handler}]
 	'use strict';
 
 var neo4j = require('neo4j-driver').v1;
 
-var driver = neo4j.driver("bolt://"+process.env.NEO4J_URL, neo4j.auth.basic("neo4j" ,"linuxisgreat"));
+var driver = neo4j.driver("bolt://"+process.env.NEO4J_URL, neo4j.auth.basic("user" ,"password"));
 module.exports.getNode = function(event, context, callback) {
   var session = driver.session();
   session
@@ -96,4 +109,27 @@ module.exports.getNode = function(event, context, callback) {
 
 \end{lstlisting}
 
+
+\subsection{Deployment mit dem Serverless Framework}
+
+Beim Erzeugen eines neuen Projektes mit dem Serverless Framework, wird neben einem leeren Handler auch eine Konfigurationsdatei mit dem Namen \textit{serverless.yaml} erzeugt. In dieser werden neben der Route die die Funktion auslöst auch die Art der HTTP Methoden eingetragen.
+
+\begin{lstlisting}[language=Python, frame=htrbl, caption={Serverless Konfiguration}, label={lst:serverless_yaml]
+
+  functions:
+  	getNode:
+    	handler: handler.getNode
+    	events: 
+          - http: 
+            	path: node 
+         		method: get 
+         		
+\end{lstlisting}
+
+Die notwendigen Paketabhängikeiten für die Datenbankanbindung an Neo4j werden mit \textit{npm install} in den node_modules Ordner geladen. Über das Serverless Kommandozeilen Programm, wird mit dem \textit{deploy} Aufruf der gesamte Inhalt des Projektes, inklusive Abhängigkeiten gepackt, Cloudformation Templates erstellt und dann auf ein S3 Bucket in der AWS Cloud geladen. 
+
 \subsection{Algorithmen und Metriken}
+
+Das technische Gerüst ist nun komplett. Kompetenzen können per GET Request an die API, und unter Angabe ihrer IRIs abgefragt werden. Jedoch sind die Anforderungen an das Empfehlungsystem mittels Metriken und Algorithmen Ähnlichkeiten zu bestimmen. 
+
+Zunächst soll geprüft werden ob es Knoten Typen und Beziehungen im Graphen gibt mit denen sich eine Schnittmenge für zwei Kompetenzen berechnen 
