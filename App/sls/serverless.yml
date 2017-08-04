@@ -78,6 +78,14 @@ functions:
           path: getSimilarOccupations
           method: get
 
+  getJaccardOfCompetence:
+    handler: handler.getJaccardOfCompetence
+    events:
+      - http:
+          path: getJaccardOfCompetence
+          method: get
+
+
   getSimilarCompetences:
     handler: handler.getSimilarCompetences
     events:

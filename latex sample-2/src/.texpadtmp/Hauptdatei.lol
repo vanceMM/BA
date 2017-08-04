@@ -1,4 +1,5 @@
-\contentsline {lstlisting}{\numberline {1}Das Listing zeigt einen Funktionsaufruf \IeC {\"u}ber die Neo4j}{12}{lstlisting.1}
-\contentsline {lstlisting}{\numberline {2}importRDF Prozeduraufruf}{21}{lstlisting.2}
-\contentsline {lstlisting}{\numberline {3}Lambda Handler Funktion}{23}{lstlisting.3}
-\contentsline {lstlisting}{\numberline {4}Das Listing zeigt Java Quellcode}{24}{lstlisting.4}
+\contentsline {lstlisting}{\numberline {1}Das Listing zeigt einen Funktionsaufruf \IeC {\"u}ber die Neo4j}{14}{lstlisting.1}
+\contentsline {lstlisting}{\numberline {2}importRDF Prozeduraufruf}{23}{lstlisting.2}
+\contentsline {lstlisting}{\numberline {3}Lambda Handler Funktion}{25}{lstlisting.3}
+\contentsline {lstlisting}{\numberline {4}Serverless Konfiguration}{26}{lstlisting.4}
+\contentsline {lstlisting}{\numberline {5}Das Listing zeigt Java Quellcode}{27}{lstlisting.5}

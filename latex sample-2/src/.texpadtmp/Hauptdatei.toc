@@ -1,62 +1,66 @@
 \contentsline {section}{Abbildungsverzeichnis}{5}{section*.4}
 \contentsline {section}{Tabellenverzeichnis}{5}{section*.5}
 \contentsline {section}{Listingverzeichnis}{5}{section*.6}
-\contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{5}{section*.7}
-\contentsline {section}{\numberline {1}Einleitung}{6}{section.1}
-\contentsline {section}{\numberline {2}Grundlagen}{7}{section.2}
-\contentsline {subsection}{\numberline {2.1}Kompetenzen}{7}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Kompetenzframeworks}{7}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}RDF, Semantic Web Linked Data}{8}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Semantic Web}{8}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Linked Data}{8}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}RDF}{8}{subsubsection.2.3.3}
-\contentsline {subsection}{\numberline {2.4}Graphen}{9}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Graphentheorie}{9}{subsubsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.2}Graphendatenbanken}{9}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}Neo4J}{10}{subsubsection.2.4.3}
-\contentsline {subsection}{\numberline {2.5}Empfehlungssysteme}{10}{subsection.2.5}
-\contentsline {section}{\numberline {3}Verwandte Themen und Arbeiten}{10}{section.3}
-\contentsline {subsection}{\numberline {3.1}Openbadge}{10}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}European e-Competence Framework}{11}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}InLoc}{11}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}ESCO}{11}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}GraphGist: Recommendation System Sandbox}{12}{subsubsection.3.4.1}
-\contentsline {subsection}{\numberline {3.5}RDF Import Neo4J}{12}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Recommender Systeme}{13}{subsection.3.6}
-\contentsline {subsubsection}{\numberline {3.6.1}RecSys Challenge}{13}{subsubsection.3.6.1}
-\contentsline {subsubsection}{\numberline {3.6.2}GraphGist Recommendation Engine Neo4j}{13}{subsubsection.3.6.2}
-\contentsline {subsection}{\numberline {3.7}Job-Matching: Xing}{13}{subsection.3.7}
-\contentsline {section}{\numberline {4}Analyse und Aufgabenstellung}{14}{section.4}
-\contentsline {subsection}{\numberline {4.1}Aufgabenstellung}{14}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Anforderungsanalyse}{14}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Kompetenzen}{14}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Anforderungen an die Engine}{14}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Anforderungen an die API}{15}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}Anforderungen an die Architektur}{15}{subsubsection.4.2.4}
-\contentsline {subsection}{\numberline {4.3}Algorithmen und Metriken}{16}{subsection.4.3}
-\contentsline {section}{\numberline {5}Entwurf}{16}{section.5}
-\contentsline {subsection}{\numberline {5.1}Format/Kompotenzmodell}{17}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}ESCO als RDF}{17}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}inLOC}{17}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Fazit: Auswahl eines Models}{18}{subsubsection.5.1.3}
-\contentsline {subsubsection}{\numberline {5.1.4}Datenbank}{18}{subsubsection.5.1.4}
-\contentsline {subsubsection}{\numberline {5.1.5}API}{19}{subsubsection.5.1.5}
-\contentsline {subsection}{\numberline {5.2}Datenmodell}{19}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Anfragen Formulieren}{19}{subsection.5.3}
-\contentsline {section}{\numberline {6}Implementierung}{20}{section.6}
-\contentsline {subsection}{\numberline {6.1}Beschreibung des Stacks}{20}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}EC2}{20}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Neo4j}{20}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}RDF Import}{21}{subsubsection.6.3.1}
-\contentsline {subsection}{\numberline {6.4}API Gateway}{21}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Serverless}{21}{subsection.6.5}
-\contentsline {subsubsection}{\numberline {6.5.1}AWS Lambda}{22}{subsubsection.6.5.1}
-\contentsline {subsubsection}{\numberline {6.5.2}Serverless Framework}{22}{subsubsection.6.5.2}
-\contentsline {subsection}{\numberline {6.6}Architektur im \IeC {\"U}berblick}{22}{subsection.6.6}
-\contentsline {subsection}{\numberline {6.7}Deployment mit dem Serverless Framework}{24}{subsection.6.7}
-\contentsline {subsection}{\numberline {6.8}Algorithmen und Metriken}{24}{subsection.6.8}
-\contentsline {section}{\numberline {7}Ausblick}{24}{section.7}
-\contentsline {section}{\numberline {8}Fazit}{24}{section.8}
-\contentsline {section}{Literaturverzeichnis}{26}{lstnumber.4.33}
-\contentsline {section}{Anhang}{27}{section*.13}
-\contentsline {section}{Eidesstattliche Erkl\IeC {\"a}rung}{27}{section*.14}
+\contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{6}{section*.7}
+\contentsline {section}{\numberline {1}Einleitung}{7}{section.1}
+\contentsline {section}{\numberline {2}Grundlagen und Begrifflichkeiten}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}Kompetenzen}{8}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Kompetenzframeworks}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}RDF, Semantic Web Linked Data}{9}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Semantic Web}{9}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Linked Data}{9}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}RDF}{9}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}Graphen}{10}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Graphentheorie}{10}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Graphendatenbanken}{11}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Neo4J}{11}{subsubsection.2.4.3}
+\contentsline {subsection}{\numberline {2.5}Empfehlungssysteme}{11}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Begriffe}{11}{subsection.2.6}
+\contentsline {subsubsection}{\numberline {2.6.1}Algorithmus}{12}{subsubsection.2.6.1}
+\contentsline {subsubsection}{\numberline {2.6.2}Metrik}{12}{subsubsection.2.6.2}
+\contentsline {section}{\numberline {3}Verwandte Themen und Arbeiten}{12}{section.3}
+\contentsline {subsection}{\numberline {3.1}Openbadge}{12}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Europ\IeC {\"a}ischer Qualifikationsrahmen}{12}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}European e-Competence Framework}{13}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}InLoc}{13}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}ESCO}{13}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}GraphGist: Recommendation System Sandbox}{14}{subsubsection.3.5.1}
+\contentsline {subsection}{\numberline {3.6}RDF Import Neo4J}{14}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Recommender Systeme}{14}{subsection.3.7}
+\contentsline {subsubsection}{\numberline {3.7.1}RecSys Challenge}{15}{subsubsection.3.7.1}
+\contentsline {subsubsection}{\numberline {3.7.2}GraphGist Recommendation Engine Neo4j}{15}{subsubsection.3.7.2}
+\contentsline {subsection}{\numberline {3.8}Job-Matching: Xing}{15}{subsection.3.8}
+\contentsline {section}{\numberline {4}Analyse und Aufgabenstellung}{15}{section.4}
+\contentsline {subsection}{\numberline {4.1}Aufgabenstellung}{16}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Anforderungsanalyse}{16}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Kompetenzen}{16}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Anforderungen an die Engine}{16}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Anforderungen an die API}{17}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Anforderungen an die Architektur}{17}{subsubsection.4.2.4}
+\contentsline {subsection}{\numberline {4.3}Algorithmen und Metriken}{17}{subsection.4.3}
+\contentsline {section}{\numberline {5}Entwurf}{19}{section.5}
+\contentsline {subsection}{\numberline {5.1}Format/Kompotenzmodell}{19}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}ESCO als RDF}{19}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}inLOC}{20}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Fazit: Auswahl eines Models}{20}{subsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.4}Datenbank}{20}{subsubsection.5.1.4}
+\contentsline {subsubsection}{\numberline {5.1.5}API}{21}{subsubsection.5.1.5}
+\contentsline {subsection}{\numberline {5.2}Datenmodell}{22}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Anfragen Formulieren}{22}{subsection.5.3}
+\contentsline {section}{\numberline {6}Implementierung}{22}{section.6}
+\contentsline {subsection}{\numberline {6.1}Beschreibung des Stacks}{22}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}EC2}{23}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Neo4j}{23}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}RDF Import}{23}{subsubsection.6.3.1}
+\contentsline {subsection}{\numberline {6.4}API Gateway}{23}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Serverless}{23}{subsection.6.5}
+\contentsline {subsubsection}{\numberline {6.5.1}AWS Lambda}{24}{subsubsection.6.5.1}
+\contentsline {subsubsection}{\numberline {6.5.2}Serverless Framework}{24}{subsubsection.6.5.2}
+\contentsline {subsection}{\numberline {6.6}Architektur im \IeC {\"U}berblick}{24}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Deployment mit dem Serverless Framework}{26}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}Algorithmen und Metriken}{26}{subsection.6.8}
+\contentsline {section}{\numberline {7}Ausblick}{27}{section.7}
+\contentsline {section}{\numberline {8}Fazit}{27}{section.8}
+\contentsline {section}{Literaturverzeichnis}{29}{lstnumber.5.33}
+\contentsline {section}{Anhang}{31}{section*.14}
+\contentsline {section}{Eidesstattliche Erkl\IeC {\"a}rung}{31}{section*.15}

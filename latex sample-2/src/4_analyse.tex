@@ -59,20 +59,31 @@ Der Dienst soll als nach dem Microservice Muster implementiert werden, also bei 
 
 \subsection{Algorithmen und Metriken}
 
-Das Kernproblem des Empfehlungsdienstes ist die Berechnung von Ähnlichkeiten von Knoten in einem Graphen. Es gibt bereits einige Algorithmen die sich mit dieser Problematik auseinander setzen. Ein grundsätzlicher Ansatz kann lautet,\textit{ je näher zwei Knoten im Graphen einander sind, desto ähnlicher sind sie sich}. Der folgende Graph soll dies veranschaulichen. 
+Das Kernproblem des Empfehlungsdienstes ist die Berechnung von Ähnlichkeiten von Knoten in einem Graphen. Es gibt bereits einige Algorithmen und Metriken die sich mit dieser Problematik auseinander setzen. Welche Metriken und Algorithmen angewandt werden können hängt aber auch vom Anwendungsfall ab. Einige Methoden zur Berechnung von Ähnlichkeiten sollen im folgenden aufgelistet, und später bei der Implementierung evaluiert werden. Ein grundsätzlicher Ansatz kann lautet,\textit{ je näher zwei Knoten im Graphen einander sind, desto ähnlicher sind sie sich}. Der folgende Graph soll dies veranschaulichen. 
 
-Der Dijkstra-Algorithmus löst das Problem der kürzesten Pfade.
+Der \textbf{Dijkstra-Algorithmus} löst das Problem der kürzesten Pfade.
 
 Es gibt aber auch mehr Eigenschaften des Graphen die sich ein Algorithmus zu nutzen machen kann. So können mit Hilfe von gewichteten Kanten Vektoren entlang der Pfade von einem Knoten zu einem anderen erstellt werden. Die \textit{Kosinus-Ähnlichkeit} ist eine Metrik die den eingeschlossenen Winkel zwischen zwei solcher Vektoren ermittelt.
+\vspace{1em}
 
-
-Mit dem Jaccard Koeffizenten lassen sich zwei Mengen auf ihre Ähnlichkeit prüfen. Der Wert des Koeffizienten ist  genau dann 1, wenn die beiden Mengen identisch sind. Je weniger Gemeinsame Elemente zwei Mengen besitzen, desto kleiner wird der  Koeffizient und wird 0, wenn keine Gemeinsamkeiten vorliegen.
+Mit dem \textbf{Jaccard Koeffizenten} lassen sich zwei Mengen auf ihre Ähnlichkeit prüfen. Der Wert des Koeffizienten ist  genau dann 1, wenn die beiden Mengen identisch sind. Je weniger Gemeinsame Elemente zwei Mengen besitzen, desto kleiner wird der  Koeffizient und wird 0, wenn keine Gemeinsamkeiten vorliegen.
 \begin{center}
 	$ J(A,B)=\frac{\mid A\bigcap B\mid }{ \mid A \bigcup B \mid }$
 
 \end{center}
-In einem Graphen kann die Metrik für 2 Knoten angewandt werden, indem man die beiden Mengen aus Knoten zusammen setzt, die eine Beziehung zu den 2 Knoten haben. Kategorien oder Taxonomien sind dabei geeignete Kandidaten für gemeinsame Beziehungen. Am Beispiel des Movie Graphen, kann hier eine Ähnlichkeit von 2 Filmen berechnet werden, die sich in gemeinsamen Genres befinden. 
+In einem Graphen kann die Metrik für 2 Knoten angewandt werden, indem man die beiden Mengen aus Knoten zusammen setzt, die eine Beziehung zu den 2 Knoten haben. Kategorien oder Taxonomien sind dabei geeignete Kandidaten für gemeinsame Beziehungen. Am Beispiel des Movie Graphen, kann hier eine Ähnlichkeit von 2 Filmen berechnet werden, die sich in gemeinsamen Genres befinden. Je mehr gemeinsame Genres, desto höher die Ähnlichketi. Sind tauchen beide Filme in denselben Genres zb. \{Horror, Action, Comedy\} auf so haben sie eine Ähnlichkeit von 1, haben sie kein gemeinsames Genre ist die Ähnlichkeit 0.
+\vspace{1em}
 
-Ein weiterer Ansatz lautet \textit{"Zwei Objekte sind Ähnlich, wenn sie mit ähnlichen Objekten verknüpft sind"}. Der \textit{SimRank} Algorithmus versucht Ähnlichkeiten von Knoten zu finden zwischen denen ein struktureller Zusammenhang besteht. 
+Ein weiterer Ansatz lautet \textit{"Zwei Objekte sind Ähnlich, wenn sie mit ähnlichen Objekten verknüpft sind"}. Der \textbf{SimRank} \cite{Jeh:2002:SMS:775047.775126} Algorithmus versucht Ähnlichkeiten von Knoten zu finden zwischen denen ein struktureller Zusammenhang besteht. 
+\vspace{1em}
 
+Ontologien im Semantic Web haben eine Baumstruktur. Um semantische Nähe zwischen Konzepten zu berechnen müssen neben der Distanz der Knoten auch die Tiefe im Baum berücksichtigt werden. \textbf{Wu und Palmer} \cite{Wu:1994:VSL:981732.981751} schlagen folgende Berechnung für 2 verwandte Konzepte $C_{1}$ und $C_{2}$ vor:\par
 
+\begin{center}
+	$Sim_{wp}=\frac{2 \times N_{3}}{N_{1} + N_{2} + 2 \times N_{3}}$
+\end{center}
+
+Wobei $N_{3}$ die Länge des Pfades vom Wurzelknoten bis zum nächsten gemeinsamen Knoten $C_{3}$, $N_{2}$ die Länge des Pfades p $(C_{3},C_{2})$ und $N_{1}$ die Länge des Pfades p'$(C_{1},C_{3})$ ist.
+\vspace{1em}
+
+Mit der \textbf{Edit-Distanz} \cite{Krumke2012} wird mit Hilfe von Edit-Operationen, also dem löschen und hinzufügen von Kanten eine Graphentransformation durchgeführt, und für jede Edit-Operation $\eta$ Transoformationskosten c($\eta$) veranschlagt. Die Summe der minimalen Kosten der Transformationsfolge $D$ kann dann als Maß für eine Ähnlichkeit von zwei Graphen $G_{1}$ und $G_{2}$ verwendet werden.

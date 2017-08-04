@@ -1,4 +1,4 @@
-\section{Grundlagen}\label{2_grundlagen}
+\section{Grundlagen und Begrifflichkeiten}\label{2_grundlagen}
 
 %Kompetenzen
 %RDF Semantic Web & Linked Data
@@ -71,7 +71,22 @@ Ein Graph ist definiert als eine Menge von Knoten(Vertices) und deren Beziehunge
 	\subsubsection{Graphentheorie}
 	In diesem Teilgebiet der Mathematik werden Graphen und ihre Beziehungen zueinander untersucht. Das älteste Dokumentierte Problem der Graphentheorie ist das Königsberger Brückenproblem. Dabei wurde ein Rundweg durch Königsberg gesucht, der alle Brücken jedoch nur einmal überquerte. Leonhard Euler erkannte 1736, dass man die einzelnen Ufer als Punkte und Brücken als Kanten abstrahieren konnte. Euler zeigte, dass ein solcher Weg nicht existierte, da jeder Knoten mit einer ungeraden Anzahl von ungerichteten Kanten verbunden sein muss.
 	
-	In der Informatik 
+	Da dieses Themengebiet sehr umfassend ist sollen hier nur einige für diese Arbeit relevante Konzepte erwähnt werden.
+	
+	Gerichteter Graph: 
+	
+	Ein gerichteter Graph ist definiert als G = (V,R, $\alpha$ , $\omega$) mit V als nicht leere Menge von Knoten, R als Kantenmenge.  $\alpha$ und $\omega$ sind jeweils Abbildungen für die gilt r($\alpha$,$\omega$), wobei r eine Kante ist die ihren Ursprung im Anfangsknoten $\alpha$ hat und im Endknoten $\omega$ endet.
+	
+	Adjazenmatrix:
+	
+	Die Adjazenzmatrix oder auch Nachbarschaftsmatrix ist eine  $n\times n $Matrix mit n = |V|. Sie gibt welche Knoten im Graphen miteinander verbunden sind. Für die Adjazenzmatrix \textit{A(G)} gilt $a_{aj}$ = | \{ $r \in R: \alpha(r) = v_{i}$ und $\omega(r) = v_{j} $ \} |. 
+	
+	Gewichtete Kanten:
+	
+	Eine Kante kann bewertet werden. Sie wird mit einer Zahl notiert. Diese Zahl kann dann als Parameter verwendet werden und gibt die Kosten an, die anfallen wenn die Kante von einem Algorithmus oder einer Funktion passiert wird.
+	
+	
+	
 	\todo[inline]{graphentheoretische Konzepte zitieren Seite4}
 	\subsubsection{Graphendatenbanken}	
 	Im Gegensatz zu relationalen Datenbanken werden Daten nicht in Tupeln als Tabellen gespeichert sondern als Knoten in einem Graphenmodell. Der Vorteil darin liegt zunächst in der Daten Modelierung, da das Graphen Model sehr intuitive ist und sich einfach auf Papier modelieren lässt. 
@@ -96,6 +111,12 @@ Mit der \textit{MATCH} Klausel, werden alle Pfade im Graphen gezeigt, welche dem
 \subsection{Empfehlungssysteme}
 
 Ein Empfehlungsystem ist eine Software, welche Nutzern Vorschläge zu Artikeln, Music, Filmen, Büchern oder anderen Objekten macht. \cite{Ricci2010} Ausgehend von einem Objekt werden dem Benutzer andere Objekte mit Ähnlichkeiten zu dem Ausgangsobjekt aufgelistet. Für die Ergebnisse werden im wesentlichen zwei Ansätze verfolgt. Das Inhalts basierte Filtern und Kollaborative Filtern.
+
+\subsection{Begriffe}
+
+\todo{Begriffe erläutern}
+\subsubsection{Algorithmus}
+\subsubsection{Metrik}
 
 
  

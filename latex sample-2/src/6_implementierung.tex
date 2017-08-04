@@ -114,7 +114,7 @@ module.exports.getNode = function(event, context, callback) {
 
 Beim Erzeugen eines neuen Projektes mit dem Serverless Framework, wird neben einem leeren Handler auch eine Konfigurationsdatei mit dem Namen \textit{serverless.yaml} erzeugt. In dieser werden neben der Route die die Funktion auslöst auch die Art der HTTP Methoden eingetragen.
 
-\begin{lstlisting}[language=Python, frame=htrbl, caption={Serverless Konfiguration}, label={lst:serverless_yaml]
+\begin{lstlisting}[language=Python, frame=htrbl, caption={Serverless Konfiguration}, label={lst:serverless_yaml}]
 
   functions:
   	getNode:
@@ -126,10 +126,18 @@ Beim Erzeugen eines neuen Projektes mit dem Serverless Framework, wird neben ein
          		
 \end{lstlisting}
 
-Die notwendigen Paketabhängikeiten für die Datenbankanbindung an Neo4j werden mit \textit{npm install} in den node_modules Ordner geladen. Über das Serverless Kommandozeilen Programm, wird mit dem \textit{deploy} Aufruf der gesamte Inhalt des Projektes, inklusive Abhängigkeiten gepackt, Cloudformation Templates erstellt und dann auf ein S3 Bucket in der AWS Cloud geladen. 
+Die notwendigen Paketabhängikeiten für die Datenbankanbindung an Neo4j werden mit \textit{npm install} in den node modules Ordner geladen. Über das Serverless Kommandozeilen Programm, wird mit dem \textit{deploy} Aufruf der gesamte Inhalt des Projektes, inklusive Abhängigkeiten gepackt, Cloudformation Templates erstellt und dann auf ein S3 Bucket in der AWS Cloud geladen. 
 
 \subsection{Algorithmen und Metriken}
 
 Das technische Gerüst ist nun komplett. Kompetenzen können per GET Request an die API, und unter Angabe ihrer IRIs abgefragt werden. Jedoch sind die Anforderungen an das Empfehlungsystem mittels Metriken und Algorithmen Ähnlichkeiten zu bestimmen. 
 
-Zunächst soll geprüft werden ob es Knoten Typen und Beziehungen im Graphen gibt mit denen sich eine Schnittmenge für zwei Kompetenzen berechnen 
+Zunächst soll geprüft werden ob es Knoten Typen und Beziehungen im Graphen gibt mit denen sich eine Schnittmenge für zwei Kompetenzen berechnen lässt. Dabei soll eine Kompetenz von außen über die API als Eingabe erfolgen und solche Kompetenzen die eine Schnittmenge mit der gegebenen haben in geordneter Reihenfolge zurückgegeben werden. Diese Metrik lässt sich mit einer Cypher Abfrage direkt implementieren ohne weiteren Code ausführen zu müssen. Dazu formulieren wir zunächst die Abfrage. 
+
+\textit{Welche Kompetenzen haben wieviele gemeinsame Beziehungen vom selben Typ zur gegebenen Kompetenz}
+
+Als erstes werden mit einer \textit{MATCH} Klausel alle Knoten $c_{gesucht}$ gesucht, die neben dem gegebenen Knoten $c_{input}$ eine eingehende Beziehung zu einem Knoten $o$ vom Typ \texttt{ns4\_Occupation} haben. 
+
+\begin{lstlisting}
+	
+\end{lstlisting}

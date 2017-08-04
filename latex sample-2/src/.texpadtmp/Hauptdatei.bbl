@@ -52,6 +52,21 @@
 \newblock Berlin Heidelberg New York : Springer-Verlag, 2007. --
 \newblock ISBN 978--3--540--33994--6
 
+\bibitem[JW02]{Jeh:2002:SMS:775047.775126}
+\textsc{Jeh}, Glen ; \textsc{Widom}, Jennifer:
+\newblock SimRank: A Measure of Structural-context Similarity.
+\newblock {In: }\emph{Proceedings of the Eighth ACM SIGKDD International
+  Conference on Knowledge Discovery and Data Mining}.
+\newblock New York, NY, USA : ACM, 2002 (KDD '02). --
+\newblock ISBN 1--58113--567--X, 538--543
+
+\bibitem[KN12]{Krumke2012}
+\textsc{Krumke}, Sven~O. ; \textsc{Noltemeier}, Hartmut:
+\newblock \emph{Graphentheoretische Konzepte und Algorithmen -}.
+\newblock 3. Aufl.
+\newblock Berlin Heidelberg New York : Springer-Verlag, 2012. --
+\newblock ISBN 978--3--834--82264--2
+
 \bibitem[Lop17]{lopez}
 \textsc{Lopez}, Benjamin:
 \newblock \emph{Entwicklung und Evaluation eines e-Kompetenz-Verzeichnisses mit
@@ -87,5 +102,13 @@
 \textsc{Robinson}, Ian ; \textsc{Webber}, Jim  ; \textsc{Eifrem}, Emil:
 \newblock \emph{Graph Databases Ian Robinson; Jim Webber; Emil Eifrem}.
 \newblock OReilly and Associates, 2015
+
+\bibitem[WP94]{Wu:1994:VSL:981732.981751}
+\textsc{Wu}, Zhibiao ; \textsc{Palmer}, Martha:
+\newblock Verbs Semantics and Lexical Selection.
+\newblock {In: }\emph{Proceedings of the 32Nd Annual Meeting on Association for
+  Computational Linguistics}.
+\newblock Stroudsburg, PA, USA : Association for Computational Linguistics,
+  1994 (ACL '94), 133--138
 
 \end{thebibliography}
