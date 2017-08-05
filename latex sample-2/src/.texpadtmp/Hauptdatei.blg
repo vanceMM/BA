@@ -5,11 +5,11 @@ The style file: ../alphadin.bst
 A level-1 auxiliary file: latex_einstellungen/deckblatt.aux
 A level-1 auxiliary file: abstract.aux
 Case mismatch error between cite keys Neo4j and neo4j
----line 113 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
+---line 120 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
  : \citation{Neo4j
  :                }
 I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 176 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
+Illegal, another \bibstyle command---line 182 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
  : \bibstyle
  :          {alphadin}
 I'm skipping whatever remains of this command
@@ -40,45 +40,46 @@ Warning--to sort, need author or key in alliance_for_excellent_education
 Warning--to sort, need author or key in neo4j
 Warning--to sort, need author or key in omdb
 Warning--to sort, need author or key in grouplens_2016
-You've used 16 entries,
+Warning--to sort, need author or key in neo4jsysreq
+You've used 19 entries,
             4793 wiz_defined-function locations,
-            1010 strings with 9717 characters,
-and the built_in function-call counts, 8765 in all, are:
-= -- 909
-> -- 206
-< -- 192
-+ -- 226
-- -- 70
-* -- 591
-:= -- 1406
-add.period$ -- 25
-call.type$ -- 16
-change.case$ -- 72
-chr.to.int$ -- 15
-cite$ -- 26
-duplicate$ -- 255
-empty$ -- 697
-format.name$ -- 131
-if$ -- 1842
-int.to.chr$ -- 2
+            1024 strings with 10288 characters,
+and the built_in function-call counts, 9879 in all, are:
+= -- 1020
+> -- 223
+< -- 211
++ -- 246
+- -- 74
+* -- 648
+:= -- 1575
+add.period$ -- 30
+call.type$ -- 19
+change.case$ -- 83
+chr.to.int$ -- 17
+cite$ -- 31
+duplicate$ -- 299
+empty$ -- 800
+format.name$ -- 143
+if$ -- 2088
+int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 74
-newline$ -- 102
-num.names$ -- 33
-pop$ -- 107
+missing$ -- 89
+newline$ -- 118
+num.names$ -- 39
+pop$ -- 130
 preamble$ -- 1
-purify$ -- 104
+purify$ -- 121
 quote$ -- 0
-skip$ -- 429
+skip$ -- 496
 stack$ -- 0
-substring$ -- 703
-swap$ -- 51
-text.length$ -- 35
-text.prefix$ -- 4
+substring$ -- 755
+swap$ -- 56
+text.length$ -- 39
+text.prefix$ -- 6
 top$ -- 0
-type$ -- 146
-warning$ -- 5
-while$ -- 60
-width$ -- 18
-write$ -- 212
+type$ -- 178
+warning$ -- 6
+while$ -- 66
+width$ -- 21
+write$ -- 248
 (There were 4 error messages)

@@ -15,10 +15,11 @@ Mit API Gateway können Anwendungen über das Internet auf die Cloud Dienste von
 
 AWS Lambda
 
-Wird ein Endpunkt besucht kann 
-   \subsection{EC2 }
+Code in Lambda Funktionen wird nur ausfgeführt wenn ensprechende Events die Lambda Funktion auslösen.
 
-Die Neo4j Instanz wird auf einer Ubuntu Umgebung installiert. Dafür müssen jedoch erst einige Abhängkeiten und Pakete installiert werden. Um den Aufwand gering zuhalten, wird eine Amazon Web Serivices EC2 Instanz hochgefahren mit einem speziellen Cloudformation Template. Cloudformation erleichtert das Erstellen von Umgebungen mit wichtigen Laufzeitparametern. Das folgende Schaubild veranschaulicht alle wichtigen Parameter:
+  \subsection{EC2 }
+Für die Datenhaltung wird das Open Source Graphendatenbank Manangement System Neo4j verwendet. Dieses stellt jedoch eingie Vorraussetzungen an die Umgebung\cite{neo4jsysreq}. Da Neo4j eine Java VM muss zb. für Ubuntu das OpenJDK 8 installiert sein.
+Die Neo4j Instanz wird auf einer Ubuntu Umgebung installiert. Dafür müssen jedoch erst einige Abhängkeiten und Pakete installiert werden. Um den Aufwand gering zuhalten, wird eine Amazon Web Serivices EC2 Instanz hochgefahren mit einem speziellen Cloudformation Template, welches alle System Vorraussetzungen erfüllt. Cloudformation erleichtert das Erstellen von Umgebungen mit wichtigen Laufzeitparametern. Das folgende Schaubild veranschaulicht alle wichtigen Parameter:
 
 \subsection{Neo4j}
 
@@ -37,6 +38,8 @@ CALL semantics.importRDF("file:///.../esco_skos.rdf","RDF", { shortenUrls: true,
 
 
 \end{lstlisting}
+
+
 
 
 \subsection{API Gateway}
@@ -132,12 +135,62 @@ Die notwendigen Paketabhängikeiten für die Datenbankanbindung an Neo4j werden 
 
 Das technische Gerüst ist nun komplett. Kompetenzen können per GET Request an die API, und unter Angabe ihrer IRIs abgefragt werden. Jedoch sind die Anforderungen an das Empfehlungsystem mittels Metriken und Algorithmen Ähnlichkeiten zu bestimmen. 
 
-Zunächst soll geprüft werden ob es Knoten Typen und Beziehungen im Graphen gibt mit denen sich eine Schnittmenge für zwei Kompetenzen berechnen lässt. Dabei soll eine Kompetenz von außen über die API als Eingabe erfolgen und solche Kompetenzen die eine Schnittmenge mit der gegebenen haben in geordneter Reihenfolge zurückgegeben werden. Diese Metrik lässt sich mit einer Cypher Abfrage direkt implementieren ohne weiteren Code ausführen zu müssen. Dazu formulieren wir zunächst die Abfrage. 
+Zunächst soll geprüft werden ob es Knoten Typen und Beziehungen im Graphen gibt mit denen sich eine Schnittmenge für zwei Kompetenzen berechnen lässt. Dabei soll eine Kompetenz von außen über die API als Eingabe erfolgen und solche Kompetenzen die eine Schnittmenge mit der gegebenen haben in geordneter Reihenfolge zurückgegeben werden. Diese Metrik lässt sich mit einer Cypher Abfrage direkt implementieren ohne weiteren Code ausführen zu müssen. Dazu wird zunächst die Abfrage formuliert. 
 
 \textit{Welche Kompetenzen haben wieviele gemeinsame Beziehungen vom selben Typ zur gegebenen Kompetenz}
 
-Als erstes werden mit einer \textit{MATCH} Klausel alle Knoten $c_{gesucht}$ gesucht, die neben dem gegebenen Knoten $c_{input}$ eine eingehende Beziehung zu einem Knoten $o$ vom Typ \texttt{ns4\_Occupation} haben. 
+Als erstes werden mit einer \textbf{MATCH} Klausel alle Knoten $c_{gesucht}$ gesucht, die neben dem gegebenen Knoten $c_{input}$ eine eingehende Beziehung zu einem Knoten $o$ vom Typ \texttt{ns4\_Occupation} haben und die Schnittmenge bilden. 
 
 \begin{lstlisting}
-	
+MATCH (c:ns4_Skill {ns5_prefLabel:{queryParam})-[:ns5_related]->(o:ns4_Occupation)<-[:ns5_related]-(other:ns4_Skill)
 \end{lstlisting}
+
+
+
+Die Kompetenz aus dem Input wird mittels Parameter der Query übergeben und das Resultat des Patterns in den Variablen $c$, $o$, $other$  mit der \textbf{WITH} Klausel in den nächsten Query Teil weiter gereicht. Mit der Aggregatsfunktion \textbf{COUNT} wird dann der Betrag der Schnittmenge von Knoten vom Typ \texttt{ns4\_Occupation}, die eine eingehende Beziehung vom Typ \texttt{ns5\_related} von Knoten $c_{input}$ und Knoten $c_{gesucht}$ vom Typ \texttt{ns4\_Skill} haben. 
+
+\begin{lstlisting}
+MATCH (c:ns4_Skill {ns5_prefLabel:{queryParam})-[:ns5_related]->(o:ns4_Occupation)<-[:ns5_related]-(other:ns4_Skill)
+
+WITH c, other, COUNT(o) AS intersection, COLLECT(o.ns5_prefLabel) AS i
+
+\end{lstlisting}
+
+Als nächstes müssen die beiden Mengen in seperaten Variablen $s1_{A}$ und $s2_{B}$ gespeichert werden,
+
+\begin{lstlisting}
+MATCH (c:ns4_Skill {ns5_prefLabel:{queryParam})-[:ns5_related]->(o:ns4_Occupation)<-[:ns5_related]-(other:ns4_Skill)
+
+WITH c, other, COUNT(o) AS intersection, COLLECT(o.ns5_prefLabel) AS i
+MATCH (c)-[:ns5_related]->(c_other:ns4_Occupation)
+
+WITH c,other,intersection, i ,COLLECT(c_other.ns5_prefLabel) AS s1
+MATCH (other)-[:ns5_related]->(oc:ns4_Occupation)
+
+WITH c,other,intersection,i, s1, COLLECT(oc.ns5_prefLabel) AS s2
+
+\end{lstlisting}
+
+um dann mittels Listenfunktion \textbf{FILTER} die Vereinigungsmenge zu berechnen.
+
+\begin{lstlisting}[language=SPARQL, morekeywords={MATCH, WITH, COLLECT}]
+MATCH (c:ns4_Skill {ns5_prefLabel:{queryParam})-[:ns5_related]->(o:ns4_Occupation)<-[:ns5_related]-(other:ns4_Skill)
+WITH c, other, COUNT(o) AS intersection, COLLECT(o.ns5_prefLabel) AS i
+
+MATCH (c)-[:ns5_related]->(c_other:ns4_Occupation)
+WITH c,other,intersection, i ,COLLECT(c_other.ns5_prefLabel) AS s1
+
+MATCH (other)-[:ns5_related]->(oc:ns4_Occupation)
+WITH c,other,intersection,i, s1, COLLECT(oc.ns5_prefLabel) AS s2
+
+WITH c,other,intersection,s1+filter(x IN s2 WHERE NOT x IN s1) AS union, s1, s2
+
+RETURN c.ns5_prefLabel, other.ns5_prefLabel, s1,s2,intersection,((1.0*intersection)/SIZE(union)) 
+
+AS jaccard ORDER BY jaccard DESC LIMIT 10
+
+\end{lstlisting}
+
+
+Der Quotient aus dem Betrag der Schnittmenge, und dem Betrag der Vereinigungsmenge ergibt dann den Jaccard Index und wird gemeinsam mit den Namens Attributen für die die Kompetenzen $c_{input}$ und $c_{gesucht}$  in, in sortierter Reihenfolge in der \textbf{RETURN} Klausel in das Ergebnis geschrieben.
+

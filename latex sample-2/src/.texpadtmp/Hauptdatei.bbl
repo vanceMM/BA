@@ -52,6 +52,14 @@
 \newblock Berlin Heidelberg New York : Springer-Verlag, 2007. --
 \newblock ISBN 978--3--540--33994--6
 
+\bibitem[Hö16]{hoelscher}
+\textsc{Hölscher}, Denny:
+\newblock \emph{Mit XING zum Traumjob: Wie gut ist das Job-Matching des
+  Karrierenetzwerks?}
+\newblock
+  \url{https://hr-blog.prosoft.net/mit-xing-zum-traumjob-wie-gut-ist-das-job-matching-des-karrierenetzwerks/}.
+\newblock \,Version:\,Dec 2016
+
 \bibitem[JW02]{Jeh:2002:SMS:775047.775126}
 \textsc{Jeh}, Glen ; \textsc{Widom}, Jennifer:
 \newblock SimRank: A Measure of Structural-context Similarity.
@@ -67,13 +75,25 @@
 \newblock Berlin Heidelberg New York : Springer-Verlag, 2012. --
 \newblock ISBN 978--3--834--82264--2
 
+\bibitem[Kon16]{OBNO3-A2}
+\textsc{Konert}, Johannes:
+\newblock Open Badge Network Proposal on Competency Alignment and Directory.
+\newblock   (2016).
+\newblock
+  \url{http://www.openbadgenetwork.com/wp-content/uploads/2016/01/OBNO3-A2__CompetencyAlignmentAndRepository__proposal_v1.1.pdf}
+
 \bibitem[Lop17]{lopez}
 \textsc{Lopez}, Benjamin:
 \newblock \emph{Entwicklung und Evaluation eines e-Kompetenz-Verzeichnisses mit
   REST-API und eines automatisierten Crawlers zur Datensammlung}.
 \newblock 2017
 
-\bibitem[neo]{neo4j}
+\bibitem[neoa]{neo4jsysreq}
+\emph{2.1. System requirements - Chapter 2. Installation}.
+\newblock
+  \url{https://neo4j.com/docs/operations-manual/current/installation/requirements/}
+
+\bibitem[neob]{neo4j}
 \emph{Neo4j Graph Database Sandbox - Get Started with Graphs}.
 \newblock \url{https://neo4j.com/sandbox-v2/}. --
 \newblock kein direkte Link zur Instanz. Diese wird erst nach einem Login nur

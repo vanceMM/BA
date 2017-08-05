@@ -71,14 +71,17 @@ Der komplette RDF Graph des ESCO Kataloges mit allen Beziehungen laden und Abfra
 
 Bekannte Anwendungsfälle für ein Recommender System sind neben Musik und Film Empfehlungen vor allem die \textit{andere Kunden kauften auch...} Komponente in Web Shops. Ziel dieser Systeme ist es eine Vorhersage zu treffen, welches Produkt oder Objekt dem Kunden oder Anwender ebenfalls interessieren könnte. Dabei werden häufig die Konzepte des \textit{Inhaltsbasierenden} und des \textit{Kollaborativen} Filtern angewandt. 
 
-Beim Inhaltsbasierten Filtern wird die Ähnlichkeit der Objekte und deren Eigenschaften ermittelt. Im Gegensatz dazu werden beim kollaborativen Filtern Benutzer miteinander verglichen. 
+Beim Inhaltsbasierten Filtern wird die Ähnlichkeit der Objekte und deren Eigenschaften ermittelt. Im Gegensatz dazu werden beim kollaborativen Filtern Benutzer und deren Präferenzen miteinander verglichen. 
 
-\subsubsection{RecSys Challenge}
+
 \subsubsection{GraphGist Recommendation Engine Neo4j}
 
-\subsection{Job-Matching: Xing}
+\subsubsection{RecSys Challenge}
 
-Das Karrierenetzwerk bietet Arbeitssuchenden die Möglichkeit Job-Empfehlungen auf Basis des eigenen Profils zu erhalten. Dabei wird nach den Kriterien Entfernung zum Arbeitsort, Karrierestufe, Skills und Aktivitäten gefiltert. Aus diesen 4 Kriterien wird ein Relevanz-Indikator ermittelt, welcher die Treffgenauigkeit des Inserats angibt. 
+Die \textit{ACM RecSys Conference} befasst sich jedes Jahr mit den aktuellen Untersuchungsergebnissen und Techniken im Bereich der Empfehlungsdienste. Darüber hinaus veranstaltet sie auch die RecSys Challenge, einen mit 3000 \euro  Siegerprämie dotierten Wettbewerb, bei dem Teilnehmer ein Empfehlungsdienst, in einer bestimmten Domäne entwickeln sollen. In den beiden vergangen Jahren beschäftigte sich der Wettbewerb mit Job Empfehlungen der Karriereplatform Xing. Die Aufgabe war, anhand eines neuen Job Angebotes, all jene Nutzer zu finden, die interessiert sein könnten eine Benachrichtigung über das neue Angebot zu erhalten aber auch Nutzer die ebenfalls für den Job geeignet sein könnten. Die Ergebnisse werden auf der RecSys Conference in Como, Italien am 27.08.2017 vorgestellt.
+\subsubsection{Job-Matching: Xing}
+
+Das Karrierenetzwerk bietet Arbeitssuchenden die Möglichkeit Job-Empfehlungen auf Basis des eigenen Profils zu erhalten. Dabei wird nach den Kriterien Entfernung zum Arbeitsort, Karrierestufe, Skills und Aktivitäten gefiltert. Aus diesen 4 Kriterien wird ein Relevanz-Indikator ermittelt, welcher die Treffgenauigkeit des Inserats angibt. Umgekehrt wird auch ein Inserat mit dem eigenen Profil gematcht, wobei auch die geforderten Skills den eigenen gegenübergestellt werden.\cite{hoelscher}
 
 \begin{figure}[htb]
  \centering
@@ -87,7 +90,7 @@ Das Karrierenetzwerk bietet Arbeitssuchenden die Möglichkeit Job-Empfehlungen a
 \label{fig:Beschreibung}
 \end{figure}
 
-Dieser Ansatz berücksichtigt jedoch nicht die Persönlichkeit der Bewerber, und bietet auch nur eine teilweise höhere Bewerberpassgenauigkeit aus Sicht der Arbeitgeber. Wie qualifiziert ein Bewerber wirklich ist bleibt weiter unklar, da eine Liste der angegebenen Skills keine Auskunft darüber gibt wie kompetent der Bewerber auf einem Gebiet wirklich ist. 
+Dieser Ansatz berücksichtigt jedoch nicht die Persönlichkeit der Bewerber, und bietet auch nur eine teilweise höhere Bewerberpassgenauigkeit aus Sicht der Arbeitgeber. Wie qualifiziert ein Bewerber wirklich ist bleibt weiter unklar, da eine Liste der angegebenen Skills keine Auskunft darüber gibt wie kompetent der Bewerber auf einem Gebiet wirklich ist. So kann es passieren, dass ein Bewerber der trotz Eignung durch das Raster fällt, weil er andere Schlagworte als die geforderten angegeben hat.
 
 Neben Xing bieten die Plattformen Truffles und BirdieMatch ähnliche Technologien an.
 

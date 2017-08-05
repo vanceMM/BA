@@ -65,6 +65,13 @@ RDF-Graphen lassen sich vollständig durch ihre Kanten beschreiben. Eine solche 
 
 \todo{Vokabular bzw. Ontologien}
 
+\subsubsection{Ontologie}
+
+Als Ontologie wird ein RDF Dokument bezeichnet, welches ein gewisses \textit{Wissen} einer bestimmten Domäne speichert. Mit Hilfe eines Vokabulars werden Regeln über die Semantik und Beziehungen von Daten definiert. Ontologien können auch in einer spezifischeren Domäne erweitert werden. In der \textit{Simple Knowledge Organization System}  Ontologie wird durch die \textit{Concept} abstrakte Klasse eine Entität beschrieben
+prefLabel
+altLabel
+semantic relation narrow
+
 \subsection{Graphen}
 
 Ein Graph ist definiert als eine Menge von Knoten(Vertices) und deren Beziehungen, welche über Kanten(Edges) dargestellt werden. Mit Graphen kann man vernetzte Strukturen wie zb. Straßennetze, Computernetzwerke oder Datenstrukturen modellieren. So finden sich in vielen modernen Technologien wie Routenplaner oder Social Media Anwendungen graphentheoretische Konzepte wieder.
@@ -73,15 +80,15 @@ Ein Graph ist definiert als eine Menge von Knoten(Vertices) und deren Beziehunge
 	
 	Da dieses Themengebiet sehr umfassend ist sollen hier nur einige für diese Arbeit relevante Konzepte erwähnt werden.
 	
-	Gerichteter Graph: 
+	\textbf{Gerichteter Graph: }
 	
 	Ein gerichteter Graph ist definiert als G = (V,R, $\alpha$ , $\omega$) mit V als nicht leere Menge von Knoten, R als Kantenmenge.  $\alpha$ und $\omega$ sind jeweils Abbildungen für die gilt r($\alpha$,$\omega$), wobei r eine Kante ist die ihren Ursprung im Anfangsknoten $\alpha$ hat und im Endknoten $\omega$ endet.
 	
-	Adjazenmatrix:
+	\textbf{Adjazenmatrix:}
 	
 	Die Adjazenzmatrix oder auch Nachbarschaftsmatrix ist eine  $n\times n $Matrix mit n = |V|. Sie gibt welche Knoten im Graphen miteinander verbunden sind. Für die Adjazenzmatrix \textit{A(G)} gilt $a_{aj}$ = | \{ $r \in R: \alpha(r) = v_{i}$ und $\omega(r) = v_{j} $ \} |. 
 	
-	Gewichtete Kanten:
+	\textbf{Gewichtete Kanten:}
 	
 	Eine Kante kann bewertet werden. Sie wird mit einer Zahl notiert. Diese Zahl kann dann als Parameter verwendet werden und gibt die Kosten an, die anfallen wenn die Kante von einem Algorithmus oder einer Funktion passiert wird.
 	
