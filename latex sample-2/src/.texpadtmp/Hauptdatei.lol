@@ -2,4 +2,3 @@
 \contentsline {lstlisting}{\numberline {2}importRDF Prozeduraufruf}{24}{lstlisting.2}
 \contentsline {lstlisting}{\numberline {3}Lambda Handler Funktion}{26}{lstlisting.3}
 \contentsline {lstlisting}{\numberline {4}Serverless Konfiguration}{27}{lstlisting.4}
-\contentsline {lstlisting}{\numberline {5}Das Listing zeigt Java Quellcode}{29}{lstlisting.5}

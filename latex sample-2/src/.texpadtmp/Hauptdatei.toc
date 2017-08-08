@@ -1,7 +1,7 @@
 \contentsline {section}{Abbildungsverzeichnis}{5}{section*.4}
 \contentsline {section}{Tabellenverzeichnis}{5}{section*.5}
 \contentsline {section}{Listingverzeichnis}{5}{section*.6}
-\contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{6}{section*.7}
+\contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{5}{section*.7}
 \contentsline {section}{\numberline {1}Einleitung}{7}{section.1}
 \contentsline {section}{\numberline {2}Grundlagen und Begrifflichkeiten}{8}{section.2}
 \contentsline {subsection}{\numberline {2.1}Kompetenzen}{8}{subsection.2.1}
@@ -9,58 +9,57 @@
 \contentsline {subsection}{\numberline {2.3}RDF, Semantic Web Linked Data}{9}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Semantic Web}{9}{subsubsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.2}Linked Data}{9}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}RDF}{9}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3}RDF}{10}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Ontologie}{10}{subsubsection.2.3.4}
 \contentsline {subsection}{\numberline {2.4}Graphen}{10}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Graphentheorie}{10}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.1}Graphentheorie}{11}{subsubsection.2.4.1}
 \contentsline {subsubsection}{\numberline {2.4.2}Graphendatenbanken}{11}{subsubsection.2.4.2}
 \contentsline {subsubsection}{\numberline {2.4.3}Neo4J}{11}{subsubsection.2.4.3}
-\contentsline {subsection}{\numberline {2.5}Empfehlungssysteme}{11}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Begriffe}{11}{subsection.2.6}
-\contentsline {subsubsection}{\numberline {2.6.1}Algorithmus}{12}{subsubsection.2.6.1}
-\contentsline {subsubsection}{\numberline {2.6.2}Metrik}{12}{subsubsection.2.6.2}
+\contentsline {subsection}{\numberline {2.5}Empfehlungssysteme}{12}{subsection.2.5}
 \contentsline {section}{\numberline {3}Verwandte Themen und Arbeiten}{12}{section.3}
 \contentsline {subsection}{\numberline {3.1}Openbadge}{12}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Europ\IeC {\"a}ischer Qualifikationsrahmen}{12}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Europ\IeC {\"a}ischer Qualifikationsrahmen}{13}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}European e-Competence Framework}{13}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}InLoc}{13}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}ESCO}{13}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}GraphGist: Recommendation System Sandbox}{14}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.1}EURES}{14}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}GraphGist: Recommendation System Sandbox}{14}{subsubsection.3.5.2}
 \contentsline {subsection}{\numberline {3.6}RDF Import Neo4J}{14}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Recommender Systeme}{14}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.7}Recommender Systeme}{15}{subsection.3.7}
 \contentsline {subsubsection}{\numberline {3.7.1}GraphGist Recommendation Engine Neo4j}{15}{subsubsection.3.7.1}
 \contentsline {subsubsection}{\numberline {3.7.2}RecSys Challenge}{15}{subsubsection.3.7.2}
 \contentsline {subsubsection}{\numberline {3.7.3}Job-Matching: Xing}{15}{subsubsection.3.7.3}
 \contentsline {section}{\numberline {4}Analyse und Aufgabenstellung}{16}{section.4}
 \contentsline {subsection}{\numberline {4.1}Aufgabenstellung}{16}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Anforderungsanalyse}{16}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Kompetenzen}{16}{subsubsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2}Anforderungsanalyse}{17}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Kompetenzen}{17}{subsubsection.4.2.1}
 \contentsline {subsubsection}{\numberline {4.2.2}Anforderungen an die Engine}{17}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Anforderungen an die API}{17}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3}Anforderungen an die API}{18}{subsubsection.4.2.3}
 \contentsline {subsubsection}{\numberline {4.2.4}Anforderungen an die Architektur}{18}{subsubsection.4.2.4}
 \contentsline {subsection}{\numberline {4.3}Algorithmen und Metriken}{18}{subsection.4.3}
-\contentsline {section}{\numberline {5}Entwurf}{19}{section.5}
+\contentsline {section}{\numberline {5}Entwurf}{20}{section.5}
 \contentsline {subsection}{\numberline {5.1}Format/Kompotenzmodell}{20}{subsection.5.1}
 \contentsline {subsubsection}{\numberline {5.1.1}ESCO als RDF}{20}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}inLOC}{20}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2}inLOC}{21}{subsubsection.5.1.2}
 \contentsline {subsubsection}{\numberline {5.1.3}Fazit: Auswahl eines Models}{21}{subsubsection.5.1.3}
 \contentsline {subsubsection}{\numberline {5.1.4}Datenbank}{21}{subsubsection.5.1.4}
 \contentsline {subsubsection}{\numberline {5.1.5}API}{22}{subsubsection.5.1.5}
-\contentsline {subsection}{\numberline {5.2}Datenmodell}{22}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Anfragen Formulieren}{22}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.2}Datenmodell}{23}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Anfragen Formulieren}{23}{subsection.5.3}
 \contentsline {section}{\numberline {6}Implementierung}{23}{section.6}
 \contentsline {subsection}{\numberline {6.1}Beschreibung des Stacks}{23}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}EC2}{23}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.2}EC2}{24}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Neo4j}{24}{subsection.6.3}
 \contentsline {subsubsection}{\numberline {6.3.1}RDF Import}{24}{subsubsection.6.3.1}
 \contentsline {subsection}{\numberline {6.4}API Gateway}{24}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Serverless}{24}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.5}Serverless}{25}{subsection.6.5}
 \contentsline {subsubsection}{\numberline {6.5.1}AWS Lambda}{25}{subsubsection.6.5.1}
 \contentsline {subsubsection}{\numberline {6.5.2}Serverless Framework}{25}{subsubsection.6.5.2}
-\contentsline {subsection}{\numberline {6.6}Architektur im \IeC {\"U}berblick}{25}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.6}Architektur im \IeC {\"U}berblick}{26}{subsection.6.6}
 \contentsline {subsection}{\numberline {6.7}Deployment mit dem Serverless Framework}{27}{subsection.6.7}
 \contentsline {subsection}{\numberline {6.8}Algorithmen und Metriken}{27}{subsection.6.8}
 \contentsline {section}{\numberline {7}Ausblick}{29}{section.7}
 \contentsline {section}{\numberline {8}Fazit}{29}{section.8}
-\contentsline {section}{Literaturverzeichnis}{31}{lstnumber.5.33}
-\contentsline {section}{Anhang}{33}{section*.14}
-\contentsline {section}{Eidesstattliche Erkl\IeC {\"a}rung}{33}{section*.15}
+\contentsline {section}{Literaturverzeichnis}{31}{section.8}
+\contentsline {section}{Anhang}{33}{section*.15}
+\contentsline {section}{Eidesstattliche Erkl\IeC {\"a}rung}{33}{section*.16}

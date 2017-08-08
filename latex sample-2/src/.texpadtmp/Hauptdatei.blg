@@ -5,11 +5,11 @@ The style file: ../alphadin.bst
 A level-1 auxiliary file: latex_einstellungen/deckblatt.aux
 A level-1 auxiliary file: abstract.aux
 Case mismatch error between cite keys Neo4j and neo4j
----line 120 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
+---line 119 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
  : \citation{Neo4j
  :                }
 I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 182 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
+Illegal, another \bibstyle command---line 178 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
  : \bibstyle
  :          {alphadin}
 I'm skipping whatever remains of this command
@@ -34,52 +34,51 @@ I was expecting a `,' or a `}'---line 151 of file ../Hauptdatei.bib
  :                e-competence framework, title={Ein gemeinsamer europäischer Rahmen für IKT Fach- und Führungskräfte in allen Branchen}, url={http://www.ecompetences.eu/de/}, journal={European e-Competence Framework}}
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "https://ec.europa.eu/esco/portal/escopedia/Competence"
-Warning--I didn't find a database entry for "wk05"
 Warning--to sort, need author or key in bibb
 Warning--to sort, need author or key in alliance_for_excellent_education
 Warning--to sort, need author or key in neo4j
 Warning--to sort, need author or key in omdb
 Warning--to sort, need author or key in grouplens_2016
 Warning--to sort, need author or key in neo4jsysreq
-You've used 19 entries,
+You've used 20 entries,
             4793 wiz_defined-function locations,
-            1024 strings with 10288 characters,
-and the built_in function-call counts, 9879 in all, are:
-= -- 1020
-> -- 223
-< -- 211
-+ -- 246
-- -- 74
-* -- 648
-:= -- 1575
-add.period$ -- 30
-call.type$ -- 19
-change.case$ -- 83
-chr.to.int$ -- 17
-cite$ -- 31
-duplicate$ -- 299
-empty$ -- 800
-format.name$ -- 143
-if$ -- 2088
+            1028 strings with 10424 characters,
+and the built_in function-call counts, 10251 in all, are:
+= -- 1054
+> -- 231
+< -- 213
++ -- 248
+- -- 76
+* -- 670
+:= -- 1635
+add.period$ -- 32
+call.type$ -- 20
+change.case$ -- 87
+chr.to.int$ -- 18
+cite$ -- 32
+duplicate$ -- 314
+empty$ -- 835
+format.name$ -- 149
+if$ -- 2171
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 89
-newline$ -- 118
-num.names$ -- 39
-pop$ -- 130
+missing$ -- 95
+newline$ -- 124
+num.names$ -- 42
+pop$ -- 137
 preamble$ -- 1
-purify$ -- 121
+purify$ -- 127
 quote$ -- 0
-skip$ -- 496
+skip$ -- 515
 stack$ -- 0
-substring$ -- 755
-swap$ -- 56
-text.length$ -- 39
-text.prefix$ -- 6
+substring$ -- 767
+swap$ -- 59
+text.length$ -- 41
+text.prefix$ -- 7
 top$ -- 0
-type$ -- 178
+type$ -- 190
 warning$ -- 6
-while$ -- 66
-width$ -- 21
-write$ -- 248
+while$ -- 69
+width$ -- 22
+write$ -- 261
 (There were 4 error messages)
