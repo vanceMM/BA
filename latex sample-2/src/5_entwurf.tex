@@ -65,16 +65,22 @@ Das folgende Digram zeigt die Struktur für Kompetenzen aus dem e-CF.
 
 Nachdem nun das Datenmodell für die Speicherung der Kompetenzen gewählt wurde, muss eine geeignete Datenbank gewählt werden. Das SKOS Schema des ESCO Katalogs liegt zwar bereits als gerichteter Graph, nämlich im RDF Format vor, soll aber aus Gründen der Flexibilität und Möglichkeiten in ein Datenbankmanagement System überführt werden.
 
-Alternativ könnte mit Hilfe von SPARQL, einer graphenbasierten Abfragesprache, direkt auf dem RDF Graphen gearbeitet werden 
-,hier sollen jedoch von den Vorteilen eines \textit{Label Property Graphen}  Gebrauch gemacht werden. Möchte man eine Kompetenz in RDF modellieren, so muss zunächst ein Knoten für die Kompetenz selbst angelegt werden. Soll die Kompetenz neben dem Identifier auch noch einen Namens oder Sprachattribut hinzufügen, müssen zunächst Knoten und Beziehungen für jedes Attribut angelegt werden. Daraus resultiert ein stärkere Vernetzung des Graphen. Im \textit{LPG} können die Attribute einfach dem Kompetenzknoten hinzugefügt werden. Emil Eifrem, CEO der Open-Source Graphendatenbank \cite{Neo4j} übt Kritik an der RDF Community. So bemängelt er, dass zu wenig Rücksicht auf Entwickler und die Integration in Software Systeme genommen wird. \cite{anadiotis_2017} 
+Alternativ könnte mit Hilfe von SPARQL, einer Graphen basierten Abfragesprache, direkt auf dem RDF Graphen gearbeitet werden 
+,hier sollen jedoch von den Vorteilen eines \textit{Label Property Graphen}  Gebrauch gemacht werden. Möchte man eine Kompetenz in RDF modellieren, so muss zunächst ein Knoten für die Kompetenz selbst angelegt werden. Soll die Kompetenz neben dem \textit{Identifier} auch noch einen Namens oder Sprachattribut hinzufügen, müssen zunächst Knoten und Beziehungen für jedes Attribut angelegt werden. Daraus resultiert ein stärkere Vernetzung des Graphen. Im \textit{LPG} können die Attribute einfach dem Kompetenzknoten hinzugefügt werden. Emil Eifrem, CEO der Open-Source Graphendatenbank \cite{Neo4j} übt Kritik an der RDF Community. So bemängelt er, dass zu wenig Rücksicht auf Entwickler und die Integration in Software Systeme genommen wird. \cite{anadiotis_2017} 
 
 "There is a pool of super smart people in the Semantic Web community, but their approach is typically extremely academic. "
 Warum keine RDF Technologie?
 
 \subsection{Datenmodell}
 
-Da Der ESCO Katalog als Ontologie implementiert und im Linked Data Format veröffentlich wird, besteht dieser aus einer hierachischen 
+Da Der ESCO Katalog als Ontologie implementiert und im Linked Data Format als SKOS veröffentlich wird, liegen die Konzepte von Kompetenzen als hierarchische Struktur vor. Dabei gibt es ausgehend vom Root Knoten einen Unterknoten für die \textit{Kompetenzen/Fertigkeiten} Säule, von dem ausgehend sich der Baum aufspaltet in Job-spezifische und Transversale Skills. Hierarchien in SKOS werden über \textit{broader-narrower} Beziehungen hergestellt. Kompetenzen sind Teil der Konzept Klasse \textit{Skill} und werden mit der \textit{LeafGroup} und \textit{Member} Konzept Klasse strukturiert. Beispielsweise ist die Kompetenz \textit{Windows XP} Teil der Gruppe \textit{Computing} die wiederum Teil der Gruppe \textit{Job-specific skills/competences} Gruppe ist.
 
+\begin{figure}[htb]
+ \centering
+ \includegraphics[width=0.7\textwidth,angle=0]{abb/graph}
+ \caption[Beschreibung]{Hierarischie Struktur von Kompetenzen}
+\label{fig:Beschreibung}
+\end{figure}
 
 \subsubsection{API}
 
@@ -91,9 +97,9 @@ Die Anwendung ist also wenig Komplex. Ein viel höherer Implementierungsaufwand 
 
 \begin{figure}[htb]
  \centering
- \includegraphics[width=0.7\textwidth,angle=0]{abb/Architecture}
- \caption[Beschreibung]{Beschreibung}
-\label{fig:Beschreibung}
+ \includegraphics[width=0.7\textwidth,angle=0]{abb/entwurf}
+ \caption[Beschreibung]{Entwurf}
+\label{fig:Entwurf}
 \end{figure}
 
 

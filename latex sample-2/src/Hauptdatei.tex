@@ -2,6 +2,9 @@
 \documentclass[a4paper,12pt,headsepline]{scrartcl}
 \input{latex_einstellungen/variablen}
 
+%page break
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
 
 % weitere Pakete
 % Grafiken aus PNG Dateien einbinden
@@ -312,6 +315,8 @@ captionpos=b
 
 \input{6_implementierung}
 
+\input{10_bewertung.tex}
+
 \input{8_evaluation}
 
 \input{7_ausblick}
@@ -347,8 +352,8 @@ captionpos=b
 \input{anhang/anhang}
 
 % Eidesstattliche Erklärung
-\addcontentsline{toc}{section}{Eidesstattliche Erklärung}
-\include{erklaerung}
+%\addcontentsline{toc}{section}{Eidesstattliche Erklärung}
+%\include{erklaerung}
 
 % leere Abschlussseite
 \newpage

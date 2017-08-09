@@ -3,7 +3,7 @@
 
  In diesem Kapitel sollen die einzelnen Implementierungsschritte für den Empfehlungsdienst erläutert werden. Alle Komponenten können in der \textit{Amazon Webservices Cloud} implementiert werden. Dabei sollen nur die eingesetzten Dienste beschrieben werden, jedoch auf grundlegende Einstellungen wie die Benutzer Rollen und Berechtigungen in der AWS Konsole über welche sich sämtliche Dienste steuern und konfigurieren lassen, nicht weiter eingegangen werden. Im einzelnen kommen folgende Dienste zum Einsatz:
 
-\subsection{Beschreibung des Stacks}
+\subsection{Architektur}
 
 EC2:
 
@@ -69,7 +69,12 @@ Welche Vorteile bietet API Gateway
 
 \subsection{Architektur im Überblick}
 
-
+\begin{figure}[htb]
+ \centering
+ \includegraphics[width=0.7\textwidth,angle=0]{abb/Architecture}
+ \caption[Beschreibung]{Architektur}
+\label{fig:Architektur}
+\end{figure}
 
 Nachdem nun alle Komponenten eingerichtet sind erfolgt das Implementieren der Algorithmen und Datenbankabfragen. Als Laufzeitumgebung für die Lambda Funktionen wird Node.js in der Version 6.10 gewählt. Für die Anbindung an die Neo4j wird die \textit{neo4j-driver} Bibliothek geladen. Damit lässt sich zunächst für den gesamten Scope der Lambda Funktion der Datenbanktreiber der \textit{neo4j} Klasse instanzieren. 
 Wird nun beim ausführen des Codes durch Lambda wird die \textit{Handler} Funktion aufgerufen, kann für den jeweiligen Handler eine neue Session geöffnet werden und ein String für die Datenbankabfrage, inklusive Parameter geformt werden. Ist die Abfrage beendet wird die Callback Funktion aufgerufen und ein Response Objekt erstellt, welches das Ergebnis der Datenbankabfrage im JSON String Format enthält.
@@ -133,7 +138,15 @@ Die notwendigen Paketabhängikeiten für die Datenbankanbindung an Neo4j werden 
 
 \subsection{Algorithmen und Metriken}
 
-Das technische Gerüst ist nun komplett. Kompetenzen können per GET Request an die API, und unter Angabe ihrer IRIs abgefragt werden. Jedoch sind die Anforderungen an das Empfehlungsystem mittels Metriken und Algorithmen Ähnlichkeiten zu bestimmen. 
+Das technische Gerüst ist nun komplett. Kompetenzen können per GET Request an die API, und unter Angabe ihrer IRIs abgefragt werden. Jedoch sind die Anforderungen an das Empfehlungssystem mittels Metriken und Algorithmen Ähnlichkeiten zu bestimmen. 
+
+\subsubsection{Shortest Path}
+
+Neo4j bringt eine Implementierung von kürzesten Pfaden direkt von Haus aus mit. Dafür müssen in der \textit{MATCH} Klausel nur ein spezifischer Anfangsknoten \textit{s} und ein Endknoten \textit{t} abgefragt werden und diese beiden in der \textit{shortestPath} Funktion als Parameter übergeben. Wahlweise kann der Pfad oder die Länge des Pfades zurückgegeben werden.
+
+Als grobe Metrik kann die shortestPath Funktion dazu verwendet werden um heraus zu finden wie weit eine Kompetenz von einer anderen entfernt ist. Je näher, desto ähnlicher. 
+
+\subsubsection{Jaccard Index}
 
 Zunächst soll geprüft werden ob es Knoten Typen und Beziehungen im Graphen gibt mit denen sich eine Schnittmenge für zwei Kompetenzen berechnen lässt. Dabei soll eine Kompetenz von außen über die API als Eingabe erfolgen und solche Kompetenzen die eine Schnittmenge mit der gegebenen haben in geordneter Reihenfolge zurückgegeben werden. Diese Metrik lässt sich mit einer Cypher Abfrage direkt implementieren ohne weiteren Code ausführen zu müssen. Dazu wird zunächst die Abfrage formuliert. 
 
@@ -193,4 +206,8 @@ AS jaccard ORDER BY jaccard DESC LIMIT 10
 
 
 Der Quotient aus dem Betrag der Schnittmenge, und dem Betrag der Vereinigungsmenge ergibt dann den Jaccard Index und wird gemeinsam mit den Namens Attributen für die die Kompetenzen $c_{input}$ und $c_{gesucht}$  in, in sortierter Reihenfolge in der \textbf{RETURN} Klausel in das Ergebnis geschrieben.
+
+
+\subsubsection{Levensthein oder Edit-Distanz}
+
 

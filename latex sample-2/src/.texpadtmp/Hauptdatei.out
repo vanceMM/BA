@@ -1,65 +1,64 @@
-\BOOKMARK [1][-]{section*.4}{Abbildungsverzeichnis}{}% 1
-\BOOKMARK [1][-]{section*.5}{Tabellenverzeichnis}{}% 2
-\BOOKMARK [1][-]{section*.6}{Listingverzeichnis}{}% 3
-\BOOKMARK [1][-]{section*.7}{Abk\374rzungsverzeichnis}{}% 4
+\BOOKMARK [1][-]{Doc-Start}{Abbildungsverzeichnis}{}% 1
+\BOOKMARK [1][-]{Doc-Start}{Tabellenverzeichnis}{}% 2
+\BOOKMARK [1][-]{Doc-Start}{Listingverzeichnis}{}% 3
+\BOOKMARK [1][-]{Doc-Start}{Abk\374rzungsverzeichnis}{}% 4
 \BOOKMARK [1][-]{section.1}{1 Einleitung}{}% 5
-\BOOKMARK [1][-]{section.2}{2 Grundlagen und Begrifflichkeiten}{}% 6
-\BOOKMARK [2][-]{subsection.2.1}{2.1 Kompetenzen}{section.2}% 7
-\BOOKMARK [2][-]{subsection.2.2}{2.2 Kompetenzframeworks}{section.2}% 8
-\BOOKMARK [2][-]{subsection.2.3}{2.3 RDF, Semantic Web Linked Data}{section.2}% 9
-\BOOKMARK [3][-]{subsubsection.2.3.1}{2.3.1 Semantic Web}{subsection.2.3}% 10
-\BOOKMARK [3][-]{subsubsection.2.3.2}{2.3.2 Linked Data}{subsection.2.3}% 11
-\BOOKMARK [3][-]{subsubsection.2.3.3}{2.3.3 RDF}{subsection.2.3}% 12
-\BOOKMARK [3][-]{subsubsection.2.3.4}{2.3.4 Ontologie}{subsection.2.3}% 13
-\BOOKMARK [2][-]{subsection.2.4}{2.4 Graphen}{section.2}% 14
-\BOOKMARK [3][-]{subsubsection.2.4.1}{2.4.1 Graphentheorie}{subsection.2.4}% 15
-\BOOKMARK [3][-]{subsubsection.2.4.2}{2.4.2 Graphendatenbanken}{subsection.2.4}% 16
-\BOOKMARK [3][-]{subsubsection.2.4.3}{2.4.3 Neo4J}{subsection.2.4}% 17
-\BOOKMARK [2][-]{subsection.2.5}{2.5 Empfehlungssysteme}{section.2}% 18
-\BOOKMARK [1][-]{section.3}{3 Verwandte Themen und Arbeiten}{}% 19
-\BOOKMARK [2][-]{subsection.3.1}{3.1 Openbadge}{section.3}% 20
-\BOOKMARK [2][-]{subsection.3.2}{3.2 Europ\344ischer Qualifikationsrahmen}{section.3}% 21
-\BOOKMARK [2][-]{subsection.3.3}{3.3 European e-Competence Framework}{section.3}% 22
-\BOOKMARK [2][-]{subsection.3.4}{3.4 InLoc}{section.3}% 23
-\BOOKMARK [2][-]{subsection.3.5}{3.5 ESCO}{section.3}% 24
-\BOOKMARK [3][-]{subsubsection.3.5.1}{3.5.1 EURES}{subsection.3.5}% 25
-\BOOKMARK [3][-]{subsubsection.3.5.2}{3.5.2 GraphGist: Recommendation System Sandbox}{subsection.3.5}% 26
-\BOOKMARK [2][-]{subsection.3.6}{3.6 RDF Import Neo4J}{section.3}% 27
-\BOOKMARK [2][-]{subsection.3.7}{3.7 Recommender Systeme}{section.3}% 28
-\BOOKMARK [3][-]{subsubsection.3.7.1}{3.7.1 GraphGist Recommendation Engine Neo4j}{subsection.3.7}% 29
-\BOOKMARK [3][-]{subsubsection.3.7.2}{3.7.2 RecSys Challenge}{subsection.3.7}% 30
-\BOOKMARK [3][-]{subsubsection.3.7.3}{3.7.3 Job-Matching: Xing}{subsection.3.7}% 31
-\BOOKMARK [1][-]{section.4}{4 Analyse und Aufgabenstellung}{}% 32
-\BOOKMARK [2][-]{subsection.4.1}{4.1 Aufgabenstellung}{section.4}% 33
-\BOOKMARK [2][-]{subsection.4.2}{4.2 Anforderungsanalyse}{section.4}% 34
-\BOOKMARK [3][-]{subsubsection.4.2.1}{4.2.1 Kompetenzen}{subsection.4.2}% 35
-\BOOKMARK [3][-]{subsubsection.4.2.2}{4.2.2 Anforderungen an die Engine}{subsection.4.2}% 36
-\BOOKMARK [3][-]{subsubsection.4.2.3}{4.2.3 Anforderungen an die API}{subsection.4.2}% 37
-\BOOKMARK [3][-]{subsubsection.4.2.4}{4.2.4 Anforderungen an die Architektur}{subsection.4.2}% 38
-\BOOKMARK [2][-]{subsection.4.3}{4.3 Algorithmen und Metriken}{section.4}% 39
-\BOOKMARK [1][-]{section.5}{5 Entwurf}{}% 40
-\BOOKMARK [2][-]{subsection.5.1}{5.1 Format/Kompotenzmodell}{section.5}% 41
-\BOOKMARK [3][-]{subsubsection.5.1.1}{5.1.1 ESCO als RDF}{subsection.5.1}% 42
-\BOOKMARK [3][-]{subsubsection.5.1.2}{5.1.2 inLOC}{subsection.5.1}% 43
-\BOOKMARK [3][-]{subsubsection.5.1.3}{5.1.3 Fazit: Auswahl eines Models}{subsection.5.1}% 44
-\BOOKMARK [3][-]{subsubsection.5.1.4}{5.1.4 Datenbank}{subsection.5.1}% 45
-\BOOKMARK [3][-]{subsubsection.5.1.5}{5.1.5 API}{subsection.5.1}% 46
+\BOOKMARK [2][-]{subsection.1.1}{1.1 Inhalte dieser Arbeit}{section.1}% 6
+\BOOKMARK [1][-]{section.2}{2 Grundlagen und Begrifflichkeiten}{}% 7
+\BOOKMARK [2][-]{subsection.2.1}{2.1 Kompetenzen}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.2}{2.2 Kompetenzframeworks}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.3}{2.3 RDF, Semantic Web Linked Data}{section.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.3.1}{2.3.1 Semantic Web}{subsection.2.3}% 11
+\BOOKMARK [3][-]{subsubsection.2.3.2}{2.3.2 Linked Data}{subsection.2.3}% 12
+\BOOKMARK [3][-]{subsubsection.2.3.3}{2.3.3 RDF}{subsection.2.3}% 13
+\BOOKMARK [3][-]{subsubsection.2.3.4}{2.3.4 Ontologie/Vokabular}{subsection.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.4}{2.4 Graphen}{section.2}% 15
+\BOOKMARK [3][-]{subsubsection.2.4.1}{2.4.1 Graphentheorie}{subsection.2.4}% 16
+\BOOKMARK [3][-]{subsubsection.2.4.2}{2.4.2 Graphendatenbanken}{subsection.2.4}% 17
+\BOOKMARK [3][-]{subsubsection.2.4.3}{2.4.3 Neo4J}{subsection.2.4}% 18
+\BOOKMARK [2][-]{subsection.2.5}{2.5 Empfehlungssysteme}{section.2}% 19
+\BOOKMARK [1][-]{section.3}{3 Verwandte Themen und Arbeiten}{}% 20
+\BOOKMARK [2][-]{subsection.3.1}{3.1 Openbadge}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.2}{3.2 Europ\344ischer Qualifikationsrahmen}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.3}{3.3 European e-Competence Framework}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.4}{3.4 InLoc}{section.3}% 24
+\BOOKMARK [2][-]{subsection.3.5}{3.5 ESCO}{section.3}% 25
+\BOOKMARK [3][-]{subsubsection.3.5.1}{3.5.1 EURES}{subsection.3.5}% 26
+\BOOKMARK [3][-]{subsubsection.3.5.2}{3.5.2 GraphGist: Recommendation System Sandbox}{subsection.3.5}% 27
+\BOOKMARK [2][-]{subsection.3.6}{3.6 RDF Import Neo4J}{section.3}% 28
+\BOOKMARK [2][-]{subsection.3.7}{3.7 Recommender Systeme}{section.3}% 29
+\BOOKMARK [3][-]{subsubsection.3.7.1}{3.7.1 GraphGist Recommendation Engine Neo4j}{subsection.3.7}% 30
+\BOOKMARK [3][-]{subsubsection.3.7.2}{3.7.2 RecSys Challenge}{subsection.3.7}% 31
+\BOOKMARK [3][-]{subsubsection.3.7.3}{3.7.3 Job-Matching: Xing}{subsection.3.7}% 32
+\BOOKMARK [1][-]{section.4}{4 Analyse und Aufgabenstellung}{}% 33
+\BOOKMARK [2][-]{subsection.4.1}{4.1 Aufgabenstellung}{section.4}% 34
+\BOOKMARK [2][-]{subsection.4.2}{4.2 Anforderungsanalyse}{section.4}% 35
+\BOOKMARK [3][-]{subsubsection.4.2.1}{4.2.1 Kompetenzen}{subsection.4.2}% 36
+\BOOKMARK [3][-]{subsubsection.4.2.2}{4.2.2 Anforderungen an die Engine}{subsection.4.2}% 37
+\BOOKMARK [3][-]{subsubsection.4.2.3}{4.2.3 Anforderungen an die API}{subsection.4.2}% 38
+\BOOKMARK [3][-]{subsubsection.4.2.4}{4.2.4 Anforderungen an die Architektur}{subsection.4.2}% 39
+\BOOKMARK [2][-]{subsection.4.3}{4.3 Algorithmen und Metriken}{section.4}% 40
+\BOOKMARK [1][-]{section.5}{5 Entwurf}{}% 41
+\BOOKMARK [2][-]{subsection.5.1}{5.1 Format/Kompotenzmodell}{section.5}% 42
+\BOOKMARK [3][-]{subsubsection.5.1.1}{5.1.1 ESCO als RDF}{subsection.5.1}% 43
+\BOOKMARK [3][-]{subsubsection.5.1.2}{5.1.2 inLOC}{subsection.5.1}% 44
+\BOOKMARK [3][-]{subsubsection.5.1.3}{5.1.3 Fazit: Auswahl eines Models}{subsection.5.1}% 45
+\BOOKMARK [3][-]{subsubsection.5.1.4}{5.1.4 Datenbank}{subsection.5.1}% 46
 \BOOKMARK [2][-]{subsection.5.2}{5.2 Datenmodell}{section.5}% 47
-\BOOKMARK [2][-]{subsection.5.3}{5.3 Anfragen Formulieren}{section.5}% 48
-\BOOKMARK [1][-]{section.6}{6 Implementierung}{}% 49
-\BOOKMARK [2][-]{subsection.6.1}{6.1 Beschreibung des Stacks}{section.6}% 50
-\BOOKMARK [2][-]{subsection.6.2}{6.2 EC2}{section.6}% 51
-\BOOKMARK [2][-]{subsection.6.3}{6.3 Neo4j}{section.6}% 52
-\BOOKMARK [3][-]{subsubsection.6.3.1}{6.3.1 RDF Import}{subsection.6.3}% 53
-\BOOKMARK [2][-]{subsection.6.4}{6.4 API Gateway}{section.6}% 54
-\BOOKMARK [2][-]{subsection.6.5}{6.5 Serverless}{section.6}% 55
-\BOOKMARK [3][-]{subsubsection.6.5.1}{6.5.1 AWS Lambda}{subsection.6.5}% 56
-\BOOKMARK [3][-]{subsubsection.6.5.2}{6.5.2 Serverless Framework}{subsection.6.5}% 57
-\BOOKMARK [2][-]{subsection.6.6}{6.6 Architektur im \334berblick}{section.6}% 58
-\BOOKMARK [2][-]{subsection.6.7}{6.7 Deployment mit dem Serverless Framework}{section.6}% 59
-\BOOKMARK [2][-]{subsection.6.8}{6.8 Algorithmen und Metriken}{section.6}% 60
-\BOOKMARK [1][-]{section.7}{7 Ausblick}{}% 61
-\BOOKMARK [1][-]{section.8}{8 Fazit}{}% 62
-\BOOKMARK [1][-]{section.8}{Literaturverzeichnis}{}% 63
-\BOOKMARK [1][-]{section*.15}{Anhang}{}% 64
-\BOOKMARK [1][-]{section*.16}{Eidesstattliche Erkl\344rung}{}% 65
+\BOOKMARK [3][-]{subsubsection.5.2.1}{5.2.1 API}{subsection.5.2}% 48
+\BOOKMARK [2][-]{subsection.5.3}{5.3 Anfragen Formulieren}{section.5}% 49
+\BOOKMARK [1][-]{section.6}{6 Implementierung}{}% 50
+\BOOKMARK [2][-]{subsection.6.1}{6.1 Architektur}{section.6}% 51
+\BOOKMARK [2][-]{subsection.6.2}{6.2 EC2 }{section.6}% 52
+\BOOKMARK [2][-]{subsection.6.3}{6.3 Neo4j}{section.6}% 53
+\BOOKMARK [3][-]{subsubsection.6.3.1}{6.3.1 RDF Import}{subsection.6.3}% 54
+\BOOKMARK [2][-]{subsection.6.4}{6.4 API Gateway}{section.6}% 55
+\BOOKMARK [2][-]{subsection.6.5}{6.5 Serverless}{section.6}% 56
+\BOOKMARK [3][-]{subsubsection.6.5.1}{6.5.1 AWS Lambda}{subsection.6.5}% 57
+\BOOKMARK [3][-]{subsubsection.6.5.2}{6.5.2 Serverless Framework}{subsection.6.5}% 58
+\BOOKMARK [2][-]{subsection.6.6}{6.6 Architektur im \334berblick}{section.6}% 59
+\BOOKMARK [2][-]{subsection.6.7}{6.7 Deployment mit dem Serverless Framework}{section.6}% 60
+\BOOKMARK [2][-]{subsection.6.8}{6.8 Algorithmen und Metriken}{section.6}% 61
+\BOOKMARK [3][-]{subsubsection.6.8.1}{6.8.1 Shortest Path}{subsection.6.8}% 62
+\BOOKMARK [3][-]{subsubsection.6.8.2}{6.8.2 Jaccard Index}{subsection.6.8}% 63
+\BOOKMARK [3][-]{subsubsection.6.8.3}{6.8.3 Levensthein oder Edit-Distanz}{subsection.6.8}% 64

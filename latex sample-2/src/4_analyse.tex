@@ -58,12 +58,21 @@ Der Dienst soll als nach dem Microservice Muster implementiert werden, also bei 
 	\item Skalierbarkeit: soll viele Anfragen gleichzeitig bearbeiten können
 \end{itemize}
 
+\begin{figure}[htb]
+ \centering
+ \includegraphics[width=0.7\textwidth,angle=0]{abb/Entwurf}
+ \caption[Beschreibung]{Entwurf}
+\label{fig:Entwurf}
+\end{figure}
+
+
 
 \subsection{Algorithmen und Metriken}
 
 Das Kernproblem des Empfehlungsdienstes ist die Berechnung von Ähnlichkeiten von Knoten in einem Graphen. Es gibt bereits einige Algorithmen und Metriken die sich mit dieser Problematik auseinander setzen. Welche Metriken und Algorithmen angewandt werden können hängt aber auch vom Anwendungsfall ab. Einige Methoden zur Berechnung von Ähnlichkeiten sollen im folgenden aufgelistet, und später bei der Implementierung evaluiert werden. Ein grundsätzlicher Ansatz kann lautet,\textit{ je näher zwei Knoten im Graphen einander sind, desto ähnlicher sind sie sich}. Der folgende Graph soll dies veranschaulichen. 
 
-Der \textbf{Dijkstra-Algorithmus} löst das Problem der kürzesten Pfade.
+Das Problem des \textit{kürzesten Pfades} ist ein häufig behandeltes Problem in der Graphentheorie. Ein kürzester Pfad von einem Knoten $s$ zu $t$ in einem Graphen $G$ ist definiert durch eine Funktion $c$: $R \rightarrow \mathbb{R}$
+\vspace{1em}
 
 Es gibt aber auch mehr Eigenschaften des Graphen die sich ein Algorithmus zu nutzen machen kann. So können mit Hilfe von gewichteten Kanten Vektoren entlang der Pfade von einem Knoten zu einem anderen erstellt werden. Die \textit{Kosinus-Ähnlichkeit} ist eine Metrik die den eingeschlossenen Winkel zwischen zwei solcher Vektoren ermittelt.
 \vspace{1em}

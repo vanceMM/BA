@@ -2,21 +2,24 @@
 
 Was wurde erreicht?
 
-Das Ergebnis dieser Arbeit ist ein Prototyp für einen Empfehlungsdienst, der über eine Web API erreichbar und an den eine Graphendatenbank angebunden ist. Kompetenzen die von anderen Organisationen als \textit{Linked Data} veröffentlich werden, können in die Datenbank importiert werden. Die zunächst in der Analyse gestellten Anforderungen an die Engine konnten nur in geringem Maß erfüllt werden. Zunächst gab es bereits bei der Findung eines geeigneten Models für die Kompetenzen große Schwierigkeiten. Die größte Hürde bei dieser Arbeit bestand darin ein geeignetes Model für die Kompetenzen zu finden, da bei der Recherche viel Zeit in die Entwicklung von Empfehlungsdiensten floss, die sich aber meistens in den Domänen E-Commerce, Filme oder Musik bewegten und häufig Metriken und Algorithmen zur Implementierung des kollaborativen Ansatzes vorgeschlagen wurden. 
-Die 
+Das Ergebnis dieser Arbeit ist ein Prototyp für einen Empfehlungsdienst, der über eine Web API erreichbar und an den eine Graphendatenbank angebunden ist. Kompetenzen die von anderen Organisationen als \textit{Linked Data} veröffentlich werden, können in die Datenbank importiert werden. Momentan bietet lediglich die EU Kommission mit ESCO eine Ontologie mit Kompetenzen in einem Maschinenlesbaren Format zum Download an. 
 
-Wie kann dieser Dienst genutzt werden? 
-Jobportale implementieren bereits einige Matching und Ähnlichkeitsalgorithmen um Nutzer bei der Jobsuche oder der Personalentwicklung zu unterstützen, dabei wird jedoch unter anderem der Kollaborative Ansatz verfolgt, also hauptsächlich das Verhalten und die Angaben der Nutzer miteinander vergleichen. Kompetenzen können über eine ...
+Eine wichtige Erkenntnis ist genau dieses Veröffentlichunsformat. Da Kompetenzen oder Kompetenzen aus Sektorspezifischen Frameworks, sich gut in Ontologien darstellen lassen, können Metriken und Algorithmen die sich mit Ontologien befassen untersucht werden, und geprüft werden ob sich diese auch auf Kompetenzontologien anwenden lassen.
 
-Das verwendete Datenmodel jedoch, basiert auf der Ontologie des ESCO Katalogs, welcher als Linked Data veröffentlicht wird. Der Focus von ESCO liegt auf der Interoperabilität am europäischen Arbeitsmarkt und an der Übersetzung von nationalen Standards. Bis Ende 2017 soll der Katalog stetig weiter entwickelt und aktualisiert werden. Mitgliederstaaten sollen auch dabei unterstütz werden ihre nationalen Standards in maschinenlesbaren Formaten zur Verfügung zu stellen.
+Mit der Neo4j Datenbank wurde ein wichtiges Werkzeug gewählt welche nicht nur die Aufgabe des Datenspeichers übernimmt, sondern auch einige relevanten Graphen Operationen implementiert. Mit der mächtigen Abfragensprache \textit{Cypher} können neben kürzesten Pfaden auch Adjazenzmatrizen gebildet werden und Beziehungen können genau wie Knoten mit Attributen versehen werden, was die Gewichtung von Kanten ermöglicht.
+
+\textbf{Wie kann dieser Dienst genutzt werden? }
+
+Karriereportale können mit Hilfe des Empfehlungsystems ihre Treffergenauigkeit bei vorgeschlagenen Stellenangeboten oder Job-Matching erhöhen. Die Möglichkeiten erstrecken sich im gesamten Personalentwicklungsbereich und Kompetenzmanagement, so wäre auch eine Nutzung des Dienstes durch Systeme denkbar die Karrierepfade zeigen sollen. 
+ 
+Das in dieser Arbeit verwendete Datenmodel basiert auf der Ontologie des ESCO Katalogs, welcher als Linked Data veröffentlicht wird. Der Focus von ESCO liegt auf der Interoperabilität am europäischen Arbeitsmarkt und an der Übersetzung von nationalen Standards. Bis Ende 2017 soll der Katalog stetig weiter entwickelt und aktualisiert werden. Mitgliederstaaten sollen auch dabei unterstütz werden ihre nationalen Standards in maschinenlesbaren Formaten zur Verfügung zu stellen. 
 
 Kritik 
   am ESCO Model. Welche Alternativen und Vorschläge?
   
-  Zum Zeitpunkt der Entscheidung die Daten von ESCO zu verwenden lagen standen diese nur in einer frühen Version 0.8 zur Verfügung. Seit dem 28.07.2017 sind die Daten nun in überarbeiteter Struktur verfügbar und es wurden zb. für die Informations und Technologie Branche relevante Sektor spezifische Kompetenzen hinzugefügt. 
+
 Zukunftsausblick.
 
 Karriereplattformen bieten schon jetzt die Möglichkeit elektronische Lebensläufe oder Profile anzulegen, in welchen Benutzer dann ihre Abschlüsse, Qualifikationen und Fertigkeiten angeben. Diese Lebensläufe und Profile werden dann mit Anforderungen von Jobinseraten verglichen. Für die Repräsentation von eigenen Kompetenzen ist eine Verknüpfung mit anderen Technologien wie zb. dem Mozilla Open Badge Network denkbar. Damit würden erworbene Kompetenzen nicht nur visuell darstellbar, sondern es gäbe auch eine Referenz auf einen Nachweis für die Kompetenz. 
 Openbadges in CVs für Jobportale.
 
-ESCO SKOS Datenmodell sinnvoll? besser eigenes Model entwickeln?
