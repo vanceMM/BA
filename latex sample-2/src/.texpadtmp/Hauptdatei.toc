@@ -20,13 +20,14 @@
 \contentsline {section}{\numberline {3}Verwandte Themen und Arbeiten}{17}{section.3}
 \contentsline {subsection}{\numberline {3.1}Openbadge}{17}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Europ\IeC {\"a}ischer Qualifikationsrahmen}{17}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Deutscher Qualifikationsrahmen}{18}{subsubsection.3.2.1}
 \contentsline {subsection}{\numberline {3.3}European e-Competence Framework}{18}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}InLoc}{18}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}ESCO}{18}{subsection.3.5}
 \contentsline {subsubsection}{\numberline {3.5.1}EURES}{19}{subsubsection.3.5.1}
 \contentsline {subsubsection}{\numberline {3.5.2}GraphGist: Recommendation System Sandbox}{19}{subsubsection.3.5.2}
 \contentsline {subsection}{\numberline {3.6}RDF Import Neo4J}{19}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Recommender Systeme}{19}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.7}Recommender Systeme}{20}{subsection.3.7}
 \contentsline {subsubsection}{\numberline {3.7.1}GraphGist Recommendation Engine Neo4j}{20}{subsubsection.3.7.1}
 \contentsline {subsubsection}{\numberline {3.7.2}RecSys Challenge}{20}{subsubsection.3.7.2}
 \contentsline {subsubsection}{\numberline {3.7.3}Job-Matching: Xing}{20}{subsubsection.3.7.3}
@@ -61,4 +62,11 @@
 \contentsline {subsection}{\numberline {6.8}Algorithmen und Metriken}{34}{subsection.6.8}
 \contentsline {subsubsection}{\numberline {6.8.1}Shortest Path}{35}{subsubsection.6.8.1}
 \contentsline {subsubsection}{\numberline {6.8.2}Jaccard Index}{35}{subsubsection.6.8.2}
-\contentsline {subsubsection}{\numberline {6.8.3}Levensthein oder Edit-Distanz}{36}{subsubsection.6.8.3}
+\contentsline {subsubsection}{\numberline {6.8.3}Simrank}{36}{subsubsection.6.8.3}
+\contentsline {subsubsection}{\numberline {6.8.4}Levensthein oder Edit-Distanz}{37}{subsubsection.6.8.4}
+\contentsline {section}{\numberline {7}Bewertung}{38}{section.7}
+\contentsline {section}{\numberline {8}Ausblick}{40}{section.8}
+\contentsline {section}{\numberline {9}Fazit}{41}{section.9}
+\contentsline {section}{Literaturverzeichnis}{44}{lstnumber.6.33}
+\contentsline {section}{Anhang}{46}{lstnumber.6.33}
+\contentsline {subsubsection}{\numberline {9.0.1}API Endpunkte}{46}{subsubsection.9.0.1}

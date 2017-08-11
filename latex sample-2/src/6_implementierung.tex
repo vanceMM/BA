@@ -207,7 +207,12 @@ AS jaccard ORDER BY jaccard DESC LIMIT 10
 
 Der Quotient aus dem Betrag der Schnittmenge, und dem Betrag der Vereinigungsmenge ergibt dann den Jaccard Index und wird gemeinsam mit den Namens Attributen für die die Kompetenzen $c_{input}$ und $c_{gesucht}$  in, in sortierter Reihenfolge in der \textbf{RETURN} Klausel in das Ergebnis geschrieben.
 
+\subsubsection{Simrank}
+
+In der Arbeit \textit{SimRank: A Measure of Structural-Context Similarity} wird gemäß dem Ansatz \textit{Zwei Objekte sind ähnlich, wenn sie mit ähnlichen Objekten verknüpft sind} ein Algorithmus vorgestellt, welche Die Ähnlichkeit von Objekten berechnet die in einem strukturellen Zusammenhang stehen. Für einen Knoten $v$ in eimem gerichteten Graphen mit $G = (V,E) $ wird eine Liste $I(v)$ mit Knoten die eine eingehende Beziehung haben, und eine Liste $O(v)$ mit ausgehenden Beziehungen erstellt. Ausgehend von der Annahme, dass ein Objekt eine maximale Ähnlichkeit von 1 zu sich selbst hat, soll nun die Ähnlichkeit von jedem Objekt über die Beziehungen zum nächsten propagiert werden, 	
 
 \subsubsection{Levensthein oder Edit-Distanz}
+
+Die Edit-Distanz oder auch 
 
 
