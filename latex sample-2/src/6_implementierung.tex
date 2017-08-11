@@ -4,22 +4,35 @@
  In diesem Kapitel sollen die einzelnen Implementierungsschritte für den Empfehlungsdienst erläutert werden. Alle Komponenten können in der \textit{Amazon Webservices Cloud} implementiert werden. Dabei sollen nur die eingesetzten Dienste beschrieben werden, jedoch auf grundlegende Einstellungen wie die Benutzer Rollen und Berechtigungen in der AWS Konsole über welche sich sämtliche Dienste steuern und konfigurieren lassen, nicht weiter eingegangen werden. Im einzelnen kommen folgende Dienste zum Einsatz:
 
 \subsection{Architektur}
-
-EC2:
+\paragraph{EC2:}
+\vspace{1em}
 
 Mit Elastic Compute Cloud können virtuelle Rechner Umgebungen erstellt werden auf welchen skalierbare Applikationen entwickelt werden können. Rechen und Speicherkapazitäten können den persönlichen Bedürfnissen angepasst werden. 
+\vspace{1em}
 
-AWS API Gateway:
+\paragraph{AWS API Gateway:}
+\vspace{1em}
 
 Mit API Gateway können Anwendungen über das Internet auf die Cloud Dienste von Amazon zugreifen. Dazu werden HTTP-Endpunkte erstellt.
+\vspace{1em}
 
-AWS Lambda
+\paragraph{AWS Lambda}
+\vspace{1em}
 
 Code in Lambda Funktionen wird nur ausfgeführt wenn ensprechende Events die Lambda Funktion auslösen.
 
-  \subsection{EC2 }
+\subsection{EC2 }
 Für die Datenhaltung wird das Open Source Graphendatenbank Manangement System Neo4j verwendet. Dieses stellt jedoch eingie Vorraussetzungen an die Umgebung\cite{neo4jsysreq}. Da Neo4j eine Java VM muss zb. für Ubuntu das OpenJDK 8 installiert sein.
 Die Neo4j Instanz wird auf einer Ubuntu Umgebung installiert. Dafür müssen jedoch erst einige Abhängkeiten und Pakete installiert werden. Um den Aufwand gering zuhalten, wird eine Amazon Web Serivices EC2 Instanz hochgefahren mit einem speziellen Cloudformation Template, welches alle System Vorraussetzungen erfüllt. Cloudformation erleichtert das Erstellen von Umgebungen mit wichtigen Laufzeitparametern. Das folgende Schaubild veranschaulicht alle wichtigen Parameter:
+
+\begin{figure}[htb]
+ \centering
+ \includegraphics[width=0.7\textwidth,angle=0]{abb/ec2_cloudformation}
+ \caption[Beschreibung]{EC2 Cloudformation Design Template}
+\label{fig:EC2 Cloudformation Template}
+\end{figure}
+
+\pagebreak
 
 \subsection{Neo4j}
 
@@ -48,24 +61,16 @@ Das API Gateway wird hier als Proxy verwendet, mit dessen Hilfe HTTP Requests an
 
 \subsection{Serverless}
 
-Mit den Amazon Web Diensten können serverlose Anwendungen geschrieben werden, die es dem Entwickler ermöglichen sich auf den Kern der Applikation, den Quellcode zu konzentrieren ohne sich Gedanken über Ressourcen und Kapazitäten zu machen. Bereits in der Entwurfsphase konnte fest gestellt werden, dass die Komplexität der Anwendung im weniger Programmieraufwand, sondern im finden und implementieren von Algorithmen liegt. Dennoch ist das Bereitstellen von einigen Ressourcen wie einer Laufzeitumgebung und einer API notwendig um anderen Anwendungen über das Internet das Ausführen des Codes mit Parametern zu ermöglichen. Dabei spielt es keine Rolle wieviele Anwendungen auf gleichzeitig auf die API zugreifen, die Rechenkapazität werden automatisch angepasst. Draus ergibt sich ein weiterer Vorteil für Entwickler und Betreiber. Code der nicht ausgeführt wird verbraucht keine Ressourcen, und wird von Ressourcen Dienstleister auch nicht in Rechnung gestellt. 
+Mit den Amazon Web Diensten können serverlose Anwendungen geschrieben werden, die es dem Entwickler ermöglichen sich auf den Kern der Applikation, den Quellcode zu konzentrieren ohne sich Gedanken über Ressourcen und Kapazitäten zu machen. Bereits in der Entwurfsphase konnte fest gestellt werden, dass die Komplexität der Anwendung weniger im Programmieraufwand, sondern mehr im finden und implementieren von Algorithmen liegt. Dennoch ist das Bereitstellen von einigen Ressourcen wie einer Laufzeitumgebung und einer API notwendig, um anderen Anwendungen über das Internet das Ausführen des Codes mit Parametern zu ermöglichen. Dabei spielt es keine Rolle wieviele Anwendungen gleichzeitig auf die API zugreifen, die Rechenkapazität werden automatisch angepasst. Draus ergibt sich ein weiterer Vorteil für Entwickler und Betreiber. Code, der nicht ausgeführt wird, verbraucht keine Ressourcen, und wird von Ressourcen Dienstleister auch nicht in Rechnung gestellt. 
 Der geringe Overhead, die geringen Betriebskosten und die geringe Komplexität der zu entwickelnden Anwendungen laden daher dazu ein, den serverlosen Ansatz zu wählen. 
-Automatisches Kapazitäts Management
-Only Pay what you use
- 
 
 \subsubsection{AWS Lambda}
 
 Lambda bietet die Möglichkeit Code auszuführen ohne die nötigen Ressourcen managen zu müssen. Lambda ist Ereignis gesteuert, was bedeutet der Code wird als Reaktion auf ein Ereignis ausgeführt. 
 \subsubsection{Serverless Framework}
 Das Serverless Framework ist ein Kommandozeilen Tool, und wurde zur Unterstützung des Entwicklungs und Deployment Prozess von serverlosen Anwendungen entwickelt. 
-Der Quellcode zur Datenverarbeitung in den Lambda Funktionen kann mit diesem Framework nicht nur lokal getestet werden, sondern kann auch direkt mit API Gateway verknüpft werden. Alle wichtigen Parameter wie Umgebungsvariablen zb. Zugangsdaten, URLs und Endpunkte, werden in einer Konfigurationsdatei eingetragen.  Über die Kommandozeile kann die Lambda Funktion aufgerufen werden, sowohl lokal als auch auf dem Stage System. 
-Ein Problem was nun an den Tag tritt ist die lokale Nichtverfügbarkeit von Diensten die nur in der Cloud existieren. Nimmt man zb. Änderungen im Code der Lambda Funktion vor und möchte diese testen, muss der Code zunächst neu deployt werden bevor neue Anfragen an die API gesendet werden können. Dieser Prozess braucht Zeit und verlängert den Entwicklungsprozess. Besser wäre es eine lokale simulierte API zur Verfügung zu haben mit welcher sich die Änderungen im Quell Code der Lambda Funktion direkt testen lassen. Dieses Feature wird über Plugins des \textit{Serverless Frameworks} zur Verfügung gestellt.
-
-API implementieren
-Was ist Api Gateway?
-Welche Vorteile bietet API Gateway
-
+Der Quellcode zur Datenverarbeitung in den Lambda Funktionen kann mit diesem Framework nicht nur lokal getestet werden, sondern kann auch direkt mit einem API Gateway verknüpft werden. Alle wichtigen Parameter wie Umgebungsvariablen zb. Zugangsdaten, URLs und Endpunkte, werden in einer Konfigurationsdatei eingetragen. Über die Kommandozeile kann die Lambda Funktion aufgerufen werden, sowohl lokal als auch auf dem Stage System. 
+Ein Problem, was nun an den Tag tritt, ist die lokale Nichtverfügbarkeit von Diensten die nur in der Cloud existieren. Nimmt man zb. Änderungen im Code der Lambda Funktion vor und möchte diese testen, muss der Code zunächst neu deployt werden bevor neue Anfragen an die API gesendet werden können. Dieser Prozess braucht Zeit und verlängert den Entwicklungsprozess. Besser wäre es eine lokale simulierte API zur Verfügung zu haben, mit welcher sich die Änderungen im Quell Code der Lambda Funktion direkt testen lassen. Dieses Feature wird über Plugins des \textit{Serverless Frameworks} zur Verfügung gestellt.
 
 \subsection{Architektur im Überblick}
 
@@ -77,11 +82,12 @@ Welche Vorteile bietet API Gateway
 \end{figure}
 
 Nachdem nun alle Komponenten eingerichtet sind erfolgt das Implementieren der Algorithmen und Datenbankabfragen. Als Laufzeitumgebung für die Lambda Funktionen wird Node.js in der Version 6.10 gewählt. Für die Anbindung an die Neo4j wird die \textit{neo4j-driver} Bibliothek geladen. Damit lässt sich zunächst für den gesamten Scope der Lambda Funktion der Datenbanktreiber der \textit{neo4j} Klasse instanzieren. 
-Wird nun beim ausführen des Codes durch Lambda wird die \textit{Handler} Funktion aufgerufen, kann für den jeweiligen Handler eine neue Session geöffnet werden und ein String für die Datenbankabfrage, inklusive Parameter geformt werden. Ist die Abfrage beendet wird die Callback Funktion aufgerufen und ein Response Objekt erstellt, welches das Ergebnis der Datenbankabfrage im JSON String Format enthält.
+Wird nun beim ausführen des Codes durch Lambda die \textit{Handler} Funktion aufgerufen, kann für den jeweiligen Handler eine neue Session geöffnet werden und ein String für die Datenbankabfrage, inklusive Parameter geformt werden. Ist die Abfrage beendet wird die Callback Funktion aufgerufen und ein Response Objekt erstellt, welches das Ergebnis der Datenbankabfrage im JSON String Format enthält.
 
-Die Im Entwurf beschriebene Kern Komponente für Die Datenbankanbindung, die Ein uns Ausgabe von Daten und die Implementierung von Algorithmen, soll nun Lambda Funktionen in einer Node.js Laufzeitumgebung implementiert werden. Als erstes wird eine Instanz des Datenbanktreibers erzeugt welche von mehreren Handlern benutzt werden kann. Für jede Anforderung der Engine, soll ein eigener Handler implementiert werde, der genau dann ausgeführt wird wenn ein HTTP Request auf dem zu dem Handler gehörenden Pfad aufgerufen wird. Parameter aus dem Query String, oder Daten die mittels POST übermittelt werden können aus dem \textit{event} Objekt gelesen werden. 
+Die Im Entwurf beschriebene Kern Komponente für die Datenbankanbindung, die Ein- uns Ausgabe von Daten und die Implementierung von Algorithmen, soll nun Lambda Funktionen in einer Node.js Laufzeitumgebung implementiert werden. Als erstes wird eine Instanz des Datenbanktreibers erzeugt welche von mehreren Handlern benutzt werden kann. Für jede Anforderung der Engine, soll ein eigener Handler implementiert werde, der genau dann ausgeführt wird wenn ein HTTP Request auf dem zu dem Handler gehörenden Pfad aufgerufen wird. Parameter aus dem Query String, oder Daten die mittels POST übermittelt werden können aus dem \textit{event} Objekt gelesen werden. 
+\newline
 
-Innerhalb des Handlers wird ein \textit{session} Objekt erzeugt, welches Die Verbindung zur Datenbank herstellt und über diese auch die Abfragen an die Datenbank erfolgen. Dazu wird die \textit{run} Methode auf dem Objekt aufgerufen und der Querystring und Queryparameter übergeben. Es wird ein Promises erzeugt, auf welchem eine Callbackfunktion aufgerufen wird sobald die Abfrage alle Ergebnisse geliefert hat. Aus dem Resultset kann ein Objekt erzeugt werden welches mit der \textit{callback} Funktion des Lambda Handlers an den Aufrufer, in diesem Fall die API zurück gegeben wird.
+Innerhalb des Handlers wird ein \textit{session} Objekt erzeugt, welches die Verbindung zur Datenbank herstellt und über diese auch die Abfragen an die Datenbank erfolgen. Dazu wird die \textit{run} Methode auf dem Objekt aufgerufen und der Querystring und Queryparameter übergeben. Es wird ein Promises erzeugt, auf welchem eine Callbackfunktion aufgerufen wird sobald die Abfrage alle Ergebnisse geliefert hat. Aus dem Resultset kann ein Objekt erzeugt werden welches mit der \textit{callback} Funktion des Lambda Handlers an den Aufrufer, in diesem Fall die API zurück gegeben wird.
 
 Mit dem folgenden Handler wird ein Node \textit{n} über ein eindeutiges Attribut wie einer Id oder eines IRI in der Datenbank abgefragt und an die API zurückgeliefert.
 
@@ -142,17 +148,20 @@ Das technische Gerüst ist nun komplett. Kompetenzen können per GET Request an 
 
 \subsubsection{Shortest Path}
 
-Neo4j bringt eine Implementierung von kürzesten Pfaden direkt von Haus aus mit. Dafür müssen in der \textit{MATCH} Klausel nur ein spezifischer Anfangsknoten \textit{s} und ein Endknoten \textit{t} abgefragt werden und diese beiden in der \textit{shortestPath} Funktion als Parameter übergeben. Wahlweise kann der Pfad oder die Länge des Pfades zurückgegeben werden.
+Neo4j bringt eine Implementierung von kürzesten Pfaden direkt von Haus aus mit. Dafür müssen in der \textit{MATCH} Klausel nur ein spezifischer Anfangsknoten \textit{s} und ein Endknoten \textit{t} abgefragt werden und diese beiden in der \textit{shortestPath} Funktion als Parameter übergeben. Wahlweise kann der Pfad, oder die Länge des Pfades zurückgegeben werden.
+\newline
 
 Als grobe Metrik kann die shortestPath Funktion dazu verwendet werden um heraus zu finden wie weit eine Kompetenz von einer anderen entfernt ist. Je näher, desto ähnlicher. 
 
 \subsubsection{Jaccard Index}
 
-Zunächst soll geprüft werden ob es Knoten Typen und Beziehungen im Graphen gibt mit denen sich eine Schnittmenge für zwei Kompetenzen berechnen lässt. Dabei soll eine Kompetenz von außen über die API als Eingabe erfolgen und solche Kompetenzen die eine Schnittmenge mit der gegebenen haben in geordneter Reihenfolge zurückgegeben werden. Diese Metrik lässt sich mit einer Cypher Abfrage direkt implementieren ohne weiteren Code ausführen zu müssen. Dazu wird zunächst die Abfrage formuliert. 
+Zunächst soll geprüft werden, ob es Knoten Typen und Beziehungen im Graphen gibt mit denen sich eine Schnittmenge für zwei Kompetenzen berechnen lässt. Dabei soll eine Kompetenz von außen über die API als Eingabe erfolgen und solche Kompetenzen die eine Schnittmenge mit der gegebenen haben in geordneter Reihenfolge zurückgegeben werden. Diese Metrik lässt sich mit einer Cypher Abfrage direkt implementieren ohne weiteren Code ausführen zu müssen. Dazu wird zunächst die Abfrage formuliert. 
 
 \textit{Welche Kompetenzen haben wieviele gemeinsame Beziehungen vom selben Typ zur gegebenen Kompetenz}
+\newline
 
 Als erstes werden mit einer \textbf{MATCH} Klausel alle Knoten $c_{gesucht}$ gesucht, die neben dem gegebenen Knoten $c_{input}$ eine eingehende Beziehung zu einem Knoten $o$ vom Typ \texttt{ns4\_Occupation} haben und die Schnittmenge bilden. 
+\newline
 
 \begin{lstlisting}
 MATCH (c:ns4_Skill {ns5_prefLabel:{queryParam})-[:ns5_related]->(o:ns4_Occupation)<-[:ns5_related]-(other:ns4_Skill)
@@ -161,6 +170,7 @@ MATCH (c:ns4_Skill {ns5_prefLabel:{queryParam})-[:ns5_related]->(o:ns4_Occupatio
 
 
 Die Kompetenz aus dem Input wird mittels Parameter der Query übergeben und das Resultat des Patterns in den Variablen $c$, $o$, $other$  mit der \textbf{WITH} Klausel in den nächsten Query Teil weiter gereicht. Mit der Aggregatsfunktion \textbf{COUNT} wird dann der Betrag der Schnittmenge von Knoten vom Typ \texttt{ns4\_Occupation}, die eine eingehende Beziehung vom Typ \texttt{ns5\_related} von Knoten $c_{input}$ und Knoten $c_{gesucht}$ vom Typ \texttt{ns4\_Skill} haben. 
+\newline
 
 \begin{lstlisting}
 MATCH (c:ns4_Skill {ns5_prefLabel:{queryParam})-[:ns5_related]->(o:ns4_Occupation)<-[:ns5_related]-(other:ns4_Skill)
@@ -185,6 +195,7 @@ WITH c,other,intersection,i, s1, COLLECT(oc.ns5_prefLabel) AS s2
 \end{lstlisting}
 
 um dann mittels Listenfunktion \textbf{FILTER} die Vereinigungsmenge zu berechnen.
+\vspace{1em}
 
 \begin{lstlisting}[language=SPARQL, morekeywords={MATCH, WITH, COLLECT}]
 MATCH (c:ns4_Skill {ns5_prefLabel:{queryParam})-[:ns5_related]->(o:ns4_Occupation)<-[:ns5_related]-(other:ns4_Skill)

@@ -71,7 +71,7 @@
 \usepackage{fancyhdr} %Paket laden
 \pagestyle{fancy} %eigener Seitenstil
 \fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
-\fancyhead[L]{\nouppercase{\leftmark}} %Kopfzeile links
+\fancyhead[L]{\rightmark} %Kopfzeile links
 \fancyhead[C]{} %zentrierte Kopfzeile
 \fancyhead[R]{\thepage} %Kopfzeile rechts
 \renewcommand{\headrulewidth}{0.4pt} %obere Trennlinie
@@ -231,7 +231,7 @@ captionpos=b
 %\input{sperrvermerk}
 
 % Einleitung / Abstract
-\include{abstract}
+%\include{abstract}
 
 % einfacher Zeilenabstand
 \singlespacing
@@ -250,10 +250,10 @@ captionpos=b
 % das Tabellenverzeichnis
 %\newpage
 % Abbildungsverzeichnis soll im Inhaltsverzeichnis auftauchen
-\addcontentsline{toc}{section}{Tabellenverzeichnis}
+%\addcontentsline{toc}{section}{Tabellenverzeichnis}
 % \fancyhead[L]{Abbildungsverzeichnis / Abkürzungsverzeichnis} %Kopfzeile links
 % Abbildungsverzeichnis endgueltig anzeigen
-\listoftables
+%\listoftables
 
 %% WORKAROUND für Listings
 %\makeatletter% --> De-TeX-FAQ
@@ -291,6 +291,7 @@ captionpos=b
 \input{latex_einstellungen/abkuezungen/abkuerzungen}
 \printnomenclature
 
+
 % Definiert Stegbreite bei zweispaltigem Layout
 \setlength{\columnsep}{25pt}
 
@@ -323,7 +324,9 @@ captionpos=b
 
 \input{9_fazit}
 
-\input{beispiel}
+%\input{beispiel}
+
+
 
 \onecolumn
 % einfacher Zeilenabstand

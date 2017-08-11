@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.8)  10 AUG 2017 14:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.8)  11 AUG 2017 19:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1083,18 +1083,12 @@ Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 
 
 Writing nomenclature file Hauptdatei.nlo
-(/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/latex_einstellungen/deckblatt.aux) (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/abstract.aux)
+(/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/latex_einstellungen/deckblatt.aux)
 
 LaTeX Warning: Label `fig:Beschreibung' multiply defined.
 
 
 LaTeX Warning: Label `fig:Entwurf' multiply defined.
-
-
-LaTeX Warning: Label `fig:Beschreibung' multiply defined.
-
-
-LaTeX Warning: Label `lst:result2' multiply defined.
 
 )
 \openout1 = `Hauptdatei.aux'.
@@ -1205,12 +1199,12 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ]
 \openout2 = `latex_einstellungen/deckblatt.aux'.
 
- (./latex_einstellungen/deckblatt.tex <abb/logo1.png, id=296, 1073.611pt x 264.187pt>
+ (./latex_einstellungen/deckblatt.tex <abb/logo1.png, id=289, 1073.611pt x 264.187pt>
 File: abb/logo1.png Graphic file (type png)
  <use abb/logo1.png>
 Package pdftex.def Info: abb/logo1.png used on input line 22.
 (pdftex.def)             Requested size: 264.61333pt x 65.11134pt.
- <abb/logo2.png, id=298, 1073.611pt x 264.187pt>
+ <abb/logo2.png, id=291, 1073.611pt x 264.187pt>
 File: abb/logo2.png Graphic file (type png)
  <use abb/logo2.png>
 Package pdftex.def Info: abb/logo2.png used on input line 24.
@@ -1250,29 +1244,16 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 77.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )) [2
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./abb/logo1.png> <./abb/logo2.png>]
-\openout2 = `abstract.aux'.
-
- (./abstract.tex) [3
-
-
-
-] (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.toc [4
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./abb/logo1.png> <./abb/logo2.png>] (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.toc [3
 
 
 ])
 \tf@toc=\write8
 \openout8 = `Hauptdatei.toc'.
 
- [5] (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.lof)
+ [4] (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.lof)
 \tf@lof=\write9
 \openout9 = `Hauptdatei.lof'.
-
- [6
-
-] (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.lot)
-\tf@lot=\write10
-\openout10 = `Hauptdatei.lot'.
 
 
 
@@ -1288,7 +1269,7 @@ Class scrartcl Warning: \float@listhead detected!
 (scrartcl)              a package that still implements the
 (scrartcl)              deprecated \float@listhead interface  on input line 282.
 
-[7
+[5
 
 ] (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.lol
 Overfull \hbox (45.30263pt too wide) in paragraph at lines 5--5
@@ -1296,196 +1277,277 @@ Overfull \hbox (45.30263pt too wide) in paragraph at lines 5--5
  []
 
 )
-\tf@lol=\write11
-\openout11 = `Hauptdatei.lol'.
+\tf@lol=\write10
+\openout10 = `Hauptdatei.lol'.
 
- (./latex_einstellungen/abkuezungen/abkuerzungen.tex) (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.nls [8
+ (./latex_einstellungen/abkuezungen/abkuerzungen.tex) (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.nls [6
 
-]) [9
+]) [7
 
-] (./1_einleitung.tex [10
+] (./1_einleitung.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
-]) (./2_grundlagen.tex [11]
-Overfull \hbox (4.66458pt too wide) in paragraph at lines 18--19
-[]\T1/lmr/m/n/12 Qualifikationen(lateinisch: qua-lis fa-ce-re, Be-schaf-fen-heit her-stel-len) sind hin-ge-gen prüf-
- []
-
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 20.
-
-Overfull \hbox (4.67712pt too wide) in paragraph at lines 20--20
-[][][][]\T1/lmr/m/n/12 Learning 
  []
 
 
-Overfull \hbox (4.67712pt too wide) in paragraph at lines 20--20
-[][][][]\T1/lmr/m/n/12 Learning 
+Underfull \hbox (badness 10000) in paragraph at lines 8--24
+
  []
 
 
-Overfull \hbox (4.67712pt too wide) in paragraph at lines 20--20
-[][][][]\T1/lmr/m/n/12 Learning 
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
+
  []
 
-
-Overfull \hbox (4.67712pt too wide) in paragraph at lines 20--20
-[][][][]\T1/lmr/m/n/12 Learning 
- []
-
-[12
-
-] [13]
-Overfull \hbox (12.01897pt too wide) in paragraph at lines 68--68
-[][][][]\T1/lmr/m/n/12 Vokabular 
- []
-
-
-Overfull \hbox (12.01897pt too wide) in paragraph at lines 68--68
-[][][][]\T1/lmr/m/n/12 Vokabular 
- []
-
-
-Overfull \hbox (12.01897pt too wide) in paragraph at lines 68--68
-[][][][]\T1/lmr/m/n/12 Vokabular 
- []
-
-
-Overfull \hbox (12.01897pt too wide) in paragraph at lines 68--68
-[][][][]\T1/lmr/m/n/12 Vokabular 
- []
-
-
-Overfull \hbox (27.03717pt too wide) in paragraph at lines 75--75
-[][][][]\T1/lmr/m/n/12 Ontologienen 
- []
-
-
-Overfull \hbox (27.03717pt too wide) in paragraph at lines 75--75
-[][][][]\T1/lmr/m/n/12 Ontologienen 
- []
-
-
-Overfull \hbox (27.03717pt too wide) in paragraph at lines 75--75
-[][][][]\T1/lmr/m/n/12 Ontologienen 
- []
-
-
-Overfull \hbox (27.03717pt too wide) in paragraph at lines 75--75
-[][][][]\T1/lmr/m/n/12 Ontologienen 
- []
-
-[14] [15]) (./3_similar_topics.tex [16]
-Overfull \hbox (19.9225pt too wide) in paragraph at lines 20--20
-[][][][]\T1/lmr/m/n/12 ausführung, 
- []
-
-
-Overfull \hbox (19.9225pt too wide) in paragraph at lines 20--20
-[][][][]\T1/lmr/m/n/12 ausführung, 
- []
-
-
-Overfull \hbox (19.9225pt too wide) in paragraph at lines 20--20
-[][][][]\T1/lmr/m/n/12 ausführung, 
- []
-
-
-Overfull \hbox (19.9225pt too wide) in paragraph at lines 20--20
-[][][][]\T1/lmr/m/n/12 ausführung, 
- []
-
-[17
+[8
 
 ]
-Overfull \hbox (5.16434pt too wide) in paragraph at lines 34--34
-[][][][]\T1/lmr/m/n/12 Wichtig? 
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
  []
 
+) (./2_grundlagen.tex [9]
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
-Overfull \hbox (5.16434pt too wide) in paragraph at lines 34--34
-[][][][]\T1/lmr/m/n/12 Wichtig? 
  []
 
-
-Overfull \hbox (5.16434pt too wide) in paragraph at lines 34--34
-[][][][]\T1/lmr/m/n/12 Wichtig? 
- []
-
-
-Overfull \hbox (5.16434pt too wide) in paragraph at lines 34--34
-[][][][]\T1/lmr/m/n/12 Wichtig? 
- []
-
-[18]
-Overfull \hbox (20.13687pt too wide) in paragraph at lines 57--59
-[]\T1/lmr/m/n/12 Ein für die-se Ar-beit re-le-van-tes The-men-feld bie-tet die Sand-box "Recommendations".[[]]
- []
-
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 64.
-[19] <abb/xing_jobmatching.png, id=530, 998.73125pt x 660.4675pt>
-File: abb/xing_jobmatching.png Graphic file (type png)
- <use abb/xing_jobmatching.png>
-Package pdftex.def Info: abb/xing_jobmatching.png used on input line 96.
-(pdftex.def)             Requested size: 308.71106pt x 204.14821pt.
-) (./4_analyse.tex [20] [21 <./abb/xing_jobmatching.png>] [22
+[10
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 30.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 36.
+
+Overfull \hbox (2.88345pt too wide) in paragraph at lines 36--36
+[][][][]\T1/lmr/m/n/12 zitieren?  
+ []
+
+
+Overfull \hbox (2.88345pt too wide) in paragraph at lines 36--36
+[][][][]\T1/lmr/m/n/12 zitieren?  
+ []
+
+
+Overfull \hbox (2.88345pt too wide) in paragraph at lines 36--36
+[][][][]\T1/lmr/m/n/12 zitieren?  
+ []
+
+
+Overfull \hbox (2.88345pt too wide) in paragraph at lines 36--36
+[][][][]\T1/lmr/m/n/12 zitieren?  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
+
+ []
+
+
+Overfull \hbox (27.03717pt too wide) in paragraph at lines 70--70
+[][][][]\T1/lmr/m/n/12 Ontologienen 
+ []
+
+
+Overfull \hbox (27.03717pt too wide) in paragraph at lines 70--70
+[][][][]\T1/lmr/m/n/12 Ontologienen 
+ []
+
+
+Overfull \hbox (27.03717pt too wide) in paragraph at lines 70--70
+[][][][]\T1/lmr/m/n/12 Ontologienen 
+ []
+
+
+Overfull \hbox (27.03717pt too wide) in paragraph at lines 70--70
+[][][][]\T1/lmr/m/n/12 Ontologienen 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--106
+
+ []
+
+[13]) (./3_similar_topics.tex [14]
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Overfull \hbox (19.9225pt too wide) in paragraph at lines 20--20
+[][][][]\T1/lmr/m/n/12 ausführung, 
+ []
+
+
+Overfull \hbox (19.9225pt too wide) in paragraph at lines 20--20
+[][][][]\T1/lmr/m/n/12 ausführung, 
+ []
+
+
+Overfull \hbox (19.9225pt too wide) in paragraph at lines 20--20
+[][][][]\T1/lmr/m/n/12 ausführung, 
+ []
+
+
+Overfull \hbox (19.9225pt too wide) in paragraph at lines 20--20
+[][][][]\T1/lmr/m/n/12 ausführung, 
+ []
+
+[15
+
+]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 31.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 30.
- [23] <abb/Entwurf.png, id=554, 558.888pt x 111.2958pt>
-File: abb/Entwurf.png Graphic file (type png)
- <use abb/Entwurf.png>
-Package pdftex.def Info: abb/Entwurf.png used on input line 63.
-(pdftex.def)             Requested size: 308.71106pt x 61.47609pt.
- [24 <./abb/Entwurf.png>]) (./5_entwurf.tex [25]
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 31.
 
-LaTeX Warning: Citation `https://ec.europa.eu/esco/portal/escopedia/Competence' on page 26 undefined on input line 32.
+Underfull \hbox (badness 10000) in paragraph at lines 49--52
 
+ []
 
-Overfull \hbox (327.64125pt too wide) in paragraph at lines 44--44
-\T1/lmr/m/n/12 ps://ec.europa.eu/esco/resources/data/static/model/html/model.xhtml  
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
  []
 
 
-Overfull \hbox (327.64125pt too wide) in paragraph at lines 44--44
-\T1/lmr/m/n/12 ps://ec.europa.eu/esco/resources/data/static/model/html/model.xhtml  
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
  []
 
 
-Overfull \hbox (327.64125pt too wide) in paragraph at lines 44--44
-\T1/lmr/m/n/12 ps://ec.europa.eu/esco/resources/data/static/model/html/model.xhtml  
+Overfull \hbox (20.13687pt too wide) in paragraph at lines 64--66
+[]\T1/lmr/m/n/12 Ein für die-se Ar-beit re-le-van-tes The-men-feld bie-tet die Sand-box "Recommendations".[[]]
  []
 
-
-Overfull \hbox (327.64125pt too wide) in paragraph at lines 44--44
-\T1/lmr/m/n/12 ps://ec.europa.eu/esco/resources/data/static/model/html/model.xhtml  
- []
-
-[26
+[17]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 71.
+ <abb/xing_jobmatching.png, id=514, 998.73125pt x 660.4675pt>
+File: abb/xing_jobmatching.png Graphic file (type png)
+ <use abb/xing_jobmatching.png>
+Package pdftex.def Info: abb/xing_jobmatching.png used on input line 99.
+(pdftex.def)             Requested size: 308.71106pt x 204.14821pt.
+ [18]) (./4_analyse.tex [19 <./abb/xing_jobmatching.png>] [20
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
-LaTeX Warning: Citation `Neo4j' on page 27 undefined on input line 69.
+ []
 
-[27] <abb/graph.png, id=586, 443.6575pt x 329.23pt>
+[21] <abb/Entwurf.png, id=544, 558.888pt x 111.2958pt>
+File: abb/Entwurf.png Graphic file (type png)
+ <use abb/Entwurf.png>
+Package pdftex.def Info: abb/Entwurf.png used on input line 66.
+(pdftex.def)             Requested size: 308.71106pt x 61.47609pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+
+ []
+
+[22 <./abb/Entwurf.png>]) (./5_entwurf.tex [23]
+Overfull \hbox (20.91132pt too wide) in paragraph at lines 11--14
+\T1/lmr/m/n/12 ESCO wird als RDF Graph im SKOS For-mat zum Dow-n-load an-ge-bo-ten. Das Vokabular[[]]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
+
+ []
+
+
+LaTeX Warning: Citation `https://ec.europa.eu/esco/portal/escopedia/Competence' on page 24 undefined on input line 37.
+
+
+Overfull \hbox (5.34892pt too wide) in paragraph at lines 35--40
+\T1/lmr/m/n/12 ESCO wen-det hier die-sel-ben De-fi-ni-tio-nen für die-se Be-grif-fe an wie sie der EQF vorgibt.[[]]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--40
+
+ []
+
+[24
+
+] <abb/e-CF.png, id=570, 693.59125pt x 765.86125pt>
+File: abb/e-CF.png Graphic file (type png)
+ <use abb/e-CF.png>
+Package pdftex.def Info: abb/e-CF.png used on input line 62.
+(pdftex.def)             Requested size: 308.71106pt x 340.88313pt.
+ [25 <./abb/e-CF.png (PNG copy)>]
+
+LaTeX Warning: Citation `Neo4j' on page 26 undefined on input line 82.
+
+[26] <abb/graph.png, id=582, 443.6575pt x 329.23pt>
 File: abb/graph.png Graphic file (type png)
  <use abb/graph.png>
-Package pdftex.def Info: abb/graph.png used on input line 80.
+Package pdftex.def Info: abb/graph.png used on input line 93.
 (pdftex.def)             Requested size: 308.71106pt x 229.08797pt.
- [28 <./abb/graph.png>] <abb/entwurf.png, id=594, 558.888pt x 111.2958pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
+
+ []
+
+<abb/entwurf.png, id=583, 558.888pt x 111.2958pt>
 File: abb/entwurf.png Graphic file (type png)
  <use abb/entwurf.png>
-Package pdftex.def Info: abb/entwurf.png used on input line 100.
+Package pdftex.def Info: abb/entwurf.png used on input line 114.
 (pdftex.def)             Requested size: 308.71106pt x 61.47609pt.
 
 
 LaTeX Font Warning: Font shape `T1/lmtt/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 109.
+(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 123.
 
-) (./6_implementierung.tex [29 <./abb/entwurf.png>] [30
+[27 <./abb/graph.png>]) (./6_implementierung.tex [28 <./abb/entwurf.png>] <abb/ec2_cloudformation.png, id=597, 607.26875pt x 592.2125pt>
+File: abb/ec2_cloudformation.png Graphic file (type png)
+ <use abb/ec2_cloudformation.png>
+Package pdftex.def Info: abb/ec2_cloudformation.png used on input line 30.
+(pdftex.def)             Requested size: 308.71106pt x 301.05748pt.
+ [29
 
 ] (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
@@ -1493,125 +1555,132 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 37.
- [31] <abb/Architecture.png, id=614, 798.8244pt x 449.5194pt>
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 50.
+ [30 <./abb/ec2_cloudformation.png>] [31] <abb/Architecture.png, id=618, 798.8244pt x 449.5194pt>
 File: abb/Architecture.png Graphic file (type png)
  <use abb/Architecture.png>
-Package pdftex.def Info: abb/Architecture.png used on input line 74.
+Package pdftex.def Info: abb/Architecture.png used on input line 79.
 (pdftex.def)             Requested size: 308.71106pt x 173.72054pt.
- [32 <./abb/Architecture.png>] [33] (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
+
+ []
+
+[32 <./abb/Architecture.png>] [33] (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [34] [35] (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+)
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
+
+ []
+
+[35] (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2015/06/04 1.6 listings language file
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2015/06/04 1.6 listings language file
-)) (./10_bewertung.tex [36] [37]
+)) (./10_bewertung.tex [36]
 Overfull \hbox (19.04938pt too wide) in paragraph at lines 3--4
 \T1/lmr/m/n/12 Die API ist über die URL \T1/lmr/m/it/12 https://lndkrk7h5i.execute-api.eu-central-1.amazonaws.com/prd/
  []
 
-[38
+[37
 
 ] <abb/neo4j_jaccard.png, id=742, 1425.325pt x 702.625pt>
 File: abb/neo4j_jaccard.png Graphic file (type png)
  <use abb/neo4j_jaccard.png>
 Package pdftex.def Info: abb/neo4j_jaccard.png used on input line 59.
 (pdftex.def)             Requested size: 396.91325pt x 195.66153pt.
-) (./8_evaluation.tex) (./7_ausblick.tex [39 <./abb/neo4j_jaccard.png>]) (./9_fazit.tex [40
+) (./8_evaluation.tex) (./7_ausblick.tex [38 <./abb/neo4j_jaccard.png>]) (./9_fazit.tex [39
 
-] [41
+] [40
 
-]) (./beispiel.tex
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 7.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 7.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 7.
-File: abb/logo2.png Graphic file (type png)
- <use abb/logo2.png>
-Package pdftex.def Info: abb/logo2.png used on input line 12.
-(pdftex.def)             Requested size: 132.30666pt x 32.55566pt.
- [42]
-
-LaTeX Warning: Citation `wk05' on page 43 undefined on input line 76.
-
-
-LaTeX Warning: Citation `wk05' on page 43 undefined on input line 80.
-
-) [43] (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 11--16
+]) [41] (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 15--20
 \T1/lmtt/m/n/12 studie / 693192 / umfrage / offene -[] stellenangebote -[] in -[] deutschland -[]
  []
 
 
-Underfull \hbox (badness 1292) in paragraph at lines 23--28
+Underfull \hbox (badness 1292) in paragraph at lines 27--32
 []\T1/lmr/m/sc/12 Anadiotis\T1/lmr/m/n/12 , Ge-or-ge:  \T1/lmr/m/it/12 Graph da-ta-ba-ses and RDF: It's a fa-mi-ly af-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--46
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
 []\T1/lmr/m/it/12 MovieLens\T1/lmr/m/n/12 .  []$\T1/lmtt/m/n/12 https : / / grouplens . org / datasets / movielens/$[]\T1/lmr/m/n/12 .
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 56--62
+Underfull \hbox (badness 2512) in paragraph at lines 75--81
 []\T1/lmr/m/sc/12 Hölscher\T1/lmr/m/n/12 , Den-ny:  \T1/lmr/m/it/12 Mit XING zum Traum-job: Wie gut ist das
  []
 
 
-Underfull \hbox (badness 5667) in paragraph at lines 56--62
+Underfull \hbox (badness 5667) in paragraph at lines 75--81
 \T1/lmr/m/it/12 Job-Matching des Kar-rie-re-netz-werks?  []$\T1/lmtt/m/n/12 https : / / hr -[] blog . prosoft .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--62
+Underfull \hbox (badness 10000) in paragraph at lines 75--81
 \T1/lmtt/m/n/12 net / mit -[] xing -[] zum -[] traumjob -[] wie -[] gut -[] ist -[] das -[] job -[] matching -[] des -[]
  []
 
 
-Underfull \hbox (badness 5637) in paragraph at lines 85--90
+Underfull \hbox (badness 5637) in paragraph at lines 98--103
 []\T1/lmr/m/sc/12 Konert\T1/lmr/m/n/12 , Jo-han-nes:  Open Bad-ge Net-work Pro-po-sal on Com-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--90
+Underfull \hbox (badness 10000) in paragraph at lines 98--103
 \T1/lmr/m/n/12 pe-ten-cy Ali-gnment and Di-rec-to-ry.  (2016).  []$\T1/lmtt/m/n/12 http : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--90
+Underfull \hbox (badness 10000) in paragraph at lines 98--103
 \T1/lmtt/m/n/12 openbadgenetwork . com / wp -[] content / uploads / 2016 / 01 / OBNO3 -[]
  []
 
-
-Underfull \hbox (badness 1308) in paragraph at lines 92--96
-[]\T1/lmr/m/sc/12 Lopez\T1/lmr/m/n/12 , Ben-ja-min:  \T1/lmr/m/it/12 Ent-wick-lung und Eva-lua-ti-on ei-nes e-Kompetenz-
- []
-
-[44
+[42
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
+Underfull \hbox (badness 1308) in paragraph at lines 109--113
+[]\T1/lmr/m/sc/12 Lopez\T1/lmr/m/n/12 , Ben-ja-min:  \T1/lmr/m/it/12 Ent-wick-lung und Eva-lua-ti-on ei-nes e-Kompetenz-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
 []\T1/lmr/m/it/12 VOCABULARIES\T1/lmr/m/n/12 .  []$\T1/lmtt/m/n/12 https : / / www . w3 . org / standards / semanticweb /
  []
 
-) [45] (./anhang/anhang.tex
+) [43] (./anhang/anhang.tex
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 3.
 
-) [46] [47
+) [44] [45
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 363.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 363.
- (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/latex_einstellungen/deckblatt.aux) (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/abstract.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 363.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 363.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 366.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 366.
+ (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux (/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/latex_einstellungen/deckblatt.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 366.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 366.
 Package rerunfilecheck Info: File `Hauptdatei.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1621,21 +1690,21 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 363.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 366.
  ) 
 Here is how much of TeX's memory you used:
- 24102 strings out of 492995
- 437024 string characters out of 6132705
- 824898 words of memory out of 5000000
- 26784 multiletter control sequences out of 15000+600000
- 76780 words of font info for 67 fonts, out of 8000000 for 9000
+ 23969 strings out of 492995
+ 434777 string characters out of 6132705
+ 817486 words of memory out of 5000000
+ 26707 multiletter control sequences out of 15000+600000
+ 55770 words of font info for 49 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 73i,12n,80p,8858b,1976s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtko10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.pdf" (47 pages, 1387761 bytes).
+ 73i,12n,76p,8858b,1910s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtko10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "/Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.pdf" (45 pages, 1435678 bytes).
 PDF statistics:
- 1002 PDF objects out of 1200 (max. 8388607)
- 905 compressed objects within 10 object streams
- 301 named destinations out of 1000 (max. 500000)
- 629 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 949 PDF objects out of 1000 (max. 8388607)
+ 854 compressed objects within 9 object streams
+ 268 named destinations out of 1000 (max. 500000)
+ 623 words of extra memory for PDF output out of 10000 (max. 10000000)
 

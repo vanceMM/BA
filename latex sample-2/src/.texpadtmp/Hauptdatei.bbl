@@ -7,6 +7,10 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[acm]{acm}
+\emph{About the ACM Organization}.
+\newblock \url{http://www.acm.org/about-acm/about-the-acm-organization}
+
 \bibitem[Ade]{Statista2016}
 \textsc{Adecco}:
 \newblock \emph{Arbeitsmarkt: Stellenangebote in Deutschland 2016 nach
@@ -26,6 +30,14 @@
   \url{http://www.zdnet.com/article/graph-databases-and-rdf-its-a-family-affair/}.
 \newblock \,Version:\,May 2017
 
+\bibitem[BE15]{Bauer2015}
+\textsc{Bauer}, Horst~P. ; \textsc{Enderle}, Inga:
+\newblock \emph{Karriere durch Fachschulen für Betriebswirtschaft -
+  Langzeituntersuchung zur beruflichen Entwicklung der Absolventen}.
+\newblock Berlin Heidelberg New York : Springer-Verlag, 2015. --
+\newblock  39--40 S. --
+\newblock ISBN 978--3--658--09367--9
+
 \bibitem[bib17]{bibb}
 \emph{Definition und Kontextualisierung des Kompetenzbegriffes}.
 \newblock \url{https://www.bibb.de/de/8570.php}.
@@ -38,6 +50,13 @@
 \newblock \url{http://dx.doi.org/10.1007/s00287-014-0796-2}. --
 \newblock DOI 10.1007/s00287--014--0796--2. --
 \newblock ISSN 1432--122X
+
+\bibitem[esc]{esco_ontology}
+\emph{ESCO Ontology}.
+\newblock
+  \url{https://ec.europa.eu/esco/resources/data/static/model/html/model.xhtml}.
+  --
+\newblock bezieht sich auf veraltete Version 1.0
 
 \bibitem[gro16]{grouplens_2016}
 \emph{MovieLens}.
@@ -75,18 +94,16 @@
 \newblock Berlin Heidelberg New York : Springer-Verlag, 2012. --
 \newblock ISBN 978--3--834--82264--2
 
-\bibitem[kom17]{2017}
-\textsc{kompetenzrahmen.de}:
-\newblock \emph{Learning Outcomes - Lernergebnisse}.
-\newblock \url{http://www.kompetenzrahmen.de/118-0-Moeglichkeiten.html}.
-\newblock \,Version:\,Aug 2017
-
 \bibitem[Kon16]{OBNO3-A2}
 \textsc{Konert}, Johannes:
 \newblock Open Badge Network Proposal on Competency Alignment and Directory.
 \newblock   (2016).
 \newblock
   \url{http://www.openbadgenetwork.com/wp-content/uploads/2016/01/OBNO3-A2__CompetencyAlignmentAndRepository__proposal_v1.1.pdf}
+
+\bibitem[ld]{ld}
+\emph{Linked Data}.
+\newblock \url{https://www.w3.org/DesignIssues/LinkedData.html}
 
 \bibitem[Lop17]{lopez}
 \textsc{Lopez}, Benjamin:
@@ -109,6 +126,10 @@
 \bibitem[omd]{omdb}
 \emph{OMDb API}.
 \newblock \url{http://www.omdbapi.com/}
+
+\bibitem[rec]{recsys}
+\emph{RecSys – ACM Recommender Systems}.
+\newblock \url{https://recsys.acm.org/}
 
 \bibitem[RRSK10]{Ricci2010}
 \textsc{Ricci}, Francesco ; \textsc{Rokach}, Lior ; \textsc{Shapira}, Bracha  ;
