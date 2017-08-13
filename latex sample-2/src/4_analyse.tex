@@ -6,9 +6,7 @@
 %Problematisch sind die verschiedenen Standards der einzelnen Kompetenzframeworks. So gibt es nicht nur nationale und sprachliche Unterschiede sondern auch Unterschiede in den veröffentlichen Formaten. Von den bisher veröffentlichten Kompetenzframeworks bietet momentan nur ESCO den Download der Daten in einem maschinenlesbaren Format(CSV, XML, RDF) an. 
 
 Eine der großen Herausforderung in der Personalentwicklung ist das Job-Matching, eine vakante Stelle mit einem passenden Bewerber oder Angestellten zu besetzen. Dabei greifen Personaler vermehrt auf Technologien und Matching-Algorithmen zurück, die diesen Prozess automatisieren sollen. Das Prinzip ähnelt dem, der Partnervermittlung. Person A, Der Arbeitgeber wird mit Person B, dem Arbeitssuchenden oder Angestellten zusammen gebracht. Unter Berücksichtigung von Kompetenzen die eine Stelle erfordert, kann dieses Matching Verfahren verfeinert werden.
-
 Im Kontext der Personalentwicklung, Jobvermittlung oder Berufsbildung ist es aber auch wichtig Karrierepfade aufzuzeigen, also heraus zu finden welche Kompetenzen sich ähnlich sind und welche Kompetenzen fehlen, um die Anforderungen für eine bestimmte Tätigkeit zu erfüllen. Dieser Prozess kann durch Algorithmen und Metriken implementiert werden.
-
 
 \vspace{1em}
 
@@ -46,7 +44,6 @@ Optionale Anforderungen
 \subsubsection{Anforderungen an die API}
 
 Das Empfehlungssystem soll über eine API für andere Softwaresysteme verfügbar sein. Beispiele für solche Systeme können Jobportale oder Human Resource Management Systeme sein. Sie können über HTTP Requests Daten mit Kompetenzsets an die Engine senden und erhalten verarbeitete Daten als Antwort.
-
 Mit der Übereinstimmung von Kompetenzsets z.B. das einer Stellenbeschreibung und das eines Lebenslaufes, kann ein Matching vorgenommen werden, welches Computersystemen ermöglicht passende Stellenangebote oder Bewerber zu finden. Über die Vernetzung der Kompetenzen im Graphen können Wege zur weiteren Bildung ermittelt werden.
 
 
@@ -75,9 +72,7 @@ Der Dienst soll nach dem Microservice Muster implementiert werden, also bei Beda
 Das Kernproblem des Empfehlungsdienstes ist die Berechnung von Ähnlichkeiten von Knoten in einem Graphen. Es gibt bereits einige Algorithmen und Metriken die sich mit dieser Problematik auseinander setzen. Welche Metriken und Algorithmen angewandt werden können hängt aber auch vom Anwendungsfall ab. Einige Methoden zur Berechnung von Ähnlichkeiten sollen im folgenden aufgelistet, und später bei der Implementierung evaluiert werden. Ein grundsätzlicher Ansatz kann lautet,\textit{ je näher zwei Knoten im Graphen einander sind, desto ähnlicher sind sie sich}. Der folgende Graph soll dies veranschaulichen. 
 \newline
 
-Das Problem des \textit{kürzesten Pfades} ist ein häufig behandeltes Problem in der Graphentheorie. Ein kürzester Pfad von einem Knoten $s$ zu $t$ in einem Graphen $G$ ist definiert durch eine Funktion $c$: $R \rightarrow \mathbb{R}$
-\vspace{1em}
-
+Das Problem des \textit{kürzesten Pfades} ist ein häufig behandeltes Problem in der Graphentheorie. Ein kürzester Pfad von einem Knoten $s$ zu $t$ in einem Graphen $G$ ist definiert durch eine Funktion $c$: $R \rightarrow \mathbb{R}$.
 Es gibt aber auch mehr Eigenschaften des Graphen, die sich ein Algorithmus zu nutzen machen kann. So können mit Hilfe von gewichteten Kanten Vektoren entlang der Pfade von einem Knoten zu einem anderen erstellt werden. Die \textit{Kosinus-Ähnlichkeit} ist eine Metrik, die den eingeschlossenen Winkel zwischen zwei solcher Vektoren ermittelt.
 \vspace{1em}
 
@@ -86,7 +81,7 @@ Mit dem \textbf{Jaccard Koeffizenten} lassen sich zwei Mengen auf ihre Ähnlichk
 	$ J(A,B)=\frac{\mid A\bigcap B\mid }{ \mid A \bigcup B \mid }$
 
 \end{center}
-In einem Graphen kann die Metrik für 2 Knoten angewandt werden, indem man die beiden Mengen aus Knoten zusammen setzt, die eine Beziehung zu den 2 Knoten haben. Kategorien oder Taxonomien sind dabei geeignete Kandidaten für gemeinsame Beziehungen. Am Beispiel des Movie Graphen, kann hier eine Ähnlichkeit von 2 Filmen berechnet werden, die sich in gemeinsamen Genres befinden. Je mehr gemeinsame Genres, desto höher die Ähnlichketi. Tauchen beide Filme in denselben Genres zb. \{Horror, Action, Comedy\} auf, so haben sie eine Ähnlichkeit von 1, haben sie kein gemeinsames Genre ist die Ähnlichkeit 0.
+In einem Graphen kann die Metrik für 2 Knoten angewandt werden, indem man die beiden Mengen aus Knoten zusammen setzt, die eine Beziehung zu den 2 Knoten haben. Kategorien oder Taxonomien sind dabei geeignete Kandidaten für gemeinsame Beziehungen. Am Beispiel des Movie Graphen, kann hier eine Ähnlichkeit von 2 Filmen berechnet werden, die sich in gemeinsamen Genres befinden. Je mehr gemeinsame Genres, desto höher die Ähnlichkeit. Tauchen beide Filme in denselben Genres auf, wie z.B. in Horror, Action, Comedy, so haben sie eine Ähnlichkeit von 1, haben sie kein gemeinsames Genre ist die Ähnlichkeit 0.
 \vspace{1em}
 
 Ein weiterer Ansatz lautet \textit{"Zwei Objekte sind Ähnlich, wenn sie mit ähnlichen Objekten verknüpft sind"}. Der \textbf{SimRank} \cite{Jeh:2002:SMS:775047.775126} Algorithmus versucht Ähnlichkeiten von Knoten zu finden zwischen denen ein struktureller Zusammenhang besteht. 

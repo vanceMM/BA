@@ -4,11 +4,11 @@ The top-level auxiliary file: /Users/valentin/Dropbox/BA/latex sample-2/src/.tex
 The style file: ../alphadin.bst
 A level-1 auxiliary file: latex_einstellungen/deckblatt.aux
 Case mismatch error between cite keys Neo4j and neo4j
----line 133 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
+---line 121 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
  : \citation{Neo4j
  :                }
 I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 216 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
+Illegal, another \bibstyle command---line 203 of file /Users/valentin/Dropbox/BA/latex sample-2/src/.texpadtmp/Hauptdatei.aux
  : \bibstyle
  :          {alphadin}
 I'm skipping whatever remains of this command
@@ -35,6 +35,10 @@ I'm skipping whatever remains of this entry
  : @misc{ecf, title={European e-Competence Framework}, url
  :                                                        {http://www.ecompetences.eu/wp-content/uploads/2014/02/European-e-Competence-Framework-3.0_DE.pdf}}
 I'm skipping whatever remains of this entry
+Repeated entry---line 183 of file ../Hauptdatei.bib
+ : @misc{grouplens_2016
+ :                     , title={MovieLens}, url={https://grouplens.org/datasets/movielens/}, journal={GroupLens}, year={2016}, month={Oct}}
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "https://ec.europa.eu/esco/portal/escopedia/Competence"
 Warning--to sort, need author or key in acm
 Warning--to sort, need author or key in recsys
@@ -42,50 +46,53 @@ Warning--to sort, need author or key in bibb
 Warning--to sort, need author or key in ld
 Warning--to sort, need author or key in w3c
 Warning--to sort, need author or key in alliance_for_excellent_education
+Warning--to sort, need author or key in inloc
 Warning--to sort, need author or key in neo4j
 Warning--to sort, need author or key in omdb
 Warning--to sort, need author or key in grouplens_2016
+Warning--to sort, need author or key in movielens
+Warning--to sort, need author or key in movielens_img
 Warning--to sort, need author or key in esco_ontology
 Warning--to sort, need author or key in neo4jsysreq
-You've used 25 entries,
+You've used 28 entries,
             4793 wiz_defined-function locations,
-            1047 strings with 10938 characters,
-and the built_in function-call counts, 12124 in all, are:
-= -- 1254
-> -- 254
+            1056 strings with 11198 characters,
+and the built_in function-call counts, 12897 in all, are:
+= -- 1326
+> -- 257
 < -- 234
-+ -- 277
++ -- 279
 - -- 87
-* -- 783
-:= -- 1883
-add.period$ -- 36
-call.type$ -- 25
-change.case$ -- 103
-chr.to.int$ -- 23
-cite$ -- 47
-duplicate$ -- 379
-empty$ -- 1023
+* -- 825
+:= -- 1973
+add.period$ -- 39
+call.type$ -- 28
+change.case$ -- 112
+chr.to.int$ -- 25
+cite$ -- 56
+duplicate$ -- 415
+empty$ -- 1116
 format.name$ -- 154
-if$ -- 2608
-int.to.chr$ -- 3
+if$ -- 2800
+int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 123
-newline$ -- 146
+missing$ -- 141
+newline$ -- 158
 num.names$ -- 42
-pop$ -- 177
+pop$ -- 201
 preamble$ -- 1
-purify$ -- 153
+purify$ -- 168
 quote$ -- 0
-skip$ -- 607
+skip$ -- 648
 stack$ -- 0
-substring$ -- 929
-swap$ -- 66
+substring$ -- 969
+swap$ -- 69
 text.length$ -- 44
 text.prefix$ -- 6
 top$ -- 0
-type$ -- 234
-warning$ -- 11
+type$ -- 264
+warning$ -- 14
 while$ -- 75
-width$ -- 27
-write$ -- 310
-(There were 5 error messages)
+width$ -- 30
+write$ -- 337
+(There were 6 error messages)

@@ -13,17 +13,17 @@ Mit Elastic Compute Cloud können virtuelle Rechner Umgebungen erstellt werden a
 \paragraph{AWS API Gateway:}
 \vspace{1em}
 
-Mit API Gateway können Anwendungen über das Internet auf die Cloud Dienste von Amazon zugreifen. Dazu werden HTTP-Endpunkte erstellt.
+Mit einem API Gateway können Anwendungen über das Internet auf die Cloud Dienste von Amazon zugreifen. Dazu werden HTTP-Endpunkte erstellt.
 \vspace{1em}
 
 \paragraph{AWS Lambda}
 \vspace{1em}
 
-Code in Lambda Funktionen wird nur ausfgeführt wenn ensprechende Events die Lambda Funktion auslösen.
+Code in Lambda Funktionen wird nur ausgeführt wenn entsprechende Events die Lambda Funktion auslösen.
 
 \subsection{EC2 }
-Für die Datenhaltung wird das Open Source Graphendatenbank Manangement System Neo4j verwendet. Dieses stellt jedoch eingie Vorraussetzungen an die Umgebung\cite{neo4jsysreq}. Da Neo4j eine Java VM muss zb. für Ubuntu das OpenJDK 8 installiert sein.
-Die Neo4j Instanz wird auf einer Ubuntu Umgebung installiert. Dafür müssen jedoch erst einige Abhängkeiten und Pakete installiert werden. Um den Aufwand gering zuhalten, wird eine Amazon Web Serivices EC2 Instanz hochgefahren mit einem speziellen Cloudformation Template, welches alle System Vorraussetzungen erfüllt. Cloudformation erleichtert das Erstellen von Umgebungen mit wichtigen Laufzeitparametern. Das folgende Schaubild veranschaulicht alle wichtigen Parameter:
+Für die Datenhaltung wird das Open Source Graphendatenbank Management System Neo4j verwendet. Dieses stellt jedoch einige Vorraussetzungen an die Umgebung\cite{neo4jsysreq}. Da Neo4j eine Java VM muss z.B. für Ubuntu das OpenJDK 8 installiert sein.
+Die Neo4j Instanz wird auf einer Ubuntu Umgebung installiert. Dafür müssen jedoch erst einige Abhängigkeiten und Pakete installiert werden. Um den Aufwand gering zuhalten, wird eine Amazon Web Services EC2 Instanz hochgefahren mit einem speziellen Cloudformation Template, welches alle System Vorraussetzungen erfüllt. Cloudformation erleichtert das Erstellen von Umgebungen mit wichtigen Laufzeitparametern. Das folgende Schaubild veranschaulicht alle wichtigen Parameter:
 
 \begin{figure}[htb]
  \centering
@@ -41,7 +41,7 @@ Die Neo4j Instanz wird auf einer Ubuntu Umgebung installiert. Dafür müssen jed
 \subsubsection{RDF Import}
 
 Neoj4 lässt sich über Plugins erweitern. Diese so genannten \textit{Prozeduren} werden in Java geschrieben und können mit der Cypher Query Language aufgerufen werden.
-Mit dem Plugin \textit{neosemantics} können Daten aus einem Triplestore in Neo4j geladen werden. Über die Weboberfläche kann mit einer Cypher Abfrage die Methode zum importieren der Daten aufgerufen werden. 
+Mit dem Plugin \textit{neosemantics} können Daten aus einem Triplestore in Neo4j geladen werden. Über die Weboberfläche kann mit einer Cypher Abfrage die Methode zum importieren der Daten aufgerufen werden. \newline
 
 \lstset{language=xml}
 \lstset{language=java}
@@ -82,14 +82,14 @@ Ein Problem, was nun an den Tag tritt, ist die lokale Nichtverfügbarkeit von Di
 \end{figure}
 
 Nachdem nun alle Komponenten eingerichtet sind erfolgt das Implementieren der Algorithmen und Datenbankabfragen. Als Laufzeitumgebung für die Lambda Funktionen wird Node.js in der Version 6.10 gewählt. Für die Anbindung an die Neo4j wird die \textit{neo4j-driver} Bibliothek geladen. Damit lässt sich zunächst für den gesamten Scope der Lambda Funktion der Datenbanktreiber der \textit{neo4j} Klasse instanzieren. 
-Wird nun beim ausführen des Codes durch Lambda die \textit{Handler} Funktion aufgerufen, kann für den jeweiligen Handler eine neue Session geöffnet werden und ein String für die Datenbankabfrage, inklusive Parameter geformt werden. Ist die Abfrage beendet wird die Callback Funktion aufgerufen und ein Response Objekt erstellt, welches das Ergebnis der Datenbankabfrage im JSON String Format enthält.
+Wird nun beim ausführen des Codes durch Lambda die \textit{Handler} Funktion aufgerufen, kann für den jeweiligen Handler eine neue Session geöffnet werden und ein String für die Datenbankabfrage, inklusive Parameter geformt werden. Ist die Abfrage beendet wird die Callback Funktion aufgerufen und ein Response Objekt erstellt, welches das Ergebnis der Datenbankabfrage im JSON String Format enthält.\newline
 
 Die Im Entwurf beschriebene Kern Komponente für die Datenbankanbindung, die Ein- uns Ausgabe von Daten und die Implementierung von Algorithmen, soll nun Lambda Funktionen in einer Node.js Laufzeitumgebung implementiert werden. Als erstes wird eine Instanz des Datenbanktreibers erzeugt welche von mehreren Handlern benutzt werden kann. Für jede Anforderung der Engine, soll ein eigener Handler implementiert werde, der genau dann ausgeführt wird wenn ein HTTP Request auf dem zu dem Handler gehörenden Pfad aufgerufen wird. Parameter aus dem Query String, oder Daten die mittels POST übermittelt werden können aus dem \textit{event} Objekt gelesen werden. 
 \newline
 
 Innerhalb des Handlers wird ein \textit{session} Objekt erzeugt, welches die Verbindung zur Datenbank herstellt und über diese auch die Abfragen an die Datenbank erfolgen. Dazu wird die \textit{run} Methode auf dem Objekt aufgerufen und der Querystring und Queryparameter übergeben. Es wird ein Promises erzeugt, auf welchem eine Callbackfunktion aufgerufen wird sobald die Abfrage alle Ergebnisse geliefert hat. Aus dem Resultset kann ein Objekt erzeugt werden welches mit der \textit{callback} Funktion des Lambda Handlers an den Aufrufer, in diesem Fall die API zurück gegeben wird.
 
-Mit dem folgenden Handler wird ein Node \textit{n} über ein eindeutiges Attribut wie einer Id oder eines IRI in der Datenbank abgefragt und an die API zurückgeliefert.
+Mit dem folgenden Handler wird ein Node \textit{n} über ein eindeutiges Attribut wie einer Id oder eines IRI in der Datenbank abgefragt und an die API zurückgeliefert.\newline
 
 
 \begin{lstlisting}[language=JavaScript, frame=htrbl, caption={Lambda Handler Funktion}, label={lst:lambda_handler}]
@@ -126,7 +126,7 @@ module.exports.getNode = function(event, context, callback) {
 
 \subsection{Deployment mit dem Serverless Framework}
 
-Beim Erzeugen eines neuen Projektes mit dem Serverless Framework, wird neben einem leeren Handler auch eine Konfigurationsdatei mit dem Namen \textit{serverless.yaml} erzeugt. In dieser werden neben der Route die die Funktion auslöst auch die Art der HTTP Methoden eingetragen.
+Beim Erzeugen eines neuen Projektes mit dem Serverless Framework, wird neben einem leeren Handler auch eine Konfigurationsdatei mit dem Namen \textit{serverless.yaml} erzeugt. In dieser werden neben der Route die die Funktion auslöst auch die Art der HTTP Methoden eingetragen.\newline
 
 \begin{lstlisting}[language=Python, frame=htrbl, caption={Serverless Konfiguration}, label={lst:serverless_yaml}]
 
@@ -179,7 +179,7 @@ WITH c, other, COUNT(o) AS intersection, COLLECT(o.ns5_prefLabel) AS i
 
 \end{lstlisting}
 
-Als nächstes müssen die beiden Mengen in seperaten Variablen $s1_{A}$ und $s2_{B}$ gespeichert werden,
+Als nächstes müssen die beiden Mengen in seperaten Variablen $s1_{A}$ und $s2_{B}$ gespeichert werden,\newline
 
 \begin{lstlisting}
 MATCH (c:ns4_Skill {ns5_prefLabel:{queryParam})-[:ns5_related]->(o:ns4_Occupation)<-[:ns5_related]-(other:ns4_Skill)

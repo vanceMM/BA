@@ -6,21 +6,17 @@ Das Ergebnis dieser Arbeit ist ein Prototyp für einen Empfehlungsdienst, der ü
 
 Eine wichtige Erkenntnis ist genau dieses Veröffentlichunsformat. Da Kompetenzen oder Kompetenzen aus Sektorspezifischen Frameworks, sich gut in Ontologien darstellen lassen, können Metriken und Algorithmen die sich mit Ontologien befassen untersucht werden, und geprüft werden ob sich diese auch auf Kompetenzontologien anwenden lassen.
 
-Mit der Neo4j Datenbank wurde ein wichtiges Werkzeug gewählt welche nicht nur die Aufgabe des Datenspeichers übernimmt, sondern auch einige relevanten Graphen Operationen implementiert. Mit der mächtigen Abfragensprache \textit{Cypher} können neben kürzesten Pfaden auch Adjazenzmatrizen gebildet werden und Beziehungen können genau wie Knoten mit Attributen versehen werden, was die Gewichtung von Kanten ermöglicht.
+Mit der Neo4j Datenbank wurde ein wichtiges Werkzeug gewählt welche nicht nur die Aufgabe des Datenspeichers übernimmt, sondern auch einige relevanten Graphen Operationen implementiert. Mit der mächtigen Abfragensprache \textit{Cypher} können neben kürzesten Pfaden auch Adjazenzmatrizen gebildet werden und Beziehungen können genau wie Knoten mit Attributen versehen werden, was die Gewichtung von Kanten ermöglicht.\newline
 
-\todo{rdf import}
+Eine entscheidende Komponente für das erfolgreiche importieren von Kompetenzen in die Neo4j Datenbank war das RDF Import Plugin von Jesús Barassa. Da sich für die Veröffentlichung von Linked Data Formate wie RDF und JSON-LD durch gesetzt haben, jedoch für die Traversierung dieser Graphen und die Implementierung von APIs diese Technologie weniger eignet, ist eine Überführung der Triples in eine Graphendatenbank wie Neo4j für diese Arbeit essentiel gewesen.
+\newline
 
-\textbf{Wie kann dieser Dienst genutzt werden? }
-
+\textbf{Wie kann dieser Dienst genutzt werden? } \newline
 Karriereportale können mit Hilfe des Empfehlungsystems ihre Treffergenauigkeit bei vorgeschlagenen Stellenangeboten oder Job-Matching erhöhen. Die Möglichkeiten erstrecken sich im gesamten Personalentwicklungsbereich und Kompetenzmanagement, so wäre auch eine Nutzung des Dienstes durch Systeme denkbar die Karrierepfade zeigen sollen. 
  
 Das in dieser Arbeit verwendete Datenmodel basiert auf der Ontologie des ESCO Katalogs, welcher als Linked Data veröffentlicht wird. Der Focus von ESCO liegt auf der Interoperabilität am europäischen Arbeitsmarkt und an der Übersetzung von nationalen Standards. Bis Ende 2017 soll der Katalog stetig weiter entwickelt und aktualisiert werden. Mitgliederstaaten sollen auch dabei unterstütz werden ihre nationalen Standards in maschinenlesbaren Formaten zur Verfügung zu stellen. 
-
-Kritik 
-  am ESCO Model. Welche Alternativen und Vorschläge?
-  
-
-Zukunftsausblick.
+\newline
+Ob das ESCO Datenmodel der wissenschaftliche korrekte Ansatz ist, um Kompetenzen in diesem Kontext zu modellieren wurde in dieser Arbeit nicht erörtert. Der Fokus lag auf der Vergleichbarkeit von Kompetenzen und der Entwicklung eines Empfehlungssystems. Dennoch ist das Datenmodel eine wichtige Grundlage für die Implementierung von Algorithmen und Metriken. Mit einer Änderung der Struktur des ESCO Modells, geht eventuell auch eine Änderung des Empfehlungssystems einher. Diese Abhängigkeit ist eine Schwäche die in Zukunft weiter diskutiert werden kann.
 
 Karriereplattformen bieten schon jetzt die Möglichkeit elektronische Lebensläufe oder Profile anzulegen, in welchen Benutzer dann ihre Abschlüsse, Qualifikationen und Fertigkeiten angeben. Diese Lebensläufe und Profile werden dann mit Anforderungen von Jobinseraten verglichen. Für die Repräsentation von eigenen Kompetenzen ist eine Verknüpfung mit anderen Technologien wie zb. dem Mozilla Open Badge Network denkbar. Damit würden erworbene Kompetenzen nicht nur visuell darstellbar, sondern es gäbe auch eine Referenz auf einen Nachweis für die Kompetenz. 
 Openbadges in CVs für Jobportale.

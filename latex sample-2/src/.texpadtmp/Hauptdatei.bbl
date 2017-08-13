@@ -79,6 +79,10 @@
   \url{https://hr-blog.prosoft.net/mit-xing-zum-traumjob-wie-gut-ist-das-job-matching-des-karrierenetzwerks/}.
 \newblock \,Version:\,Dec 2016
 
+\bibitem[inl]{inloc}
+\emph{A brief overview of the InLOC Model}.
+\newblock \url{http://www.cetis.org.uk/inloc/Overview%2band%2bOrientation}
+
 \bibitem[JW02]{Jeh:2002:SMS:775047.775126}
 \textsc{Jeh}, Glen ; \textsc{Widom}, Jennifer:
 \newblock SimRank: A Measure of Structural-context Similarity.
@@ -110,6 +114,14 @@
 \newblock \emph{Entwicklung und Evaluation eines e-Kompetenz-Verzeichnisses mit
   REST-API und eines automatisierten Crawlers zur Datensammlung}.
 \newblock 2017
+
+\bibitem[mova]{movielens_img}
+\emph{MovieLens}.
+\newblock \url{https://movielens.org/movies/110102}
+
+\bibitem[movb]{movielens}
+\emph{Non-commercial, personalized movie recommendations.}
+\newblock \url{https://movielens.org/}
 
 \bibitem[neoa]{neo4jsysreq}
 \emph{2.1. System requirements - Chapter 2. Installation}.

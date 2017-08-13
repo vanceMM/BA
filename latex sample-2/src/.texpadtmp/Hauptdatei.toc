@@ -13,9 +13,9 @@
 \contentsline {subsubsection}{\numberline {2.3.3}RDF}{12}{subsubsection.2.3.3}
 \contentsline {subsubsection}{\numberline {2.3.4}Ontologie/Vokabular}{12}{subsubsection.2.3.4}
 \contentsline {subsection}{\numberline {2.4}Graphen}{12}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Graphentheorie}{13}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.1}Graphentheorie}{12}{subsubsection.2.4.1}
 \contentsline {subsubsection}{\numberline {2.4.2}Graphendatenbanken}{13}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}Neo4J}{14}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.3}Neo4J}{13}{subsubsection.2.4.3}
 \contentsline {subsection}{\numberline {2.5}Empfehlungssysteme}{14}{subsection.2.5}
 \contentsline {section}{\numberline {3}Verwandte Themen und Arbeiten}{15}{section.3}
 \contentsline {subsection}{\numberline {3.1}Openbadge}{15}{subsection.3.1}
@@ -23,12 +23,13 @@
 \contentsline {subsubsection}{\numberline {3.2.1}Deutscher Qualifikationsrahmen}{16}{subsubsection.3.2.1}
 \contentsline {subsection}{\numberline {3.3}European e-Competence Framework}{16}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}InLoc}{16}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}ESCO}{16}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.5}ESCO}{17}{subsection.3.5}
 \contentsline {subsubsection}{\numberline {3.5.1}EURES}{17}{subsubsection.3.5.1}
 \contentsline {subsection}{\numberline {3.6}RDF Import Neo4J}{18}{subsection.3.6}
 \contentsline {subsection}{\numberline {3.7}Recommender Systeme}{18}{subsection.3.7}
-\contentsline {subsubsection}{\numberline {3.7.1}RecSys Challenge}{18}{subsubsection.3.7.1}
-\contentsline {subsubsection}{\numberline {3.7.2}Job-Matching: Xing}{18}{subsubsection.3.7.2}
+\contentsline {subsection}{\numberline {3.8}Movielense}{18}{subsection.3.8}
+\contentsline {subsubsection}{\numberline {3.8.1}RecSys Challenge}{19}{subsubsection.3.8.1}
+\contentsline {subsubsection}{\numberline {3.8.2}Job-Matching: Xing}{19}{subsubsection.3.8.2}
 \contentsline {section}{\numberline {4}Analyse und Aufgabenstellung}{20}{section.4}
 \contentsline {subsection}{\numberline {4.1}Aufgabenstellung}{20}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Anforderungsanalyse}{20}{subsection.4.2}
@@ -43,14 +44,14 @@
 \contentsline {subsubsection}{\numberline {5.1.2}inLOC}{25}{subsubsection.5.1.2}
 \contentsline {subsubsection}{\numberline {5.1.3}Fazit: Auswahl eines Models}{26}{subsubsection.5.1.3}
 \contentsline {subsubsection}{\numberline {5.1.4}Datenbank}{26}{subsubsection.5.1.4}
-\contentsline {subsection}{\numberline {5.2}Datenmodell}{26}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.2}Datenmodell}{27}{subsection.5.2}
 \contentsline {subsubsection}{\numberline {5.2.1}API}{27}{subsubsection.5.2.1}
 \contentsline {subsection}{\numberline {5.3}Anfragen Formulieren}{28}{subsection.5.3}
 \contentsline {section}{\numberline {6}Implementierung}{29}{section.6}
 \contentsline {subsection}{\numberline {6.1}Architektur}{29}{subsection.6.1}
-\contentsline {paragraph}{EC2:}{29}{paragraph*.6}
-\contentsline {paragraph}{AWS API Gateway:}{29}{paragraph*.7}
-\contentsline {paragraph}{AWS Lambda}{29}{paragraph*.8}
+\contentsline {paragraph}{EC2:}{29}{paragraph*.1}
+\contentsline {paragraph}{AWS API Gateway:}{29}{paragraph*.2}
+\contentsline {paragraph}{AWS Lambda}{29}{paragraph*.3}
 \contentsline {subsection}{\numberline {6.2}EC2 }{29}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Neo4j}{30}{subsection.6.3}
 \contentsline {subsubsection}{\numberline {6.3.1}RDF Import}{30}{subsubsection.6.3.1}
@@ -64,10 +65,10 @@
 \contentsline {subsubsection}{\numberline {6.8.1}Shortest Path}{34}{subsubsection.6.8.1}
 \contentsline {subsubsection}{\numberline {6.8.2}Jaccard Index}{35}{subsubsection.6.8.2}
 \contentsline {subsubsection}{\numberline {6.8.3}Simrank}{36}{subsubsection.6.8.3}
-\contentsline {subsubsection}{\numberline {6.8.4}Levensthein oder Edit-Distanz}{36}{subsubsection.6.8.4}
-\contentsline {section}{\numberline {7}Bewertung}{37}{section.7}
-\contentsline {section}{\numberline {8}Ausblick}{39}{section.8}
-\contentsline {section}{\numberline {9}Fazit}{40}{section.9}
-\contentsline {section}{Literaturverzeichnis}{42}{section*.9}
-\contentsline {section}{Anhang}{44}{section*.9}
-\contentsline {subsubsection}{\numberline {9.0.1}API Endpunkte}{44}{subsubsection.9.0.1}
+\contentsline {subsubsection}{\numberline {6.8.4}Levensthein oder Edit-Distanz}{37}{subsubsection.6.8.4}
+\contentsline {section}{\numberline {7}Bewertung}{38}{section.7}
+\contentsline {section}{\numberline {8}Ausblick}{40}{section.8}
+\contentsline {section}{\numberline {9}Fazit}{41}{section.9}
+\contentsline {section}{Literaturverzeichnis}{43}{section.9}
+\contentsline {section}{Anhang}{45}{section.9}
+\contentsline {subsubsection}{\numberline {9.0.1}API Endpunkte}{45}{subsubsection.9.0.1}

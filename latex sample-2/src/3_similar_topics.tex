@@ -17,8 +17,7 @@ Die Zusicherung kann dann in den Quellcode eines SVG oder PNG Bildes geschrieben
 
 \vspace{1em}
 \subsection{Europäischer Qualifikationsrahmen}
-Der EQR ist ein Meta-Rahmen, welcher die Vergleichbarkeit von beruflichen Qualifikationen und Kompetenzen aus verschiedenen nationalen oder sektoralen Kompetenzrahmen ermöglichen soll. Er dient als Übersetzungswerkzeug zwischen den einzelnen nationalen  Qualifikationsrahmen und ist in 8 Referenzniveaus aufgeteilt. Jedes Niveau wird durch  \textit{Wissen}, \textit{Fertigkeiten} und \textit{Kompetenz} definiert. Im EQR bedeutet Kompetenz, verantwortungsvolles Handeln im Kontext. Darüber hinaus kann jedes Niveau auch durch Lernergebnisse, also das resultierende Wissen und das was der Lernende nach Abschluss einer Qualifikation in der Lage ist zu tun, beschrieben werden. \todo{ausführung, nutzung von eqf in ESCO}
-vergleichbarkeit von beruflichen Qualifikationen und Kompetenzen
+Der EQR ist ein Meta-Rahmen, welcher die Vergleichbarkeit von beruflichen Qualifikationen und Kompetenzen aus verschiedenen nationalen oder sektoralen Kompetenzrahmen ermöglichen soll. Er dient als Übersetzungswerkzeug zwischen den einzelnen nationalen  Qualifikationsrahmen und ist in 8 Referenzniveaus aufgeteilt. Jedes Niveau wird durch  \textit{Wissen}, \textit{Fertigkeiten} und \textit{Kompetenz} definiert. Im EQR bedeutet Kompetenz, verantwortungsvolles Handeln im Kontext. Darüber hinaus kann jedes Niveau auch durch Lernergebnisse, also das resultierende Wissen und das was der Lernende nach Abschluss einer Qualifikation in der Lage ist zu tun, beschrieben werden. 
 
 \subsubsection{Deutscher Qualifikationsrahmen}
 
@@ -39,8 +38,7 @@ Der europäische Kompetenzrahmen für Fach- und Führungskräfte der Information
 Die 5 Niveaus entsprechen den EQF Niveaus 3-8. 
 \subsection{InLoc}\label{inloc}
 
-Das Europäische Projekt InLOC (Integrating Learning Outcomes and Competences) erlaubt es Kompetenzen und Lernergebnisse verschiedener Kompetenzrahmen in einem einheitlichen semantischen Format abzubilden. 
-
+Das Europäische Projekt InLOC (Integrating Learning Outcomes and Competences) soll Kompetenzen und Lernergebnisse verschiedener Kompetenzrahmen in einem einheitlichen semantischen Format abbilden. Dazu wird ein Datenmodel \footnote{inLoc\cite{inloc}} vorgeschlagen, welches Lernergebnisse und Kompetenzen in 2 Klassen, \emph{Definitionen} und \emph{Struktur} einteilt. Definitionen können alle Entitäten sein, welche eine Kompetenz oder ein Lernergebnis beschreiben. Kompetenzen und Lernergebnisse können gruppiert oder hierarchisch angeordnet sein. Dieser Sachverhalt lässt sich durch die Struktur Klasse und ihre Beziehungen abbilden.
 
 \subsection{ESCO}
 
@@ -57,7 +55,6 @@ Die Europäische Kommission hat mit ESCO eine Schnittstelle geschaffen, welche I
 \subsubsection{EURES}
 
 Das EURES Job-Portal bietet Arbeitssuchenden in der EU die Möglichkeit Lebensläufe und Profile mit Hilfe der ESCO Taxonomie zu erstellen. Diese werden dann mittels Job-Matching mit offenen Stellen europaweit abgeglichen.\newline
-\todo{mehr...}
 
 Neo4J bietet über die Sandbox eine interaktive Möglichkeit auf einer temporär generierten Instanz im Browser zu arbeiten. Mit Schritt-für-Schritt Anleitungen werden Themen wie "Netzwerk Management" oder die "Panama Papers" in Neo4j näher gebracht.\newline
 
@@ -84,8 +81,16 @@ Der komplette RDF Graph des ESCO Kataloges mit allen Beziehungen laden und Abfra
 
 \subsection{Recommender Systeme}
 
-\todo{besseres Beispiel finden}
+\subsection{Movielense}
 
+Das \textit{Movielense}\footnote{MovieLense \cite{movielens}} Projekt der GroupLens Forschungsgruppe an der \emph{University of Minnesota} befasst sich mit Technologien für das kollaborative Filtern und Empfehlungen von Filmen. Die Daten\footnote{Movielens Daten\cite{grouplens_2016}} von bis zu 45,000 Filmen und deren Bewertungen durch die Nutzer stehen zu Forschungszwecken als Download zur Verfügung.
+
+\begin{figure}[htb]
+ \centering
+ \includegraphics[width=0.3\textwidth,angle=0]{abb/movielense}
+ \caption[Beschreibung]{Movielense: Vorhersage für eine Filmempfehlung\cite{movielens_img}}
+\label{fig:Filmempfehlung Movielense}
+\end{figure}
 
 \subsubsection{RecSys Challenge}
 
